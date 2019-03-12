@@ -1,0 +1,26 @@
+@mixin LearnButton() {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+
+    background-color: #2D3A52;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: signika, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+
+    transition: 500ms;
+    &:hover {
+        background: #FFE195;
+        color: black;
+        cursor: pointer;
+    }
+}

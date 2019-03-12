@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="347" column="74" selection-start-line="347" selection-start-column="74" selection-end-line="347" selection-end-column="74" />
+              <folding>
+                <element signature="n#div#1;n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#nav#0;n#div#0;n#footer#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#footer#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#footer#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#footer#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="1100" column="37" selection-start-line="1100" selection-start-column="37" selection-end-line="1100" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Less File" />
+        <option value="CSS File" />
+        <option value="Sass File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/fonts/signika.css" />
+        <option value="$PROJECT_DIR$/static/fonts/signika/signika.css" />
+        <option value="$PROJECT_DIR$/static/fonts/playfair/playfair.css" />
+        <option value="$PROJECT_DIR$/components/font_signika16.less" />
+        <option value="$PROJECT_DIR$/static/fonts/roboto/roboto.css" />
+        <option value="$PROJECT_DIR$/components/roboto14.less" />
+        <option value="$PROJECT_DIR$/components/playfair32.less" />
+        <option value="$PROJECT_DIR$/components/LearnButton.less" />
+        <option value="$PROJECT_DIR$/components/HiddenSubmit.less" />
+        <option value="$PROJECT_DIR$/components/media.less" />
+        <option value="$PROJECT_DIR$/FAQ/index.html" />
+        <option value="$PROJECT_DIR$/components/SubmitButton.less" />
+        <option value="$PROJECT_DIR$/FAQ/style.less" />
+        <option value="$PROJECT_DIR$/components/sig16.less" />
+        <option value="$PROJECT_DIR$/style.less" />
+        <option value="$PROJECT_DIR$/components/HiddenSubmit.scss" />
+        <option value="$PROJECT_DIR$/components/LearnButton.scss" />
+        <option value="$PROJECT_DIR$/components/style.css" />
+        <option value="$PROJECT_DIR$/components/playfair32.scss" />
+        <option value="$PROJECT_DIR$/components/roboto14.scss" />
+        <option value="$PROJECT_DIR$/components/sig16.scss" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/style.sass" />
+        <option value="$PROJECT_DIR$/style1.scss" />
+        <option value="$PROJECT_DIR$/components/_HiddenSubmit.scss" />
+        <option value="$PROJECT_DIR$/components/_LearnButton.scss" />
+        <option value="$PROJECT_DIR$/FAQ/style.scss" />
+        <option value="$PROJECT_DIR$/components/SubmitButton.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="348" />
+    <option name="y" value="21" />
+    <option name="width" value="960" />
+    <option name="height" value="986" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
+              <item name="FAQ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
+              <item name="style.scss" type="620a8d5e:NestingTreeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="" />
+      <created>1550312704281</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550312704281</updated>
+      <workItem from="1550312711893" duration="2018000" />
+      <workItem from="1550323223841" duration="3271000" />
+      <workItem from="1550473053016" duration="13499000" />
+      <workItem from="1550487967251" duration="1513000" />
+      <workItem from="1550566947329" duration="737000" />
+      <workItem from="1550567757187" duration="28000" />
+      <workItem from="1550567822802" duration="10517000" />
+      <workItem from="1550580430444" duration="108000" />
+      <workItem from="1550580732068" duration="638000" />
+      <workItem from="1550581523003" duration="132000" />
+      <workItem from="1550581661881" duration="190000" />
+      <workItem from="1550581949787" duration="6636000" />
+      <workItem from="1550647665260" duration="1011000" />
+      <workItem from="1550648880390" duration="4467000" />
+      <workItem from="1550653483793" duration="923000" />
+      <workItem from="1550659259490" duration="4189000" />
+      <workItem from="1550674592999" duration="18912000" />
+      <workItem from="1550734272703" duration="3046000" />
+      <workItem from="1550740552961" duration="4458000" />
+      <workItem from="1550747591587" duration="8725000" />
+      <workItem from="1550762569343" duration="11906000" />
+      <workItem from="1550922992610" duration="7804000" />
+      <workItem from="1550937382151" duration="778000" />
+      <workItem from="1550947832103" duration="2889000" />
+      <workItem from="1550951095961" duration="4667000" />
+      <workItem from="1551005219882" duration="19173000" />
+      <workItem from="1551083389209" duration="16898000" />
+      <workItem from="1551175346265" duration="5042000" />
+      <workItem from="1551193502185" duration="7354000" />
+      <workItem from="1551251058167" duration="1658000" />
+      <workItem from="1551289465612" duration="8765000" />
+      <workItem from="1551355507233" duration="6757000" />
+      <workItem from="1551365114650" duration="11893000" />
+      <workItem from="1551432184154" duration="4213000" />
+      <workItem from="1551544861613" duration="9715000" />
+      <workItem from="1551634127838" duration="5603000" />
+      <workItem from="1551882875627" duration="861000" />
+      <workItem from="1551886249943" duration="1139000" />
+      <workItem from="1551887411463" duration="116000" />
+      <workItem from="1551887624844" duration="2448000" />
+      <workItem from="1551969743147" duration="1079000" />
+      <workItem from="1551970946958" duration="32000" />
+      <workItem from="1551971257355" duration="1831000" />
+      <workItem from="1551973626695" duration="953000" />
+      <workItem from="1551974876162" duration="5602000" />
+      <workItem from="1552035962767" duration="104000" />
+      <workItem from="1552036311884" duration="1545000" />
+      <workItem from="1552039678297" duration="4365000" />
+      <workItem from="1552240135726" duration="725000" />
+      <workItem from="1552241016066" duration="8262000" />
+      <workItem from="1552394719713" duration="1437000" />
+      <workItem from="1552399697791" duration="484000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="241116000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18455844" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295583" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.50396377" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295583" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32993197" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.34994337" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18455844" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295583" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295583" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.34994337" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/fonts/signika.css" />
+    <entry file="file://$PROJECT_DIR$/components/font_signika16.css" />
+    <entry file="file://$PROJECT_DIR$/components/3.less" />
+    <entry file="file://$PROJECT_DIR$/static/fonts/playfair/playfair.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/fonts/roboto/roboto.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/fonts/signika/signika.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/HiddenSubmit.less" />
+    <entry file="file://$PROJECT_DIR$/components/LearnButton.less" />
+    <entry file="file://$PROJECT_DIR$/components/style.css" />
+    <entry file="file://$PROJECT_DIR$/components/playfair32.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/playfair32.less" />
+    <entry file="file://$PROJECT_DIR$/components/media.less" />
+    <entry file="file://$PROJECT_DIR$/components/roboto14.less" />
+    <entry file="file://$PROJECT_DIR$/components/roboto14.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/sig16.less" />
+    <entry file="file://$PROJECT_DIR$/components/sig16.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/SubmitButton.less" />
+    <entry file="file://$PROJECT_DIR$/style.less" />
+    <entry file="file://$PROJECT_DIR$/style.sass" />
+    <entry file="file://$PROJECT_DIR$/components/SubmitButton.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style1.scss" />
+    <entry file="file://$PROJECT_DIR$/style1.css" />
+    <entry file="file://$PROJECT_DIR$/components/HiddenSubmit.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="53" column="50" lean-forward="true" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/HiddenSubmit.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/LearnButton.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/_LearnButton.scss" />
+    <entry file="file://$PROJECT_DIR$/components/_HiddenSubmit.scss" />
+    <entry file="file://$PROJECT_DIR$/FAQ/style.less" />
+    <entry file="file://$PROJECT_DIR$/FAQ/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FAQ/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2146">
+          <caret line="130" column="75" selection-start-line="130" selection-start-column="75" selection-end-line="130" selection-end-column="75" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/SubmitButton.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="347" column="74" selection-start-line="347" selection-start-column="74" selection-end-line="347" selection-end-column="74" />
+          <folding>
+            <element signature="n#div#1;n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#0;n#footer#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#footer#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#footer#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#footer#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="1100" column="37" selection-start-line="1100" selection-start-column="37" selection-end-line="1100" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

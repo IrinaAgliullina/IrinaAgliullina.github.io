@@ -1,0 +1,621 @@
+@charset "UTF-8";
+@import url("../static/fonts/signika/signika.css");
+@import url("../static/fonts/playfair/playfair.css");
+@import url("../static/fonts/roboto/roboto.css");
+body {
+  margin: 0;
+  background-color: #050713;
+}
+
+.BlockOne {
+  display: flex;
+  justify-content: center;
+  background: url("../static/bg/FAQ.jpg") no-repeat bottom/cover;
+  width: 100%;
+}
+.BlockOne .Container {
+  display: flex;
+  margin-top: 59px;
+  margin-bottom: 55px;
+  width: 1180px;
+}
+.BlockOne .Container .MenuContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: Signika, sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 49px;
+}
+.BlockOne .Container .MenuContainer .Logo {
+  width: 82px;
+  height: 82px;
+  background: url("../static/images/Sprait.svg") no-repeat;
+  margin-right: 24px;
+}
+.BlockOne .Container .MenuContainer .Nav {
+  display: flex;
+  width: 642px;
+  height: 18px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 42px;
+}
+.BlockOne .Container .MenuContainer .Nav a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: 500ms;
+}
+.BlockOne .Container .MenuContainer .Nav a:hover {
+  color: #FFE195;
+  cursor: pointer;
+}
+.BlockOne .Container .MenuContainer .Tel {
+  font-family: signika, sans-serif;
+  margin-right: 18px;
+  color: #FFE195;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1.1px;
+}
+.BlockOne .Container .MenuContainer .Tel:hover {
+  color: #E7CC89;
+}
+.BlockOne .Container .MenuContainer .Sandwich {
+  width: 30px;
+  height: 24px;
+  background: url("../static/mobile_images/Mobile_sandwich.png") no-repeat;
+}
+.BlockOne .Container .MenuContainer .Submit {
+  position: relative;
+  z-index: 1;
+}
+.BlockOne .Container .MenuContainer .Submit:hover > .HiddenButtons {
+  opacity: 1;
+  pointer-events: auto;
+}
+.BlockOne .Container .MenuContainer .Submit > a {
+  position: inherit;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 0;
+  background: #FFE195;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  transition: 500ms;
+}
+.BlockOne .Container .MenuContainer .Submit > a .ButtonText {
+  white-space: nowrap;
+  margin-left: 11px;
+  font-family: Signika, sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+.BlockOne .Container .MenuContainer .Submit > a:hover {
+  background: #E7CC89;
+}
+.BlockOne .Container .MenuContainer .Submit > a .Icon_Arrow_B {
+  width: 14px;
+  height: 9px;
+  background: url("../static/images/Sprait.svg") no-repeat -1px -174px;
+  margin-left: 12px;
+  padding: 0;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons {
+  position: absolute;
+  top: 0;
+  padding-top: 36px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms;
+  /*плавное появление блока скрытых кнопок*/
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 0;
+  background: #0E1420;
+  width: fit-content;
+  text-decoration: none;
+  color: #FFE195;
+  transition: 500ms;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a .ButtonText {
+  white-space: nowrap;
+  padding-left: 11px;
+  padding-right: 18px;
+  font-family: Signika, sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:hover {
+  background: #E7CC89;
+  color: black;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:not(:last-child) {
+  margin-bottom: 6px;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a .Icon_Arrow_Y {
+  width: 14px;
+  height: 9px;
+  background: url("../static/images/Sprait.svg") no-repeat -1px -163px;
+  margin-left: 12px;
+  padding: 0;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:hover .Icon_Arrow_Y {
+  background: url("../static/images/Sprait.svg") no-repeat -1px -174px;
+}
+.BlockOne .Container .StartContainer {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  margin-bottom: 119px;
+  margin-left: 600px;
+}
+.BlockOne .Container .StartContainer nav {
+  height: 27px;
+  font-family: signika, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.BlockOne .Container .StartContainer nav > a {
+  text-decoration: none;
+  color: rgba(255, 255, 149, 0.5);
+  transition: 500ms;
+}
+.BlockOne .Container .StartContainer nav > a:hover {
+  color: #ffff95;
+}
+.BlockOne .Container .StartContainer h2 {
+  margin: 0;
+  padding: 0;
+  height: 93px;
+  font-family: playfair, serif;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 93px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF;
+}
+.BlockOne .Container .StartContainer p {
+  height: 75px;
+  margin-bottom: 30px;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: 26px;
+  font-size: 16px;
+}
+.BlockOne .Container .StartContainer .Button {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 0;
+  background: #0E1420;
+  width: fit-content;
+  text-decoration: none;
+  color: #FFE195;
+  transition: 500ms;
+}
+.BlockOne .Container .StartContainer .Button .ButtonText {
+  white-space: nowrap;
+  padding-left: 11px;
+  padding-right: 18px;
+  font-family: Signika, sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+.BlockOne .Container .StartContainer .Button:hover {
+  background: #E7CC89;
+  color: black;
+}
+.BlockOne .Container .StartContainer .Button .Icon_Arrow_Y {
+  width: 14px;
+  height: 9px;
+  background: url("../static/images/Sprait.svg") no-repeat -1px -163px;
+  margin-left: 12px;
+  padding: 0;
+}
+.BlockOne .Container .StartContainer .Button:hover .Icon_Arrow_Y {
+  background: url("../static/images/Sprait.svg") no-repeat -1px -174px;
+}
+.BlockOne .Container .MouseContainer {
+  display: flex;
+  justify-content: center;
+}
+.BlockOne .Container .MouseContainer .Mouse {
+  width: 22px;
+  height: 36px;
+  background: url("../static/images/Mouse.svg") no-repeat;
+  transition: 500ms;
+}
+.BlockOne .Container .MouseContainer .Mouse:hover {
+  opacity: 0.5;
+}
+
+.BlockTwo {
+  display: flex;
+  justify-content: center;
+}
+.BlockTwo .Container {
+  display: flex;
+  margin-top: 86px;
+  margin-bottom: 122px;
+  width: 1180px;
+}
+.BlockTwo .Container article {
+  display: flex;
+  flex-direction: column;
+  width: 817px;
+  margin-left: 162px;
+  margin-bottom: 120px;
+}
+.BlockTwo .Container article section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 817px;
+}
+.BlockTwo .Container article section:not(:last-child) {
+  margin-bottom: 62px;
+}
+.BlockTwo .Container article section .Control {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 12px;
+  height: 20px;
+  background: url("../static/images/Sprait.svg") no-repeat -17px -163px;
+  transform: rotate(90deg);
+  opacity: 0.3;
+  transition: 500ms;
+}
+.BlockTwo .Container article section .Control:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.BlockTwo .Container article section h1 {
+  margin: 0 0 18px 37px;
+  font-family: playfair, serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.BlockTwo .Container article section p {
+  margin: 0 0 0 37px;
+  font-family: signika, sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.BlockTwo .Container .CallUsToday {
+  display: flex;
+  position: relative;
+  height: 380px;
+  width: 1180px;
+  background-color: rgba(27, 49, 75, 0.75);
+}
+.BlockTwo .Container .CallUsToday > div {
+  margin: 95px 115px 0 100px;
+  width: 380px;
+  height: 160px;
+}
+.BlockTwo .Container .CallUsToday > div h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: playfair, serif;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 52px;
+}
+.BlockTwo .Container .CallUsToday > div > p {
+  margin: 0 0 15px 0;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+.BlockTwo .Container .CallUsToday > div .Tel {
+  height: 43px;
+  font-family: playfair, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFE195;
+  letter-spacing: 1px;
+  line-height: normal;
+  text-decoration: none;
+}
+.BlockTwo .Container .CallUsToday > p {
+  margin: 100px 0 0 0;
+  width: 390px;
+  height: 131px;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: 26px;
+  letter-spacing: 0.8px;
+}
+.BlockTwo .Container .CallUsToday > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #2D3A52;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: signika, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  transition: 500ms;
+}
+.BlockTwo .Container .CallUsToday > a:hover {
+  background: #FFE195;
+  color: black;
+  cursor: pointer;
+}
+
+.BlockThree {
+  display: flex;
+  justify-content: center;
+  background: url("../static/bg/Footer.jpg") no-repeat center/cover;
+  width: 100%;
+}
+.BlockThree .Container {
+  position: relative;
+  display: flex;
+  width: 1180px;
+  height: 235px;
+  margin-bottom: 56px;
+}
+.BlockThree .Container .FooterNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 53px;
+}
+.BlockThree .Container .FooterNav nav {
+  display: flex;
+  justify-content: space-between;
+  width: 853px;
+  margin-right: 102px;
+}
+.BlockThree .Container .FooterNav nav a {
+  font-family: signika, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 500ms;
+}
+.BlockThree .Container .FooterNav nav a:hover {
+  color: #FFE195;
+  cursor: pointer;
+}
+.BlockThree .Container .FooterNav .Button {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 0;
+  background: #FFE195;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  transition: 500ms;
+}
+.BlockThree .Container .FooterNav .Button .ButtonText {
+  white-space: nowrap;
+  margin-left: 11px;
+  font-family: Signika, sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+.BlockThree .Container .FooterNav .Button:hover {
+  background: #E7CC89;
+}
+.BlockThree .Container .FooterNav .Button .Icon_Arrow_B {
+  width: 14px;
+  height: 9px;
+  background: url("../static/images/Sprait.svg") no-repeat -1px -174px;
+  margin-left: 12px;
+  padding: 0;
+}
+.BlockThree .Container .FooterNav .Button .ButtonText {
+  letter-spacing: 0.5px;
+}
+.BlockThree .Container .Accredited {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  display: flex;
+  width: 281px;
+  height: 50px;
+  margin-top: 15px;
+  align-items: center;
+}
+.BlockThree .Container .Accredited .BBB {
+  background: url("../static/images/footer_img/BBBAccredited.png") no-repeat;
+  background-size: contain;
+  width: 110px;
+  height: 41px;
+  margin-right: 6px;
+}
+.BlockThree .Container .Accredited .BBBRating {
+  width: 61px;
+  height: 40px;
+  color: #CDCDCF;
+  font-family: signika, sans-serif;
+  font-style: normal;
+  line-height: 13px;
+  font-size: 9px;
+}
+.BlockThree .Container .Accredited .BBBRating > p {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.BlockThree .Container .Accredited .Napp {
+  background: url("../static/images/footer_img/NAPP.svg") no-repeat;
+  width: 80px;
+  height: 43px;
+  margin-left: 25px;
+}
+.BlockThree .Container .Socials {
+  position: absolute;
+  top: 98px;
+  right: 0;
+  display: flex;
+}
+.BlockThree .Container .Socials a {
+  width: 31.5px;
+  height: 31.5px;
+  transition: 500ms;
+}
+.BlockThree .Container .Socials a:hover {
+  opacity: 0.5;
+}
+.BlockThree .Container .Socials .Social_1 {
+  background: url("../static/images/Sprait.svg") no-repeat 0 -185px;
+  margin-right: 10px;
+}
+.BlockThree .Container .Socials .Social_2 {
+  background: url("../static/images/Sprait.svg") no-repeat -33px -185px;
+  margin-right: 10px;
+}
+.BlockThree .Container .Socials .Social_3 {
+  background: url("../static/images/Sprait.svg") no-repeat -65px -185px;
+  margin-right: 10px;
+}
+.BlockThree .Container .Socials .Social_4 {
+  background: url("../static/images/Sprait.svg") no-repeat -96px -185px;
+}
+.BlockThree .Container .StarRating {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 171px;
+  left: 0;
+}
+.BlockThree .Container .StarRating .Text {
+  font-family: roboto, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 10px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  margin-right: 8px;
+}
+.BlockThree .Container .StarRating .Star_Y {
+  background: url("../static/images/Sprait.svg") no-repeat -31px -165px;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.BlockThree .Container .StarRating .Star_W {
+  background: url("../static/images/footer_img/Star_W.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.BlockThree .Container .Author {
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+  font-family: roboto, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 10px;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.BlockThree .Container .Tel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: roboto, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 10px;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 149, 0.8);
+}
+.BlockThree .Container .Dev {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+  font-family: roboto, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 10px;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 500ms;
+}
+.BlockThree .Container .Dev:hover {
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 600px) {
+  .BlockOne .Container .MenuContainer .Sandwich {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

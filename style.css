@@ -1,0 +1,1547 @@
+@charset "UTF-8";
+@import url("./static/fonts/signika/signika.css");
+@import url("./static/fonts/playfair/playfair.css");
+@import url("./static/fonts/roboto/roboto.css");
+body {
+  margin: 0;
+  background-color: #050713;
+}
+
+/*header*/
+.BlockOne {
+  display: flex;
+  justify-content: center;
+  background: url("./static/bg/Mountain.jpg") no-repeat bottom/cover;
+  width: 100%;
+}
+.BlockOne .Container {
+  display: flex;
+  margin-top: 59px;
+  margin-bottom: 100px;
+  max-width: 1180px;
+}
+.BlockOne .Container .MenuContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: Signika, sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.BlockOne .Container .MenuContainer .Logo {
+  width: 82px;
+  height: 82px;
+  background: url("./static/images/Sprait.svg") no-repeat;
+  margin-right: 24px;
+}
+.BlockOne .Container .MenuContainer .Nav {
+  display: flex;
+  width: 642px;
+  height: 18px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 42px;
+}
+.BlockOne .Container .MenuContainer .Nav a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: 500ms;
+}
+.BlockOne .Container .MenuContainer .Nav a:hover {
+  color: #FFE195;
+  cursor: pointer;
+}
+.BlockOne .Container .MenuContainer .Tel {
+  font-family: signika, sans-serif;
+  margin-right: 18px;
+  color: #FFE195;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1.1px;
+  transition: 500ms;
+}
+.BlockOne .Container .MenuContainer .Tel:hover {
+  color: #E7CC89;
+}
+.BlockOne .Container .MenuContainer .Sandwich {
+  width: 30px;
+  height: 24px;
+  background: url("./static/mobile_images/Mobile_sandwich.png") no-repeat;
+}
+.BlockOne .Container .MenuContainer .Submit {
+  position: relative;
+  z-index: 1;
+}
+.BlockOne .Container .MenuContainer .Submit:hover > .HiddenButtons {
+  opacity: 1;
+  pointer-events: auto;
+}
+.BlockOne .Container .MenuContainer .Submit > a {
+  position: inherit;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 0;
+  background: #FFE195;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  transition: 500ms;
+}
+.BlockOne .Container .MenuContainer .Submit > a .ButtonText {
+  white-space: nowrap;
+  margin-left: 11px;
+  font-family: Signika, sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+.BlockOne .Container .MenuContainer .Submit > a:hover {
+  background: #E7CC89;
+}
+.BlockOne .Container .MenuContainer .Submit > a > div {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 18px;
+}
+.BlockOne .Container .MenuContainer .Submit > a > div .Icon_Arrow_B {
+  width: 14px;
+  height: 9px;
+  background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
+  padding: 0;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons {
+  position: absolute;
+  top: 0;
+  padding-top: 36px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms;
+  /*плавное появление блока скрытых кнопок*/
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 0;
+  background: #0E1420;
+  width: fit-content;
+  text-decoration: none;
+  color: #FFE195;
+  transition: 500ms;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a .ButtonText {
+  white-space: nowrap;
+  padding-left: 11px;
+  padding-right: 18px;
+  font-family: Signika, sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:hover {
+  background: #E7CC89;
+  color: black;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:not(:last-child) {
+  margin-bottom: 6px;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a .Icon_Arrow_Y {
+  width: 14px;
+  height: 9px;
+  background: url("./static/images/Sprait.svg") no-repeat -1px -163px;
+  margin-left: 12px;
+  padding: 0;
+}
+.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:hover .Icon_Arrow_Y {
+  background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
+}
+.BlockOne .Container .SloganContainer {
+  display: flex;
+  flex-direction: column;
+  width: 581px;
+  padding-top: 136px;
+  padding-bottom: 120px;
+  padding-left: 600px;
+}
+.BlockOne .Container .SloganContainer h2 {
+  margin: 0;
+  padding: 0;
+  height: 95px;
+  font-family: playfair, serif;
+  font-size: 66px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 90px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF;
+}
+.BlockOne .Container .SloganContainer blockquote {
+  height: 151px;
+  margin: 0;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: 25px;
+}
+.BlockOne .Container .SloganContainer blockquote cite {
+  font-style: normal;
+}
+.BlockOne .Container .SocialsContainer {
+  display: flex;
+  align-items: flex-end;
+  height: 36px;
+  margin-bottom: 100px;
+}
+.BlockOne .Container .SocialsContainer .Socials {
+  display: flex;
+  justify-content: space-between;
+  width: 154px;
+}
+.BlockOne .Container .SocialsContainer .Socials a {
+  width: 31px;
+  height: 31px;
+  transition: 500ms;
+}
+.BlockOne .Container .SocialsContainer .Socials a:hover {
+  opacity: 0.5;
+}
+.BlockOne .Container .SocialsContainer .Socials .Social_1 {
+  background: url("./static/images/Sprait.svg") no-repeat 0 -185px;
+}
+.BlockOne .Container .SocialsContainer .Socials .Social_2 {
+  background: url("./static/images/Sprait.svg") no-repeat -33px -185px;
+}
+.BlockOne .Container .SocialsContainer .Socials .Social_3 {
+  background: url("./static/images/Sprait.svg") no-repeat -65px -185px;
+}
+.BlockOne .Container .SocialsContainer .Socials .Social_4 {
+  background: url("./static/images/Sprait.svg") no-repeat -96px -185px;
+}
+.BlockOne .Container .SocialsContainer .Mouse {
+  margin-left: 446px;
+  width: 22px;
+  height: 36px;
+  background: url("./static/images/Mouse.svg") no-repeat;
+  transition: 500ms;
+}
+.BlockOne .Container .SocialsContainer .Mouse:hover {
+  opacity: 0.5;
+}
+.BlockOne .Container .SliderContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.BlockOne .Container .SliderContainer .ControlRight {
+  position: absolute;
+  right: -65px;
+  top: 69px;
+  width: 12px;
+  height: 20px;
+  background: url("./static/images/Sprait.svg") no-repeat -17px -163px;
+  opacity: 0.3;
+  transition: 500ms;
+}
+.BlockOne .Container .SliderContainer .ControlRight:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.BlockOne .Container .SliderContainer .ControlLeft {
+  position: absolute;
+  left: -65px;
+  top: 69px;
+  width: 12px;
+  height: 20px;
+  background: url("./static/images/Sprait.svg") no-repeat -17px -163px;
+  transform: scale(-1, 1);
+  opacity: 0.3;
+  transition: 500ms;
+}
+.BlockOne .Container .SliderContainer .ControlLeft:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.BlockOne .Container .SliderContainer h2 {
+  width: 315px;
+  height: 43px;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-family: playfair, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+.BlockOne .Container .SliderContainer .Slider {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.BlockOne .Container .SliderContainer .Slider article {
+  width: 270px;
+  height: fit-content;
+}
+.BlockOne .Container .SliderContainer .Slider article address {
+  height: 20px;
+  margin-bottom: 16px;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.BlockOne .Container .SliderContainer .Slider article p {
+  height: fit-content;
+  margin: 0;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: 23px;
+}
+.BlockOne .Container .SliderContainer .LineContainer {
+  display: flex;
+  justify-content: center;
+}
+.BlockOne .Container .SliderContainer .LineContainer .Lines {
+  display: flex;
+  justify-content: space-between;
+  width: 124px;
+}
+.BlockOne .Container .SliderContainer .LineContainer .Lines .Line {
+  background: url("./static/images/Line_Y.png") no-repeat;
+  opacity: 0.3;
+  width: 25px;
+  height: 2px;
+}
+.BlockOne .Container .SliderContainer .LineContainer .Lines .Line:hover {
+  opacity: 1;
+}
+
+/*main*/
+.BlockTwo {
+  display: flex;
+  justify-content: center;
+  background: url("./static/bg/Cloud1.jpg") no-repeat top/cover;
+  width: 100%;
+}
+.BlockTwo .Container {
+  display: flex;
+  max-width: 1180px;
+  margin-bottom: 85px;
+}
+.BlockTwo .Container .WeCanHelpWith h2 {
+  height: 43px;
+  margin: 0 0 10px 0;
+  font-family: playfair, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1180px;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  height: 380px;
+  margin-top: 20px;
+  background: rgba(27, 49, 75, 0.75);
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div > div {
+  height: 116px;
+  display: flex;
+  align-items: flex-end;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image1 {
+  width: 68px;
+  height: 43px;
+  background: url("./static/images/Sprait.svg") no-repeat -566px -100px;
+  opacity: 0.5;
+  transition: 500ms;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image2 {
+  width: 57px;
+  height: 57px;
+  background: url("./static/images/Sprait.svg") no-repeat -92px -94px;
+  opacity: 0.5;
+  transition: 500ms;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image3 {
+  width: 44px;
+  height: 57px;
+  background: url("./static/images/Sprait.svg") no-repeat -178px -93px;
+  opacity: 0.5;
+  transition: 500ms;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image4 {
+  width: 44px;
+  height: 67px;
+  background: url("./static/images/Sprait.svg") no-repeat -259px -89px;
+  opacity: 0.5;
+  transition: 500ms;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image5 {
+  width: 65px;
+  height: 63px;
+  background: url("./static/images/Sprait.svg") no-repeat -328px -91px;
+  opacity: 0.5;
+  transition: 500ms;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image6 {
+  width: 57px;
+  height: 57px;
+  background: url("./static/images/Sprait.svg") no-repeat -411px -93px;
+  opacity: 0.5;
+  transition: 500ms;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div .Subtitle {
+  margin-top: 24px;
+  margin-bottom: 26px;
+  font-family: signika, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 500ms;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div .Description {
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+  margin: 0;
+  transition: 500ms;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #2D3A52;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: signika, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  transition: 500ms;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div a:hover {
+  background: #FFE195;
+  color: black;
+  cursor: pointer;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover > div > div {
+  opacity: 1;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Subtitle {
+  color: #FFE195;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Description {
+  color: #FFFFFF;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover a {
+  background: #FFE195;
+  color: black;
+}
+.BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover {
+  cursor: pointer;
+}
+.BlockTwo .Container .ThankYouForChoosing {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 105px;
+  height: 330px;
+  position: relative;
+  background: rgba(27, 49, 75, 0.75);
+}
+.BlockTwo .Container .ThankYouForChoosing > div {
+  margin-top: 75px;
+  margin-left: 112px;
+  width: 68px;
+  height: 76px;
+  background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
+}
+.BlockTwo .Container .ThankYouForChoosing h2 {
+  width: 383px;
+  height: 128px;
+  margin-top: 72px;
+  margin-left: 22px;
+  margin-right: 15px;
+  line-height: 42px;
+  font-family: playfair, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+.BlockTwo .Container .ThankYouForChoosing p {
+  margin-top: 79px;
+  width: 370px;
+  height: 100px;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: 26px;
+}
+.BlockTwo .Container .ThankYouForChoosing a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #2D3A52;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: signika, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  transition: 500ms;
+}
+.BlockTwo .Container .ThankYouForChoosing a:hover {
+  background: #FFE195;
+  color: black;
+  cursor: pointer;
+}
+.BlockTwo .Container .RecentlyWonPatents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 169px;
+  width: 380px;
+  margin-left: 600px;
+  margin-bottom: 92px;
+}
+.BlockTwo .Container .RecentlyWonPatents h2 {
+  margin-bottom: 21px;
+  margin-top: 0;
+  width: 317px;
+  font-family: playfair, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+.BlockTwo .Container .RecentlyWonPatents p {
+  margin-bottom: 24px;
+  margin-top: 0;
+  width: 380px;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: 26px;
+}
+.BlockTwo .Container .RecentlyWonPatents .Button {
+  position: absolute;
+  top: 134.6px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 0;
+  background: #FFE195;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  transition: 500ms;
+}
+.BlockTwo .Container .RecentlyWonPatents .Button .ButtonText {
+  white-space: nowrap;
+  margin-left: 11px;
+  font-family: Signika, sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+.BlockTwo .Container .RecentlyWonPatents .Button:hover {
+  background: #E7CC89;
+}
+.BlockTwo .Container .RecentlyWonPatents .Button > div {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 22px;
+}
+.BlockTwo .Container .RecentlyWonPatents .Button > div .Icon_Arrow_B {
+  width: 14px;
+  height: 9px;
+  background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
+  padding: 0;
+}
+.BlockTwo .Container .RecentlyWonPatents .Button > div .ButtonText {
+  letter-spacing: 0.5px;
+}
+.BlockTwo .Container .CallUsToday {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 380px;
+  background-color: rgba(27, 49, 75, 0.75);
+}
+.BlockTwo .Container .CallUsToday > div {
+  margin: 95px 115px 0 100px;
+  width: 380px;
+  height: 160px;
+}
+.BlockTwo .Container .CallUsToday > div h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: playfair, serif;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 52px;
+}
+.BlockTwo .Container .CallUsToday > div > p {
+  margin: 0 0 15px 0;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+.BlockTwo .Container .CallUsToday > div .Tel {
+  height: 43px;
+  font-family: playfair, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFE195;
+  letter-spacing: 1px;
+  line-height: normal;
+  text-decoration: none;
+}
+.BlockTwo .Container .CallUsToday > p {
+  margin: 100px 0 0 0;
+  width: 390px;
+  height: 131px;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: 26px;
+  letter-spacing: 0.8px;
+}
+.BlockTwo .Container .CallUsToday > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #2D3A52;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: signika, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  transition: 500ms;
+}
+.BlockTwo .Container .CallUsToday > a:hover {
+  background: #FFE195;
+  color: black;
+  cursor: pointer;
+}
+
+/*Blog*/
+.BlockThree {
+  display: flex;
+  justify-content: center;
+}
+.BlockThree .Container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1180px;
+  margin-bottom: 120px;
+}
+.BlockThree .Container h2 {
+  font-family: playfair, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  margin-bottom: 38px;
+}
+.BlockThree .Container article {
+  display: flex;
+  justify-content: space-between;
+}
+.BlockThree .Container article section {
+  width: 280px;
+}
+.BlockThree .Container article section a {
+  text-decoration: none;
+}
+.BlockThree .Container article section a:hover .BlogImage1 {
+  background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url("./static/images/blog/Increase.jpg");
+}
+.BlockThree .Container article section a:hover .BlogImage2 {
+  background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url("./static/images/blog/Five types.jpg");
+}
+.BlockThree .Container article section a:hover .BlogImage3 {
+  background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url("./static/images/blog/Decrease.jpg");
+}
+.BlockThree .Container article section a:hover .BlogImage4 {
+  background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url("./static/images/blog/Perform.jpg");
+}
+.BlockThree .Container article section a:hover h3 {
+  color: #FFFFFF;
+}
+.BlockThree .Container article section a:hover p {
+  color: #FFFFFF;
+}
+.BlockThree .Container article section a > div {
+  width: 280px;
+  height: 200px;
+  transition: 500ms;
+}
+.BlockThree .Container article section a .BlogImage1 {
+  background: url("./static/images/blog/Increase.jpg") no-repeat;
+  background-size: contain;
+}
+.BlockThree .Container article section a .BlogImage2 {
+  background: url("./static/images/blog/Five types.jpg") no-repeat;
+  background-size: contain;
+}
+.BlockThree .Container article section a .BlogImage3 {
+  background: url("./static/images/blog/Decrease.jpg") no-repeat;
+  background-size: contain;
+}
+.BlockThree .Container article section a .BlogImage4 {
+  background: url("./static/images/blog/Perform.jpg") no-repeat;
+  background-size: contain;
+}
+.BlockThree .Container article section a time {
+  display: inline-flex;
+  margin: 10px 0 4px 0;
+  font-family: signika, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.BlockThree .Container article section a h3 {
+  margin: 0 0 3px 0;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: -0.3px;
+  transition: 500ms;
+}
+.BlockThree .Container article section a p {
+  margin: 0;
+  width: 275px;
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: 24px;
+  transition: 500ms;
+}
+
+/*Footer*/
+.BlockFour {
+  display: flex;
+  justify-content: center;
+  background: url("./static/bg/Footer.jpg") no-repeat center/cover;
+  width: 100%;
+}
+.BlockFour .Container {
+  position: relative;
+  display: flex;
+  max-width: 1180px;
+  height: 235px;
+  margin-bottom: 56px;
+}
+.BlockFour .Container .FooterNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 53px;
+}
+.BlockFour .Container .FooterNav nav {
+  display: flex;
+  justify-content: space-between;
+  width: 853px;
+  margin-right: 102px;
+}
+.BlockFour .Container .FooterNav nav a {
+  font-family: signika, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 500ms;
+}
+.BlockFour .Container .FooterNav nav a:hover {
+  color: #FFE195;
+  cursor: pointer;
+}
+.BlockFour .Container .FooterNav .Button {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 0;
+  background: #FFE195;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  transition: 500ms;
+}
+.BlockFour .Container .FooterNav .Button .ButtonText {
+  white-space: nowrap;
+  margin-left: 11px;
+  font-family: Signika, sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+.BlockFour .Container .FooterNav .Button:hover {
+  background: #E7CC89;
+}
+.BlockFour .Container .FooterNav .Button > div {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 18px;
+}
+.BlockFour .Container .FooterNav .Button > div .Icon_Arrow_B {
+  width: 14px;
+  height: 9px;
+  background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
+  padding: 0;
+}
+.BlockFour .Container .FooterNav .Button > div .ButtonText {
+  letter-spacing: 0.5px;
+}
+.BlockFour .Container .Accredited {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  display: flex;
+  width: 281px;
+  height: 50px;
+  margin-top: 15px;
+  align-items: center;
+}
+.BlockFour .Container .Accredited .BBB {
+  background: url("./static/images/footer_img/BBBAccredited.png") no-repeat;
+  background-size: contain;
+  width: 110px;
+  height: 41px;
+  margin-right: 6px;
+}
+.BlockFour .Container .Accredited .BBBRating {
+  width: 61px;
+  height: 40px;
+  color: #CDCDCF;
+  font-family: signika, sans-serif;
+  font-style: normal;
+  line-height: 13px;
+  font-size: 9px;
+}
+.BlockFour .Container .Accredited .BBBRating > p {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.BlockFour .Container .Accredited .Napp {
+  background: url("./static/images/footer_img/NAPP.svg") no-repeat;
+  width: 80px;
+  height: 43px;
+  margin-left: 25px;
+}
+.BlockFour .Container .Socials {
+  position: absolute;
+  top: 98px;
+  right: 0;
+  display: flex;
+}
+.BlockFour .Container .Socials a {
+  width: 31.5px;
+  height: 31.5px;
+  transition: 500ms;
+}
+.BlockFour .Container .Socials a:hover {
+  opacity: 0.5;
+}
+.BlockFour .Container .Socials .Social_1 {
+  background: url("./static/images/Sprait.svg") no-repeat 0 -185px;
+  margin-right: 10px;
+}
+.BlockFour .Container .Socials .Social_2 {
+  background: url("./static/images/Sprait.svg") no-repeat -33px -185px;
+  margin-right: 10px;
+}
+.BlockFour .Container .Socials .Social_3 {
+  background: url("./static/images/Sprait.svg") no-repeat -65px -185px;
+  margin-right: 10px;
+}
+.BlockFour .Container .Socials .Social_4 {
+  background: url("./static/images/Sprait.svg") no-repeat -96px -185px;
+}
+.BlockFour .Container .StarRating {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 171px;
+  left: 0;
+}
+.BlockFour .Container .StarRating .Text {
+  font-family: roboto, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 10px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  margin-right: 8px;
+}
+.BlockFour .Container .StarRating .Star_Y {
+  background: url("./static/images/Sprait.svg") no-repeat -31px -165px;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.BlockFour .Container .StarRating .Star_W {
+  background: url("./static/images/footer_img/Star_W.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.BlockFour .Container .Author {
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+  font-family: roboto, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 10px;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.BlockFour .Container .Tel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: roboto, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 10px;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 149, 0.8);
+}
+.BlockFour .Container .Dev {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+  font-family: roboto, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 10px;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 500ms;
+}
+.BlockFour .Container .Dev:hover {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 640px) {
+  .BlockOne {
+    background: red;
+  }
+  .BlockOne .Container {
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: midnightblue;
+    margin-top: 17px;
+    margin-bottom: 60px;
+  }
+  .BlockOne .Container header {
+    width: 100%;
+    max-width: 100%;
+  }
+  .BlockOne .Container header .MenuContainer {
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    margin: 0 0 45px 0;
+  }
+  .BlockOne .Container header .MenuContainer .Logo {
+    margin: 0;
+    width: 47px;
+    height: 47px;
+    background: url("./static/images/Sprait.svg") no-repeat;
+    background-size: 800% auto;
+  }
+  .BlockOne .Container header .MenuContainer .Nav {
+    display: none;
+  }
+  .BlockOne .Container header .MenuContainer .Tel {
+    margin: 0;
+  }
+  .BlockOne .Container header .MenuContainer .Submit {
+    margin-top: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .BlockOne .Container header .MenuContainer .Submit > a {
+    width: 100%;
+    justify-content: center;
+  }
+  .BlockOne .Container header .MenuContainer .Submit > a > div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .BlockOne .Container header .MenuContainer .Submit .HiddenButtons {
+    display: none;
+  }
+  .BlockOne .Container header .SloganContainer {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    max-width: 100%;
+    padding: 0;
+  }
+  .BlockOne .Container header .SloganContainer h2 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    height: 32px;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+  }
+  .BlockOne .Container header .SloganContainer blockquote {
+    margin: 0;
+    height: 180px;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 23px;
+  }
+  .BlockOne .Container header .SloganContainer blockquote cite {
+    font-style: normal;
+  }
+  .BlockOne .Container header .SocialsContainer {
+    width: 100%;
+    margin-bottom: 102px;
+  }
+  .BlockOne .Container header .SocialsContainer .Socials {
+    display: none;
+  }
+  .BlockOne .Container header .SocialsContainer .Mouse {
+    margin-left: 0;
+  }
+  .BlockOne .Container header .SliderContainer {
+    width: 100%;
+  }
+  .BlockOne .Container header .SliderContainer .ControlRight {
+    display: none;
+  }
+  .BlockOne .Container header .SliderContainer .ControlLeft {
+    display: none;
+  }
+  .BlockOne .Container header .SliderContainer h2 {
+    width: 100%;
+    height: 35px;
+    margin-top: 0;
+    margin-bottom: 21px;
+    font-size: 26px;
+  }
+  .BlockOne .Container header .SliderContainer .Slider {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    margin-bottom: 0;
+  }
+  .BlockOne .Container header .SliderContainer .Slider article {
+    width: 270px;
+    margin-bottom: 40px;
+    /*&:nth-child(2) {
+                                  display: none;
+                                }
+    
+                                &:nth-child(3) {
+                                  display: none;
+                                }
+    
+                                &:nth-child(5) {
+                                  display: none;
+                                }*/
+  }
+  .BlockOne .Container header .SliderContainer .Slider article address {
+    height: 20px;
+    margin-bottom: 16px;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .BlockOne .Container header .SliderContainer .Slider article p {
+    height: fit-content;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 23px;
+  }
+  .BlockOne .Container header .SliderContainer .LineContainer {
+    justify-content: flex-start;
+  }
+
+  .BlockTwo {
+    background: cornflowerblue;
+  }
+  .BlockTwo .Container {
+    width: 100%;
+    justify-content: center;
+    background: pink;
+    margin-bottom: 85px;
+  }
+  .BlockTwo .Container .WeCanHelpWith {
+    width: 100%;
+  }
+  .BlockTwo .Container .WeCanHelpWith h2 {
+    width: 280px;
+    height: 35px;
+    margin: 0 0 27px 0;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 280px;
+    margin-bottom: 30px;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div {
+    position: relative;
+    display: flex;
+    width: 130px;
+    height: 130px;
+    margin-top: 0;
+    margin-bottom: 82px;
+    /* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    /* для выравнивания картинки по центру в Мозилла */
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image1 {
+    width: 68px;
+    height: 43px;
+    background: url("./static/images/Sprait.svg") no-repeat -566px -100px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image2 {
+    width: 57px;
+    height: 57px;
+    background: url("./static/images/Sprait.svg") no-repeat -92px -94px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image3 {
+    width: 44px;
+    height: 57px;
+    background: url("./static/images/Sprait.svg") no-repeat -178px -93px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image4 {
+    width: 44px;
+    height: 67px;
+    background: url("./static/images/Sprait.svg") no-repeat -259px -89px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image5 {
+    width: 65px;
+    height: 63px;
+    background: url("./static/images/Sprait.svg") no-repeat -328px -91px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image6 {
+    width: 57px;
+    height: 57px;
+    background: url("./static/images/Sprait.svg") no-repeat -411px -93px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div .Subtitle {
+    position: absolute;
+    top: 145px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div .Description {
+    display: none;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div a {
+    display: none;
+    /* Learn more*/
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover > div > div {
+    opacity: 1;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Subtitle {
+    color: #FFE195;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Description {
+    color: #FFFFFF;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover a {
+    background: #FFE195;
+    color: black;
+  }
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover {
+    cursor: pointer;
+  }
+  .BlockTwo .Container .ThankYouForChoosing {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 70px;
+    height: auto;
+    width: 280px;
+    position: relative;
+    background: rgba(27, 49, 75, 0.75);
+  }
+  .BlockTwo .Container .ThankYouForChoosing > div {
+    margin-top: 38px;
+    margin-left: 2px;
+    width: 66px;
+    height: 76px;
+    background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
+  }
+  .BlockTwo .Container .ThankYouForChoosing h2 {
+    width: 220px;
+    height: auto;
+    margin: 20px 0 25px 0;
+    line-height: normal;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+  }
+  .BlockTwo .Container .ThankYouForChoosing p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    width: 280px;
+    height: 168px;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 26px;
+  }
+  .BlockTwo .Container .ThankYouForChoosing a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #2D3A52;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: signika, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 500ms;
+  }
+  .BlockTwo .Container .ThankYouForChoosing a:hover {
+    background: #FFE195;
+    color: black;
+    cursor: pointer;
+  }
+  .BlockTwo .Container .RecentlyWonPatents {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 280px;
+    margin: 48px 0 66px 0;
+  }
+  .BlockTwo .Container .RecentlyWonPatents h2 {
+    margin-bottom: 21px;
+    margin-top: 0;
+    width: 257px;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+  }
+  .BlockTwo .Container .RecentlyWonPatents p {
+    margin-bottom: 30px;
+    margin-top: 0;
+    width: 280px;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 26px;
+  }
+  .BlockTwo .Container .RecentlyWonPatents .Button {
+    position: static;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 0;
+    background: #FFE195;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    transition: 500ms;
+    width: 185px;
+  }
+  .BlockTwo .Container .RecentlyWonPatents .Button .ButtonText {
+    white-space: nowrap;
+    margin-left: 11px;
+    font-family: Signika, sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+  }
+  .BlockTwo .Container .RecentlyWonPatents .Button:hover {
+    background: #E7CC89;
+  }
+  .BlockTwo .Container .RecentlyWonPatents .Button .Icon_Arrow_B {
+    width: 14px;
+    height: 9px;
+    background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
+    margin-left: 12px;
+    padding: 0;
+  }
+  .BlockTwo .Container .CallUsToday {
+    display: flex;
+    position: relative;
+    width: 280px;
+    height: auto;
+    background-color: rgba(27, 49, 75, 0.75);
+    margin-top: 0;
+    padding-top: 47px;
+    padding-bottom: 170px;
+  }
+  .BlockTwo .Container .CallUsToday > div {
+    margin: 0;
+    width: 280px;
+    height: auto;
+  }
+  .BlockTwo .Container .CallUsToday > div h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: playfair, serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 34px;
+  }
+  .BlockTwo .Container .CallUsToday > div > p {
+    margin: 0 0 11px 0;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+  .BlockTwo .Container .CallUsToday > div .Tel {
+    position: absolute;
+    left: 0;
+    bottom: 110px;
+    height: 43px;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFE195;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .BlockTwo .Container .CallUsToday > p {
+    margin: 0 0 4px 0;
+    width: 280px;
+    height: 168px;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 23px;
+    letter-spacing: 0.8px;
+  }
+  .BlockTwo .Container .CallUsToday > a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #2D3A52;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: signika, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 500ms;
+  }
+  .BlockTwo .Container .CallUsToday > a:hover {
+    background: #FFE195;
+    color: black;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 641px) {
+  .BlockOne .Container .MenuContainer .Sandwich {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,533 @@
+@import url('../static/fonts/signika/signika.css');
+@import url('../static/fonts/playfair/playfair.css');
+@import url('../static/fonts/roboto/roboto.css');
+@import '../components/sig16.scss';
+@import '../components/playfair32.scss';
+@import '../components/roboto14.scss';
+@import '../components/LearnButton.scss';
+@import '../components/SubmitButton.scss';
+@import '../components/HiddenSubmit.scss';
+
+$common_color: rgba(27, 49, 75, 0.75);
+$common_color_yellow: #FFE195;
+$yellow_hover: #E7CC89;
+
+body {
+    margin: 0;
+    background-color: #050713;
+}
+
+.BlockOne {
+    display: flex;
+    justify-content: center;
+    background: url('../static/bg/FAQ.jpg')  no-repeat bottom/cover;
+    width: 100%;
+
+    .Container {
+        display: flex;
+        margin-top: 59px;
+        margin-bottom: 55px;
+        width: 1180px;
+
+        .MenuContainer {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            font-family: Signika, sans-serif;
+            font-weight: 600;
+            line-height: normal;
+            font-size: 13px;
+            letter-spacing: -0.3px;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-bottom: 49px;
+
+            .Logo {
+                width: 82px;
+                height: 82px;
+                background: url('../static/images/Sprait.svg') no-repeat;
+                margin-right: 24px;
+            }
+
+            .Nav {
+                display: flex;
+                width: 642px;
+                height: 18px;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 42px;
+
+                a {
+                    color: rgba(255, 255, 255, 0.8);
+                    text-decoration: none;
+                    transition: 500ms;
+                    &:hover {
+                        color: $common_color_yellow;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .Tel {
+                font-family: signika, sans-serif;
+                margin-right: 18px;
+                color: $common_color_yellow;
+                font-size: 15px;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 1.1px;
+                &:hover {
+                    color: $yellow_hover;
+                }
+            }
+
+            .Sandwich {
+                width: 30px;
+                height: 24px;
+                background: url('../static/mobile_images/Mobile_sandwich.png') no-repeat;
+            }
+
+            .Submit {
+                position: relative;
+                z-index: 1;
+
+                &:hover > .HiddenButtons {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+
+                > a {
+                    position: inherit;
+                    z-index: 2;
+                    @include SubmitButton;
+                    .Icon_Arrow_B {
+                        width: 14px;
+                        height: 9px;
+                        background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+                        margin-left: 12px;
+                        padding: 0;
+                    }
+                }
+
+                .HiddenButtons {
+                    position: absolute;
+                    top: 0;
+                    padding-top: 36px;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity 500ms;/*плавное появление блока скрытых кнопок*/
+
+                    > a {
+                        @include HiddenSubmit;
+
+                        &:not(:last-child) {
+                            margin-bottom: 6px;
+                        }
+
+                        .Icon_Arrow_Y {
+                            width: 14px;
+                            height: 9px;
+                            background: url('../static/images/Sprait.svg') no-repeat -1px -163px;
+                            margin-left: 12px;
+                            padding: 0;
+                        }
+
+                        &:hover .Icon_Arrow_Y {
+                            background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .StartContainer {
+            display: flex;
+            flex-direction: column;
+            width: 580px;
+            margin-bottom: 119px;
+            margin-left: 600px;
+
+            nav {
+                height: 27px;
+                font-family: signika, sans-serif;
+                font-size: 16px;
+                line-height: 26px;
+                color: rgba(255, 255, 255, 0.5);
+                > a {
+                    text-decoration: none;
+                    color: rgba(255, 255, 149, 0.5);
+                    transition: 500ms;
+                    &:hover {
+                        color: rgba(255, 255, 149, 1);
+                    }
+                }
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                height: 93px;
+                font-family: playfair, serif;
+                font-size: 56px;
+                font-weight: 600;
+                line-height: 93px;
+                letter-spacing: -0.3px;
+                color: #FFFFFF;
+            }
+            p {
+                height: 75px;
+                margin-bottom: 30px;
+                @include sig16(26px);
+                font-size: 16px;
+            }
+            .Button {
+                @include HiddenSubmit;
+
+                .Icon_Arrow_Y {
+                    width: 14px;
+                    height: 9px;
+                    background: url('../static/images/Sprait.svg') no-repeat -1px -163px;
+                    margin-left: 12px;
+                    padding: 0;
+                }
+                &:hover .Icon_Arrow_Y {
+                    background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+                }
+            }
+        }
+
+        .MouseContainer {
+            display: flex;
+            justify-content: center;
+
+            .Mouse {
+                width: 22px;
+                height: 36px;
+                background: url('../static/images/Mouse.svg') no-repeat;
+                transition: 500ms;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+.BlockTwo {
+    display: flex;
+    justify-content: center;
+
+    .Container {
+        display: flex;
+        margin-top: 86px;
+        margin-bottom: 122px;
+        width: 1180px;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            width: 817px;
+            margin-left: 162px;
+            margin-bottom: 120px;
+
+            section {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                width: 817px;
+                &:not(:last-child) {
+                    margin-bottom: 62px;
+                }
+
+                .Control {
+                    position: absolute;
+                    left: 0;
+                    top: 8px;
+                    width: 12px;
+                    height: 20px;
+                    background: url('../static/images/Sprait.svg') no-repeat -17px -163px;
+                    transform: rotate(90deg);
+                    opacity: 0.3;
+                    transition: 500ms;
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+
+                }
+                h1 {
+                    margin: 0 0 18px 37px;
+                    font-family: playfair, serif;
+                    font-weight: bold;
+                    font-size: 24px;
+                    color: #FFFFFF;
+                }
+                p {
+                    margin: 0 0 0 37px;
+                    font-family: signika, sans-serif;
+                    font-size: 18px;
+                    letter-spacing: -0.5px;
+                    line-height: 29px;
+                    color: rgba(255, 255, 255, 0.8);
+                }
+
+            }
+        }
+
+        .CallUsToday {
+            display: flex;
+            position: relative;
+            height: 380px;
+            width: 1180px;
+            background-color: $common_color;
+
+            > div {
+                margin: 95px 115px 0 100px;
+                width: 380px;
+                height: 160px;
+
+                h1 {
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    font-family: playfair, serif;
+                    font-size: 58px;
+                    font-style: normal;
+                    font-weight: bold;
+                    color: #FFFFFF;
+                    letter-spacing: 0;
+                    line-height: 52px;
+                }
+                > p {
+                    margin: 0 0 15px 0;
+                    font-family: signika, sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: normal;
+                    color: #FFFFFF;
+                    letter-spacing: 0;
+                    line-height: 26px;
+                }
+                .Tel {
+                    height: 43px;
+                    font-family: playfair, serif;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: bold;
+                    color: $common_color_yellow;
+                    letter-spacing: 1px;
+                    line-height: normal;
+                    text-decoration: none;
+                }
+            }
+
+            > p {
+                margin: 100px 0 0 0;
+                width: 390px;
+                height: 131px;
+                @include sig16(26px);
+                letter-spacing: 0.8px;
+            }
+
+            > a {
+                @include LearnButton;
+            }
+        }
+    }
+}
+
+.BlockThree {
+    display: flex;
+    justify-content: center;
+    background: url('../static/bg/Footer.jpg') no-repeat center/cover;
+    width: 100%;
+
+    .Container {
+        position: relative;
+        display: flex;
+        width: 1180px;
+        height: 235px;
+        margin-bottom: 56px;
+
+        .FooterNav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 53px;
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                width: 853px;
+                margin-right: 102px;
+
+                a {
+                    font-family: signika, sans-serif;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: normal;
+                    letter-spacing: -0.5px;
+                    line-height: normal;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: 500ms;
+                    &:hover {
+                        color: $common_color_yellow;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .Button {
+                @include SubmitButton;
+
+                .Icon_Arrow_B {
+                    width: 14px;
+                    height: 9px;
+                    background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+                    margin-left: 12px;
+                    padding: 0;
+                }
+
+                .ButtonText {
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+
+        .Accredited {
+            position: absolute;
+            top: 73px;
+            left: 0;
+            display: flex;
+            width: 281px;
+            height: 50px;
+            margin-top: 15px;
+            align-items: center;
+
+            .BBB {
+                background: url('../static/images/footer_img/BBBAccredited.png') no-repeat;
+                background-size: contain;
+                width: 110px;
+                height: 41px;
+                margin-right: 6px;
+            }
+            .BBBRating {
+                width: 61px;
+                height: 40px;
+                color: #CDCDCF;
+                font-family: signika, sans-serif;
+                font-style: normal;
+                line-height: 13px;
+                font-size: 9px;
+
+                > p {
+                    margin: 0;
+                    font-weight: 600;
+                    letter-spacing: -0.5px;
+                }
+            }
+            .Napp {
+                background: url('../static/images/footer_img/NAPP.svg') no-repeat;
+                width: 80px;
+                height: 43px;
+                margin-left: 25px;
+            }
+        }
+
+        .Socials {
+            position: absolute;
+            top: 98px;
+            right: 0;
+            display: flex;
+
+            a {
+                width: 31.5px;
+                height: 31.5px;
+                transition: 500ms;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            .Social_1 {
+                background: url('../static/images/Sprait.svg') no-repeat 0 -185px;
+                margin-right: 10px;
+            }
+            .Social_2 {
+                background: url('../static/images/Sprait.svg') no-repeat -33px -185px;
+                margin-right: 10px;
+            }
+            .Social_3 {
+                background: url('../static/images/Sprait.svg') no-repeat -65px -185px;
+                margin-right: 10px;
+            }
+            .Social_4 {
+                background: url('../static/images/Sprait.svg') no-repeat -96px -185px;
+            }
+        }
+
+        .StarRating {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            top: 171px;
+            left: 0;
+            .Text {
+                @include roboto14(#FFFFFF);
+                margin-right: 8px;
+            }
+            .Star_Y {
+                background: url('../static/images/Sprait.svg') no-repeat -31px -165px;
+                width: 16px;
+                height: 16px;
+                margin-right: 4px;
+            }
+            .Star_W {
+                background: url('../static/images/footer_img/Star_W.png') no-repeat;
+                width: 16px;
+                height: 16px;
+                margin-right: 4px;
+            }
+        }
+
+        .Author {
+            position: absolute;
+            bottom: 26px;
+            left: 0;
+            @include roboto14(rgba(255, 255, 255, 0.8));
+        }
+
+        .Tel {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            @include roboto14(rgba(255, 255, 149, 0.8));
+        }
+
+        .Dev {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-decoration: none;
+            @include roboto14(rgba(255, 255, 255, 0.8));
+            transition: 500ms;
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .BlockOne {
+        .Container {
+            .MenuContainer {
+                .Sandwich {
+                    display: none;
+                }
+            }
+        }
+    }
+}

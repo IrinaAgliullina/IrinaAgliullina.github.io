@@ -1,0 +1,28 @@
+$yellow_hover: #E7CC89;
+@mixin SubmitButton {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 0;
+    background: #FFE195;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    transition: 500ms;
+
+    .ButtonText {
+        white-space: nowrap;
+        margin-left: 11px;
+
+        font-family: Signika, sans-serif;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 13px;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+    }
+    &:hover {
+        background: $yellow_hover;
+    }
+}

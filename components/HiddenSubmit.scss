@@ -1,0 +1,29 @@
+@mixin HiddenSubmit {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 0;
+    background: #0E1420;
+    width: fit-content;
+    text-decoration: none;
+    color: #FFE195;
+    transition: 500ms;
+
+    .ButtonText {
+        white-space: nowrap;
+        padding-left: 11px;
+        padding-right: 18px;
+        font-family: Signika, sans-serif;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 13px;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+    }
+    &:hover {
+        background: #E7CC89;
+        color: black;
+    }
+}

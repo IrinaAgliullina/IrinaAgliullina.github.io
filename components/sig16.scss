@@ -1,0 +1,9 @@
+@mixin sig16($line-height) {
+  font-family: signika, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.4px;
+  line-height: $line-height;
+}
