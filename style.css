@@ -746,17 +746,8 @@ body {
 .BlockThree .Container article section a {
   text-decoration: none;
 }
-.BlockThree .Container article section a:hover .BlogImage1 {
-  background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url("./static/images/blog/Increase.jpg");
-}
-.BlockThree .Container article section a:hover .BlogImage2 {
-  background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url("./static/images/blog/Five types.jpg");
-}
-.BlockThree .Container article section a:hover .BlogImage3 {
-  background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url("./static/images/blog/Decrease.jpg");
-}
-.BlockThree .Container article section a:hover .BlogImage4 {
-  background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url("./static/images/blog/Perform.jpg");
+.BlockThree .Container article section a:hover > div .BlogImageHover {
+  opacity: 1;
 }
 .BlockThree .Container article section a:hover h3 {
   color: #FFFFFF;
@@ -767,25 +758,53 @@ body {
 .BlockThree .Container article section a > div {
   width: 280px;
   height: 200px;
-  transition: 500ms;
 }
 .BlockThree .Container article section a .BlogImage1 {
   background: url("./static/images/blog/Increase.jpg") no-repeat;
   background-size: contain;
 }
+.BlockThree .Container article section a .BlogImage1 .BlogImageHover {
+  width: 280px;
+  height: 200px;
+  background: rgba(255, 255, 149, 0.6);
+  opacity: 0;
+  transition: 500ms;
+}
 .BlockThree .Container article section a .BlogImage2 {
   background: url("./static/images/blog/Five types.jpg") no-repeat;
   background-size: contain;
+}
+.BlockThree .Container article section a .BlogImage2 .BlogImageHover {
+  width: 280px;
+  height: 200px;
+  background: rgba(255, 255, 149, 0.6);
+  opacity: 0;
+  transition: 500ms;
 }
 .BlockThree .Container article section a .BlogImage3 {
   background: url("./static/images/blog/Decrease.jpg") no-repeat;
   background-size: contain;
 }
+.BlockThree .Container article section a .BlogImage3 .BlogImageHover {
+  width: 280px;
+  height: 200px;
+  background: rgba(255, 255, 149, 0.6);
+  opacity: 0;
+  transition: 500ms;
+}
 .BlockThree .Container article section a .BlogImage4 {
   background: url("./static/images/blog/Perform.jpg") no-repeat;
   background-size: contain;
 }
+.BlockThree .Container article section a .BlogImage4 .BlogImageHover {
+  width: 280px;
+  height: 200px;
+  background: rgba(255, 255, 149, 0.6);
+  opacity: 0;
+  transition: 500ms;
+}
 .BlockThree .Container article section a time {
+  width: 100%;
   display: inline-flex;
   margin: 10px 0 4px 0;
   font-family: signika, sans-serif;
@@ -1046,10 +1065,8 @@ body {
   }
   .BlockOne .Container {
     justify-content: center;
-    width: 100%;
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 87%;
+    max-width: 87%;
     background: midnightblue;
     margin-top: 17px;
     margin-bottom: 60px;
@@ -1096,7 +1113,7 @@ body {
   .BlockOne .Container header .SloganContainer {
     display: flex;
     flex-direction: column;
-    width: 280px;
+    min-width: 280px;
     max-width: 100%;
     padding: 0;
   }
@@ -1113,8 +1130,8 @@ body {
     color: #FFFFFF;
   }
   .BlockOne .Container header .SloganContainer blockquote {
-    margin: 0;
-    height: 180px;
+    margin: 0 0 60px 0;
+    height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1203,16 +1220,20 @@ body {
     background: cornflowerblue;
   }
   .BlockTwo .Container {
-    width: 100%;
+    width: 87%;
+    max-width: 87%;
+    margin-left: 20px;
+    margin-right: 20px;
     justify-content: center;
     background: pink;
     margin-bottom: 85px;
   }
-  .BlockTwo .Container .WeCanHelpWith {
+  .BlockTwo .Container main {
     width: 100%;
+    max-width: 100%;
   }
-  .BlockTwo .Container .WeCanHelpWith h2 {
-    width: 280px;
+  .BlockTwo .Container main .WeCanHelpWith h2 {
+    width: 100%;
     height: 35px;
     margin: 0 0 27px 0;
     font-family: playfair, serif;
@@ -1223,100 +1244,100 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 280px;
+    width: 100%;
     margin-bottom: 30px;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div {
     position: relative;
     display: flex;
-    width: 130px;
+    width: 46%;
     height: 130px;
     margin-top: 0;
     margin-bottom: 82px;
     /* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div {
     display: flex;
     align-items: center;
-    height: 130px;
+    height: 100%;
     /* для выравнивания картинки по центру в Мозилла */
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image1 {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image1 {
     width: 68px;
     height: 43px;
     background: url("./static/images/Sprait.svg") no-repeat -566px -100px;
     opacity: 0.75;
     transition: 500ms;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image2 {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image2 {
     width: 57px;
     height: 57px;
     background: url("./static/images/Sprait.svg") no-repeat -92px -94px;
     opacity: 0.75;
     transition: 500ms;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image3 {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image3 {
     width: 44px;
     height: 57px;
     background: url("./static/images/Sprait.svg") no-repeat -178px -93px;
     opacity: 0.75;
     transition: 500ms;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image4 {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image4 {
     width: 44px;
     height: 67px;
     background: url("./static/images/Sprait.svg") no-repeat -259px -89px;
     opacity: 0.75;
     transition: 500ms;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image5 {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image5 {
     width: 65px;
     height: 63px;
     background: url("./static/images/Sprait.svg") no-repeat -328px -91px;
     opacity: 0.75;
     transition: 500ms;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image6 {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image6 {
     width: 57px;
     height: 57px;
     background: url("./static/images/Sprait.svg") no-repeat -411px -93px;
     opacity: 0.75;
     transition: 500ms;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div .Subtitle {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Subtitle {
     position: absolute;
     top: 145px;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div .Description {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Description {
     display: none;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div a {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div a {
     display: none;
     /* Learn more*/
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover > div > div {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover > div > div {
     opacity: 1;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Subtitle {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Subtitle {
     color: #FFE195;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Description {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Description {
     color: #FFFFFF;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover a {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover a {
     background: #FFE195;
     color: black;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover {
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover {
     cursor: pointer;
   }
-  .BlockTwo .Container .ThankYouForChoosing {
+  .BlockTwo .Container main .ThankYouForChoosing {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
@@ -1327,14 +1348,14 @@ body {
     position: relative;
     background: rgba(27, 49, 75, 0.75);
   }
-  .BlockTwo .Container .ThankYouForChoosing > div {
+  .BlockTwo .Container main .ThankYouForChoosing > div {
     margin-top: 38px;
     margin-left: 2px;
     width: 66px;
     height: 76px;
     background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
   }
-  .BlockTwo .Container .ThankYouForChoosing h2 {
+  .BlockTwo .Container main .ThankYouForChoosing h2 {
     width: 220px;
     height: auto;
     margin: 20px 0 25px 0;
@@ -1347,7 +1368,7 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container .ThankYouForChoosing p {
+  .BlockTwo .Container main .ThankYouForChoosing p {
     margin-top: 0;
     margin-bottom: 15px;
     width: 280px;
@@ -1360,7 +1381,7 @@ body {
     letter-spacing: 0.4px;
     line-height: 26px;
   }
-  .BlockTwo .Container .ThankYouForChoosing a {
+  .BlockTwo .Container main .ThankYouForChoosing a {
     position: absolute;
     left: 0;
     right: 0;
@@ -1379,12 +1400,12 @@ body {
     font-size: 12px;
     transition: 500ms;
   }
-  .BlockTwo .Container .ThankYouForChoosing a:hover {
+  .BlockTwo .Container main .ThankYouForChoosing a:hover {
     background: #FFE195;
     color: black;
     cursor: pointer;
   }
-  .BlockTwo .Container .RecentlyWonPatents {
+  .BlockTwo .Container main .RecentlyWonPatents {
     position: static;
     display: flex;
     flex-direction: column;
@@ -1392,7 +1413,7 @@ body {
     width: 280px;
     margin: 48px 0 66px 0;
   }
-  .BlockTwo .Container .RecentlyWonPatents h2 {
+  .BlockTwo .Container main .RecentlyWonPatents h2 {
     margin-bottom: 21px;
     margin-top: 0;
     width: 257px;
@@ -1404,7 +1425,7 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container .RecentlyWonPatents p {
+  .BlockTwo .Container main .RecentlyWonPatents p {
     margin-bottom: 30px;
     margin-top: 0;
     width: 280px;
@@ -1416,7 +1437,7 @@ body {
     letter-spacing: 0.4px;
     line-height: 26px;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button {
+  .BlockTwo .Container main .RecentlyWonPatents .Button {
     position: static;
     display: flex;
     align-items: center;
@@ -1430,7 +1451,7 @@ body {
     transition: 500ms;
     width: 185px;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button .ButtonText {
+  .BlockTwo .Container main .RecentlyWonPatents .Button .ButtonText {
     white-space: nowrap;
     margin-left: 11px;
     font-family: Signika, sans-serif;
@@ -1440,17 +1461,17 @@ body {
     letter-spacing: -0.3px;
     text-transform: uppercase;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button:hover {
+  .BlockTwo .Container main .RecentlyWonPatents .Button:hover {
     background: #E7CC89;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button .Icon_Arrow_B {
+  .BlockTwo .Container main .RecentlyWonPatents .Button .Icon_Arrow_B {
     width: 14px;
     height: 9px;
     background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
     margin-left: 12px;
     padding: 0;
   }
-  .BlockTwo .Container .CallUsToday {
+  .BlockTwo .Container main .CallUsToday {
     display: flex;
     position: relative;
     width: 280px;
@@ -1460,12 +1481,12 @@ body {
     padding-top: 47px;
     padding-bottom: 170px;
   }
-  .BlockTwo .Container .CallUsToday > div {
+  .BlockTwo .Container main .CallUsToday > div {
     margin: 0;
     width: 280px;
     height: auto;
   }
-  .BlockTwo .Container .CallUsToday > div h1 {
+  .BlockTwo .Container main .CallUsToday > div h1 {
     margin-top: 0;
     margin-bottom: 0;
     font-family: playfair, serif;
@@ -1476,7 +1497,7 @@ body {
     letter-spacing: 0;
     line-height: 34px;
   }
-  .BlockTwo .Container .CallUsToday > div > p {
+  .BlockTwo .Container main .CallUsToday > div > p {
     margin: 0 0 11px 0;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -1486,7 +1507,7 @@ body {
     letter-spacing: 0;
     line-height: 26px;
   }
-  .BlockTwo .Container .CallUsToday > div .Tel {
+  .BlockTwo .Container main .CallUsToday > div .Tel {
     position: absolute;
     left: 0;
     bottom: 110px;
@@ -1500,7 +1521,7 @@ body {
     line-height: normal;
     text-decoration: none;
   }
-  .BlockTwo .Container .CallUsToday > p {
+  .BlockTwo .Container main .CallUsToday > p {
     margin: 0 0 4px 0;
     width: 280px;
     height: 168px;
@@ -1513,7 +1534,7 @@ body {
     line-height: 23px;
     letter-spacing: 0.8px;
   }
-  .BlockTwo .Container .CallUsToday > a {
+  .BlockTwo .Container main .CallUsToday > a {
     position: absolute;
     left: 0;
     right: 0;
@@ -1532,13 +1553,37 @@ body {
     font-size: 12px;
     transition: 500ms;
   }
-  .BlockTwo .Container .CallUsToday > a:hover {
+  .BlockTwo .Container main .CallUsToday > a:hover {
     background: #FFE195;
     color: black;
     cursor: pointer;
   }
 }
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 641px) and (max-width: 1220px) {
+  .BlockOne .Container {
+    width: 87%;
+    max-width: 87%;
+  }
+  .BlockOne .Container header {
+    width: 100%;
+    max-width: 100%;
+  }
+  .BlockOne .Container header .MenuContainer .Nav {
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .BlockOne .Container header .MenuContainer .Tel {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .BlockOne .Container header .MenuContainer .Sandwich {
+    display: none;
+  }
+}
+@media screen and (min-width: 1220px) {
   .BlockOne .Container .MenuContainer .Sandwich {
     display: none;
   }

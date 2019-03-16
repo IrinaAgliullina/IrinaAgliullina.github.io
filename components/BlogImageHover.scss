@@ -1,0 +1,7 @@
+@mixin BlogImageHover {
+    width: 280px;
+    height: 200px;
+    background: rgba(255, 255, 149, 0.6);
+    opacity: 0;
+    transition: 500ms;
+}

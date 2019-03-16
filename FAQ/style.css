@@ -107,11 +107,16 @@ body {
 .BlockOne .Container .MenuContainer .Submit > a:hover {
   background: #E7CC89;
 }
-.BlockOne .Container .MenuContainer .Submit > a .Icon_Arrow_B {
+.BlockOne .Container .MenuContainer .Submit > a > div {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 18px;
+}
+.BlockOne .Container .MenuContainer .Submit > a > div .Icon_Arrow_B {
   width: 14px;
   height: 9px;
   background: url("../static/images/Sprait.svg") no-repeat -1px -174px;
-  margin-left: 12px;
   padding: 0;
 }
 .BlockOne .Container .MenuContainer .Submit .HiddenButtons {
@@ -465,14 +470,19 @@ body {
 .BlockThree .Container .FooterNav .Button:hover {
   background: #E7CC89;
 }
-.BlockThree .Container .FooterNav .Button .Icon_Arrow_B {
+.BlockThree .Container .FooterNav .Button > div {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 18px;
+}
+.BlockThree .Container .FooterNav .Button > div .Icon_Arrow_B {
   width: 14px;
   height: 9px;
   background: url("../static/images/Sprait.svg") no-repeat -1px -174px;
-  margin-left: 12px;
   padding: 0;
 }
-.BlockThree .Container .FooterNav .Button .ButtonText {
+.BlockThree .Container .FooterNav .Button > div .ButtonText {
   letter-spacing: 0.5px;
 }
 .BlockThree .Container .Accredited {

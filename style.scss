@@ -7,6 +7,7 @@
 @import './components/LearnButton.scss';
 @import './components/SubmitButton.scss';
 @import './components/HiddenSubmit.scss';
+@import './components/BlogImageHover.scss';
 
 $common_color: rgba(27, 49, 75, 0.75);
 $common_color_yellow: #FFE195;
@@ -626,18 +627,10 @@ body {
                 a {
                     text-decoration: none;
 
-                    &:hover .BlogImage1 {
-                        background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url('./static/images/blog/Increase.jpg');
+                    &:hover > div .BlogImageHover {
+                        opacity: 1;
                     }
-                    &:hover .BlogImage2 {
-                        background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url('./static/images/blog/Five types.jpg');
-                    }
-                    &:hover .BlogImage3 {
-                        background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url('./static/images/blog/Decrease.jpg');
-                    }
-                    &:hover .BlogImage4 {
-                        background-image: linear-gradient(rgba(255, 255, 149, 0.6), rgba(255, 255, 149, 0.6)), url('./static/images/blog/Perform.jpg');
-                    }
+
                     &:hover h3 {
                         color: #FFFFFF;
                     }
@@ -648,27 +641,44 @@ body {
                     > div {
                         width: 280px;
                         height: 200px;
-                        transition: 500ms;
                     }
 
                     .BlogImage1 {
                         background: url('./static/images/blog/Increase.jpg') no-repeat;
                         background-size: contain;
+
+                        .BlogImageHover {
+                            @include BlogImageHover;
+                        }
                     }
+
                     .BlogImage2 {
                         background: url('./static/images/blog/Five types.jpg') no-repeat;
                         background-size: contain;
+
+                        .BlogImageHover {
+                            @include BlogImageHover;
+                        }
                     }
                     .BlogImage3 {
                         background: url('./static/images/blog/Decrease.jpg') no-repeat;
                         background-size: contain;
+
+                        .BlogImageHover {
+                            @include BlogImageHover;
+                        }
                     }
                     .BlogImage4 {
                         background: url('./static/images/blog/Perform.jpg') no-repeat;
                         background-size: contain;
+
+                        .BlogImageHover {
+                            @include BlogImageHover;
+                        }
                     }
 
                     time {
+                        width: 100%;
                         display: inline-flex;
                         margin: 10px 0 4px 0;
                         font-family: signika, sans-serif;
@@ -898,10 +908,9 @@ body {
 
         .Container {
             justify-content: center;
-            width: 100%;
-            max-width: 100%;
-            padding-left: 20px;
-            padding-right: 20px;
+            width: 87%;
+            max-width: 87%;
+
             background: midnightblue;
             margin-top: 17px;
             margin-bottom: 60px;
@@ -961,7 +970,7 @@ body {
                 .SloganContainer {
                     display: flex;
                     flex-direction: column;
-                    width: 280px;
+                    min-width: 280px;
                     max-width: 100%;
                     padding: 0;
 
@@ -979,8 +988,8 @@ body {
                     }
 
                     blockquote {
-                        margin: 0;
-                        height: 180px;
+                        margin: 0 0 60px 0;
+                        height: auto;
                         @include sig16(23px);
 
                         cite {
@@ -1071,263 +1080,313 @@ body {
         background: cornflowerblue;
 
         .Container {
-            width: 100%;
+            width: 87%;
+            max-width: 87%;
+            margin-left: 20px;
+            margin-right: 20px;
             justify-content: center;
             background: pink;
             margin-bottom: 85px;
 
-            .WeCanHelpWith {
+            main {
                 width: 100%;
+                max-width: 100%;
 
-                h2 {
-                    width: 280px;
-                    height: 35px;
-                    margin: 0 0 27px 0;
-                    @include playfair32;
-                    font-size: 26px;
-                }
+                .WeCanHelpWith {
 
-                .SixButtons {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    width: 280px;
-                    margin-bottom: 30px;
+                    h2 {
+                        width: 100%;
 
-                    > div {
-                        position: relative;
+                        height: 35px;
+                        margin: 0 0 27px 0;
+                        @include playfair32;
+                        font-size: 26px;
+                    }
+
+                    .SixButtons {
                         display: flex;
-
-                        width: 130px;
-                        height: 130px;
-                        margin-top: 0;
-                        margin-bottom: 82px;/* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin-bottom: 30px;
 
                         > div {
+                            position: relative;
                             display: flex;
-                            align-items: center;
-                            height: 130px; /* для выравнивания картинки по центру в Мозилла */
+                            width: 46%;
+                            height: 130px;
 
-                            .Image1 {
-                                width: 68px;
-                                height: 43px;
-                                background: url('./static/images/Sprait.svg') no-repeat -566px -100px;
-                                opacity: 0.75;
-                                transition: 500ms;
+                            margin-top: 0;
+                            margin-bottom: 82px;/* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
+
+                            > div {
+                                display: flex;
+                                align-items: center;
+                                height: 100%;/* для выравнивания картинки по центру в Мозилла */
+
+                                .Image1 {
+                                    width: 68px;
+                                    height: 43px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -566px -100px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
+                                .Image2 {
+                                    width: 57px;
+                                    height: 57px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -92px -94px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
+                                .Image3 {
+                                    width: 44px;
+                                    height: 57px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -178px -93px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
+                                .Image4 {
+                                    width: 44px;
+                                    height: 67px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -259px -89px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
+                                .Image5 {
+                                    width: 65px;
+                                    height: 63px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -328px -91px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
+                                .Image6 {
+                                    width: 57px;
+                                    height: 57px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -411px -93px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
                             }
-                            .Image2 {
-                                width: 57px;
-                                height: 57px;
-                                background: url('./static/images/Sprait.svg') no-repeat -92px -94px;
-                                opacity: 0.75;
-                                transition: 500ms;
+
+                            .Subtitle {
+                                position: absolute;
+                                top: 145px;
+                                margin-top: 0;
+                                margin-bottom: 0;
                             }
-                            .Image3 {
-                                width: 44px;
-                                height: 57px;
-                                background: url('./static/images/Sprait.svg') no-repeat -178px -93px;
-                                opacity: 0.75;
-                                transition: 500ms;
+
+                            .Description {
+                                display: none;
                             }
-                            .Image4 {
-                                width: 44px;
-                                height: 67px;
-                                background: url('./static/images/Sprait.svg') no-repeat -259px -89px;
-                                opacity: 0.75;
-                                transition: 500ms;
+
+                            a {
+                                display: none; /* Learn more*/
                             }
-                            .Image5 {
-                                width: 65px;
-                                height: 63px;
-                                background: url('./static/images/Sprait.svg') no-repeat -328px -91px;
-                                opacity: 0.75;
-                                transition: 500ms;
+
+                            &:hover > div > div {
+                                opacity: 1;
                             }
-                            .Image6 {
-                                width: 57px;
-                                height: 57px;
-                                background: url('./static/images/Sprait.svg') no-repeat -411px -93px;
-                                opacity: 0.75;
-                                transition: 500ms;
+                            &:hover .Subtitle {
+                                color: $common_color_yellow;
+                            }
+                            &:hover .Description {
+                                color: #FFFFFF;
+                            }
+                            &:hover a {
+                                background: $common_color_yellow;
+                                color: black;
+                            }
+                            &:hover {
+                                cursor: pointer;
                             }
                         }
+                    }
+                }
 
-                        .Subtitle {
-                            position: absolute;
-                            top: 145px;
+                .ThankYouForChoosing {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding-bottom: 70px;
+                    height: auto;
+                    width: 280px;
+                    position: relative;
+                    background: $common_color;
+
+                    > div {
+                        margin-top: 38px;
+                        margin-left: 2px;
+                        width: 66px;
+                        height: 76px;
+                        background: url('./static/images/Sprait.svg') no-repeat -486px -84px;
+                    }
+
+                    h2 {
+                        width: 220px;
+                        height: auto;
+                        margin: 20px 0 25px 0;
+                        line-height: normal;
+                        @include playfair32;
+                        font-size: 26px;
+                    }
+
+                    p {
+                        margin-top: 0;
+                        margin-bottom: 15px;
+                        width: 280px;
+                        height: 168px;
+                        @include sig16(26px);
+                    }
+
+                    a {
+                        @include LearnButton;
+                    }
+                }
+
+                .RecentlyWonPatents {
+                    position: static;
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                    width: 280px;
+                    margin: 48px 0 66px 0;
+
+                    h2 {
+                        margin-bottom: 21px;
+                        margin-top: 0;
+                        width: 257px;
+                        @include playfair32;
+                        font-size: 26px;
+                    }
+
+                    p {
+                        margin-bottom: 30px;
+                        margin-top: 0;
+                        width: 280px;
+                        @include sig16(26px);
+                    }
+
+                    .Button {
+                        position: static;
+                        @include SubmitButton;
+                        width: 185px;
+
+                        .Icon_Arrow_B {
+                            width: 14px;
+                            height: 9px;
+                            background: url('./static/images/Sprait.svg') no-repeat -1px -174px;
+                            margin-left: 12px;
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .CallUsToday {
+                    display: flex;
+                    position: relative;
+                    width: 280px;
+                    height: auto;
+                    background-color: $common_color;
+                    margin-top: 0;
+                    padding-top: 47px;
+                    padding-bottom: 170px;
+
+                    > div {
+                        margin: 0;
+                        width: 280px;
+                        height: auto;
+
+                        h1 {
                             margin-top: 0;
                             margin-bottom: 0;
-                        }
-
-                        .Description {
-                            display: none;
-                        }
-
-                        a {
-                            display: none; /* Learn more*/
-                        }
-
-                        &:hover > div > div {
-                            opacity: 1;
-                        }
-                        &:hover .Subtitle {
-                            color: $common_color_yellow;
-                        }
-                        &:hover .Description {
+                            font-family: playfair, serif;
+                            font-size: 36px;
+                            font-style: normal;
+                            font-weight: bold;
                             color: #FFFFFF;
+                            letter-spacing: 0;
+                            line-height: 34px;
                         }
-                        &:hover a {
-                            background: $common_color_yellow;
-                            color: black;
+                        > p {
+                            margin: 0 0 11px 0;
+                            font-family: signika, sans-serif;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: normal;
+                            color: #FFFFFF;
+                            letter-spacing: 0;
+                            line-height: 26px;
                         }
-                        &:hover {
-                            cursor: pointer;
+                        .Tel {
+                            position: absolute;
+                            left: 0;
+                            bottom: 110px;
+                            height: 43px;
+                            font-family: playfair, serif;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: bold;
+                            color: $common_color_yellow;
+                            letter-spacing: 1px;
+                            line-height: normal;
+                            text-decoration: none;
                         }
                     }
-                }
-            }
 
-            .ThankYouForChoosing {
-                display: flex;
-                flex-wrap: wrap;
-                margin-top: 0;
-                margin-bottom: 0;
-                padding-bottom: 70px;
-                height: auto;
-                width: 280px;
-                position: relative;
-                background: $common_color;
-
-                > div {
-                    margin-top: 38px;
-                    margin-left: 2px;
-                    width: 66px;
-                    height: 76px;
-                    background: url('./static/images/Sprait.svg') no-repeat -486px -84px;
-                }
-
-                h2 {
-                    width: 220px;
-                    height: auto;
-                    margin: 20px 0 25px 0;
-                    line-height: normal;
-                    @include playfair32;
-                    font-size: 26px;
-                }
-
-                p {
-                    margin-top: 0;
-                    margin-bottom: 15px;
-                    width: 280px;
-                    height: 168px;
-                    @include sig16(26px);
-                }
-
-                a {
-                    @include LearnButton;
-                }
-            }
-
-            .RecentlyWonPatents {
-                position: static;
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                width: 280px;
-                margin: 48px 0 66px 0;
-
-                h2 {
-                    margin-bottom: 21px;
-                    margin-top: 0;
-                    width: 257px;
-                    @include playfair32;
-                    font-size: 26px;
-                }
-
-                p {
-                    margin-bottom: 30px;
-                    margin-top: 0;
-                    width: 280px;
-                    @include sig16(26px);
-                }
-
-                .Button {
-                    position: static;
-                    @include SubmitButton;
-                    width: 185px;
-
-                    .Icon_Arrow_B {
-                        width: 14px;
-                        height: 9px;
-                        background: url('./static/images/Sprait.svg') no-repeat -1px -174px;
-                        margin-left: 12px;
-                        padding: 0;
-                    }
-                }
-            }
-
-            .CallUsToday {
-                display: flex;
-                position: relative;
-                width: 280px;
-                height: auto;
-                background-color: $common_color;
-                margin-top: 0;
-                padding-top: 47px;
-                padding-bottom: 170px;
-
-                > div {
-                    margin: 0;
-                    width: 280px;
-                    height: auto;
-
-                    h1 {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        font-family: playfair, serif;
-                        font-size: 36px;
-                        font-style: normal;
-                        font-weight: bold;
-                        color: #FFFFFF;
-                        letter-spacing: 0;
-                        line-height: 34px;
-                    }
                     > p {
-                        margin: 0 0 11px 0;
-                        font-family: signika, sans-serif;
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: normal;
-                        color: #FFFFFF;
-                        letter-spacing: 0;
-                        line-height: 26px;
+                        margin: 0 0 4px 0;
+                        width: 280px;
+                        height: 168px;
+                        @include sig16(23px);
+                        letter-spacing: 0.8px;
+                    }
+
+                    > a {
+                        @include LearnButton;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 641px) and (max-width: 1220px) {
+    .BlockOne {
+
+        .Container {
+            width: 87%;
+            max-width: 87%;
+
+            header {
+                width: 100%;
+                max-width: 100%;
+
+                .MenuContainer {
+
+                    .Logo {
+
+                    }
+
+                    .Nav {
+                        width: 100%;
+                        max-width: 100%;
+                        justify-content: space-between;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
                     }
                     .Tel {
-                        position: absolute;
-                        left: 0;
-                        bottom: 110px;
-                        height: 43px;
-                        font-family: playfair, serif;
-                        font-size: 32px;
-                        font-style: normal;
-                        font-weight: bold;
-                        color: $common_color_yellow;
-                        letter-spacing: 1px;
-                        line-height: normal;
-                        text-decoration: none;
+                        width: 100%;
+                        margin-bottom: 40px;
                     }
-                }
 
-                > p {
-                    margin: 0 0 4px 0;
-                    width: 280px;
-                    height: 168px;
-                    @include sig16(23px);
-                    letter-spacing: 0.8px;
-                }
-
-                > a {
-                    @include LearnButton;
+                    .Sandwich {
+                        display: none;
+                    }
                 }
             }
         }
@@ -1335,8 +1394,7 @@ body {
 }
 
 
-
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1220px) {
     .BlockOne {
         .Container {
             .MenuContainer {

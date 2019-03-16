@@ -7,6 +7,7 @@
 @import '../components/LearnButton.scss';
 @import '../components/SubmitButton.scss';
 @import '../components/HiddenSubmit.scss';
+@import '../components/BlogImageHover.scss';
 
 $common_color: rgba(27, 49, 75, 0.75);
 $common_color_yellow: #FFE195;
@@ -100,12 +101,19 @@ body {
                     position: inherit;
                     z-index: 2;
                     @include SubmitButton;
-                    .Icon_Arrow_B {
-                        width: 14px;
-                        height: 9px;
-                        background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+
+                    > div {
+                        display: flex;
+                        align-items: center;
                         margin-left: 12px;
-                        padding: 0;
+                        margin-right: 18px;
+
+                        .Icon_Arrow_B {
+                            width: 14px;
+                            height: 9px;
+                            background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+                            padding: 0;
+                        }
                     }
                 }
 
@@ -381,16 +389,22 @@ body {
             .Button {
                 @include SubmitButton;
 
-                .Icon_Arrow_B {
-                    width: 14px;
-                    height: 9px;
-                    background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+                > div {
+                    display: flex;
+                    align-items: center;
                     margin-left: 12px;
-                    padding: 0;
-                }
+                    margin-right: 18px;
 
-                .ButtonText {
-                    letter-spacing: 0.5px;
+                    .Icon_Arrow_B {
+                        width: 14px;
+                        height: 9px;
+                        background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+                        padding: 0;
+                    }
+
+                    .ButtonText {
+                        letter-spacing: 0.5px;
+                    }
                 }
             }
         }
