@@ -1,4 +1,4 @@
-var a = 7;
+/*var a = 7;
 alert("var a = 7, тип данных : " + typeof a); // number
 
 var b = "Строка";
@@ -15,4 +15,4 @@ var e = true;
 alert("var e = true, тип данных : " + typeof e); // boolean
 
 var f;
-alert("var f, тип данных : " + typeof f); //undefined
+alert("var f, тип данных : " + typeof f); //undefined*/

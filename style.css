@@ -7,7 +7,6 @@ body {
   background-color: #050713;
 }
 
-/*header*/
 .BlockOne {
   display: flex;
   justify-content: center;
@@ -16,13 +15,14 @@ body {
 }
 .BlockOne .Container {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-top: 59px;
   margin-bottom: 100px;
   max-width: 1180px;
 }
-.BlockOne .Container .MenuContainer {
+.BlockOne .Container header .MenuContainer {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   font-family: Signika, sans-serif;
   font-weight: 600;
@@ -32,13 +32,13 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-.BlockOne .Container .MenuContainer .Logo {
+.BlockOne .Container header .MenuContainer .Logo {
   width: 82px;
   height: 82px;
   background: url("./static/images/Sprait.svg") no-repeat;
   margin-right: 24px;
 }
-.BlockOne .Container .MenuContainer .Nav {
+.BlockOne .Container header .MenuContainer .Nav {
   display: flex;
   width: 642px;
   height: 18px;
@@ -46,16 +46,16 @@ body {
   justify-content: space-between;
   margin-right: 42px;
 }
-.BlockOne .Container .MenuContainer .Nav a {
+.BlockOne .Container header .MenuContainer .Nav a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: 500ms;
 }
-.BlockOne .Container .MenuContainer .Nav a:hover {
+.BlockOne .Container header .MenuContainer .Nav a:hover {
   color: #FFE195;
   cursor: pointer;
 }
-.BlockOne .Container .MenuContainer .Tel {
+.BlockOne .Container header .MenuContainer .Tel {
   font-family: signika, sans-serif;
   margin-right: 18px;
   color: #FFE195;
@@ -65,23 +65,24 @@ body {
   letter-spacing: 1.1px;
   transition: 500ms;
 }
-.BlockOne .Container .MenuContainer .Tel:hover {
+.BlockOne .Container header .MenuContainer .Tel:hover {
   color: #E7CC89;
 }
-.BlockOne .Container .MenuContainer .Sandwich {
+.BlockOne .Container header .MenuContainer .Sandwich {
   width: 30px;
   height: 24px;
   background: url("./static/mobile_images/Mobile_sandwich.png") no-repeat;
 }
-.BlockOne .Container .MenuContainer .Submit {
+.BlockOne .Container header .MenuContainer .Submit {
   position: relative;
   z-index: 1;
+  width: 250px;
 }
-.BlockOne .Container .MenuContainer .Submit:hover > .HiddenButtons {
+.BlockOne .Container header .MenuContainer .Submit:hover > .HiddenButtons {
   opacity: 1;
   pointer-events: auto;
 }
-.BlockOne .Container .MenuContainer .Submit > a {
+.BlockOne .Container header .MenuContainer .Submit > a {
   position: inherit;
   z-index: 2;
   display: flex;
@@ -95,7 +96,7 @@ body {
   color: black;
   transition: 500ms;
 }
-.BlockOne .Container .MenuContainer .Submit > a .ButtonText {
+.BlockOne .Container header .MenuContainer .Submit > a .ButtonText {
   white-space: nowrap;
   margin-left: 11px;
   font-family: Signika, sans-serif;
@@ -105,22 +106,22 @@ body {
   letter-spacing: -0.3px;
   text-transform: uppercase;
 }
-.BlockOne .Container .MenuContainer .Submit > a:hover {
+.BlockOne .Container header .MenuContainer .Submit > a:hover {
   background: #E7CC89;
 }
-.BlockOne .Container .MenuContainer .Submit > a > div {
+.BlockOne .Container header .MenuContainer .Submit > a > div {
   display: flex;
   align-items: center;
   margin-left: 12px;
   margin-right: 18px;
 }
-.BlockOne .Container .MenuContainer .Submit > a > div .Icon_Arrow_B {
+.BlockOne .Container header .MenuContainer .Submit > a > div .Icon_Arrow_B {
   width: 14px;
   height: 9px;
   background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
   padding: 0;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons {
   position: absolute;
   top: 0;
   padding-top: 36px;
@@ -129,7 +130,7 @@ body {
   transition: opacity 500ms;
   /*плавное появление блока скрытых кнопок*/
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
@@ -142,7 +143,7 @@ body {
   color: #FFE195;
   transition: 500ms;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a .ButtonText {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a .ButtonText {
   white-space: nowrap;
   padding-left: 11px;
   padding-right: 18px;
@@ -153,32 +154,32 @@ body {
   letter-spacing: -0.3px;
   text-transform: uppercase;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:hover {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a:hover {
   background: #E7CC89;
   color: black;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:not(:last-child) {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a:not(:last-child) {
   margin-bottom: 6px;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a .Icon_Arrow_Y {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a .Icon_Arrow_Y {
   width: 14px;
   height: 9px;
   background: url("./static/images/Sprait.svg") no-repeat -1px -163px;
   margin-left: 12px;
   padding: 0;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:hover .Icon_Arrow_Y {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a:hover .Icon_Arrow_Y {
   background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
 }
 .BlockOne .Container .SloganContainer {
   display: flex;
   flex-direction: column;
-  width: 581px;
-  padding-top: 136px;
-  padding-bottom: 120px;
-  padding-left: 600px;
+  align-items: flex-end;
+  padding: 136px 0 120px 0;
+  width: 100%;
 }
 .BlockOne .Container .SloganContainer h2 {
+  width: 581px;
   margin: 0;
   padding: 0;
   height: 95px;
@@ -191,6 +192,7 @@ body {
   color: #FFFFFF;
 }
 .BlockOne .Container .SloganContainer blockquote {
+  width: 581px;
   height: 151px;
   margin: 0;
   font-family: signika, sans-serif;
@@ -249,6 +251,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .BlockOne .Container .SliderContainer .ControlRight {
   position: absolute;
@@ -299,6 +302,9 @@ body {
 .BlockOne .Container .SliderContainer .Slider article {
   width: 270px;
   height: fit-content;
+  /*&:not(:last-of-type) {
+      margin-right: 33.33px;
+  }*/
 }
 .BlockOne .Container .SliderContainer .Slider article address {
   height: 20px;
@@ -1059,6 +1065,9 @@ body {
   color: #FFFFFF;
 }
 
+/* Медиа-запросы
+
+                                             до 640px*/
 @media screen and (max-width: 640px) {
   .BlockOne {
     background: red;
@@ -1073,12 +1082,12 @@ body {
   }
   .BlockOne .Container header {
     width: 100%;
-    max-width: 100%;
   }
   .BlockOne .Container header .MenuContainer {
     width: 100%;
     max-width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 0 45px 0;
   }
   .BlockOne .Container header .MenuContainer .Logo {
@@ -1110,14 +1119,15 @@ body {
   .BlockOne .Container header .MenuContainer .Submit .HiddenButtons {
     display: none;
   }
-  .BlockOne .Container header .SloganContainer {
+  .BlockOne .Container .SloganContainer {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     min-width: 280px;
     max-width: 100%;
     padding: 0;
   }
-  .BlockOne .Container header .SloganContainer h2 {
+  .BlockOne .Container .SloganContainer h2 {
     margin: 0 0 10px 0;
     padding: 0;
     height: 32px;
@@ -1128,8 +1138,9 @@ body {
     line-height: 32px;
     letter-spacing: -0.3px;
     color: #FFFFFF;
+    width: 100%;
   }
-  .BlockOne .Container header .SloganContainer blockquote {
+  .BlockOne .Container .SloganContainer blockquote {
     margin: 0 0 60px 0;
     height: auto;
     font-family: signika, sans-serif;
@@ -1139,58 +1150,60 @@ body {
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: 0.4px;
     line-height: 23px;
+    width: 100%;
   }
-  .BlockOne .Container header .SloganContainer blockquote cite {
+  .BlockOne .Container .SloganContainer blockquote cite {
     font-style: normal;
   }
-  .BlockOne .Container header .SocialsContainer {
+  .BlockOne .Container .SocialsContainer {
     width: 100%;
     margin-bottom: 102px;
   }
-  .BlockOne .Container header .SocialsContainer .Socials {
+  .BlockOne .Container .SocialsContainer .Socials {
     display: none;
   }
-  .BlockOne .Container header .SocialsContainer .Mouse {
+  .BlockOne .Container .SocialsContainer .Mouse {
     margin-left: 0;
+    margin-right: 0;
   }
-  .BlockOne .Container header .SliderContainer {
+  .BlockOne .Container .SliderContainer {
     width: 100%;
   }
-  .BlockOne .Container header .SliderContainer .ControlRight {
+  .BlockOne .Container .SliderContainer .ControlRight {
     display: none;
   }
-  .BlockOne .Container header .SliderContainer .ControlLeft {
+  .BlockOne .Container .SliderContainer .ControlLeft {
     display: none;
   }
-  .BlockOne .Container header .SliderContainer h2 {
+  .BlockOne .Container .SliderContainer h2 {
     width: 100%;
     height: 35px;
     margin-top: 0;
     margin-bottom: 21px;
     font-size: 26px;
   }
-  .BlockOne .Container header .SliderContainer .Slider {
+  .BlockOne .Container .SliderContainer .Slider {
     display: flex;
     justify-content: space-between;
     height: fit-content;
     margin-bottom: 0;
   }
-  .BlockOne .Container header .SliderContainer .Slider article {
+  .BlockOne .Container .SliderContainer .Slider article {
     width: 270px;
     margin-bottom: 40px;
     /*&:nth-child(2) {
-                                  display: none;
-                                }
+                              display: none;
+                            }
     
-                                &:nth-child(3) {
-                                  display: none;
-                                }
+                            &:nth-child(3) {
+                              display: none;
+                            }
     
-                                &:nth-child(5) {
-                                  display: none;
-                                }*/
+                            &:nth-child(5) {
+                              display: none;
+                            }*/
   }
-  .BlockOne .Container header .SliderContainer .Slider article address {
+  .BlockOne .Container .SliderContainer .Slider article address {
     height: 20px;
     margin-bottom: 16px;
     font-family: signika, sans-serif;
@@ -1202,7 +1215,7 @@ body {
     line-height: normal;
     text-transform: uppercase;
   }
-  .BlockOne .Container header .SliderContainer .Slider article p {
+  .BlockOne .Container .SliderContainer .Slider article p {
     height: fit-content;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -1212,7 +1225,7 @@ body {
     letter-spacing: 0.4px;
     line-height: 23px;
   }
-  .BlockOne .Container header .SliderContainer .LineContainer {
+  .BlockOne .Container .SliderContainer .LineContainer {
     justify-content: flex-start;
   }
 
@@ -1558,8 +1571,99 @@ body {
     color: black;
     cursor: pointer;
   }
+
+  .BlockThree {
+    margin-bottom: 66px;
+  }
+  .BlockThree .Container {
+    width: 87%;
+    max-width: 87%;
+  }
+  .BlockThree .Container article {
+    width: 100%;
+  }
+  .BlockThree .Container article section:nth-child(2) {
+    display: none;
+  }
+  .BlockThree .Container article section:nth-child(3) {
+    display: none;
+  }
+  .BlockThree .Container article section:nth-child(4) {
+    display: none;
+  }
+
+  .BlockFour {
+    padding-top: 64px;
+    padding-bottom: 41px;
+  }
+  .BlockFour .Container {
+    position: static;
+    width: 87%;
+    max-width: 87%;
+  }
+  .BlockFour .Container footer {
+    width: 100%;
+  }
+  .BlockFour .Container footer .FooterNav {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .BlockFour .Container footer .FooterNav nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+    height: 104px;
+    margin-right: 0;
+  }
+  .BlockFour .Container footer .FooterNav nav a {
+    margin-bottom: 8px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .BlockFour .Container footer .FooterNav nav a:nth-child(1) {
+    margin-right: 26px;
+  }
+  .BlockFour .Container footer .FooterNav nav a:nth-child(2) {
+    margin-right: 26px;
+  }
+  .BlockFour .Container footer .FooterNav nav a:nth-child(3) {
+    margin-right: 26px;
+  }
+  .BlockFour .Container footer .FooterNav nav a:nth-child(4) {
+    margin-right: 26px;
+  }
+  .BlockFour .Container footer .FooterNav .Button {
+    width: 225px;
+    margin-top: 5px;
+  }
+  .BlockFour .Container footer .Accredited {
+    position: static;
+    margin: 42px 0 12px 0;
+    width: 100%;
+  }
+  .BlockFour .Container footer .Socials {
+    position: static;
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .BlockFour .Container footer .StarRating {
+    position: static;
+    margin-bottom: 23px;
+  }
+  .BlockFour .Container footer .Author {
+    position: static;
+    margin-bottom: 23px;
+  }
+  .BlockFour .Container footer .Tel {
+    position: static;
+    margin-bottom: 28px;
+  }
+  .BlockFour .Container footer .Dev {
+    position: static;
+  }
 }
-@media screen and (min-width: 641px) and (max-width: 1220px) {
+/* 641px -- 820px */
+@media screen and (min-width: 641px) and (max-width: 820px) {
   .BlockOne .Container {
     width: 87%;
     max-width: 87%;
@@ -1579,12 +1683,27 @@ body {
     width: 100%;
     margin-bottom: 40px;
   }
+}
+/* 821px -- 1220px */
+@media screen and (min-width: 821px) and (max-width: 1220px) {
+  .BlockOne .Container {
+    width: 87%;
+    max-width: 87%;
+  }
+  .BlockOne .Container header .MenuContainer {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .BlockOne .Container header .MenuContainer .Submit {
+    margin-top: 16px;
+  }
   .BlockOne .Container header .MenuContainer .Sandwich {
     display: none;
   }
 }
-@media screen and (min-width: 1220px) {
-  .BlockOne .Container .MenuContainer .Sandwich {
+/* от 1221px */
+@media screen and (min-width: 1221px) {
+  .BlockOne .Container header .MenuContainer .Sandwich {
     display: none;
   }
 }
