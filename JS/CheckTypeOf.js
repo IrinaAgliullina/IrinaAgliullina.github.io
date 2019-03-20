@@ -17,8 +17,8 @@ alert("var e = true, тип данных : " + typeof e); // boolean
 var f;
 alert("var f, тип данных : " + typeof f); //undefined*/
 
-
-function getRandom(min, max) {
+//Практикум: игра
+/*function getRandom(min, max) {
     return Math.floor(Math.random()*11);
 }
 var secretNumber = getRandom(0, 10);
@@ -34,4 +34,4 @@ while(usersAnswer != secretNumber) {
     }
 }
 i = i + 1;
-alert("Вы угадали с " + i + " попыток, это число " + usersAnswer);
+alert("Вы угадали с " + i + " попыток, это число " + usersAnswer);*/

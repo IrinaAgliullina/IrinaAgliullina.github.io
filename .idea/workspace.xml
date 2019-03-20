@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="Правка гитигнор 2">
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
+    <list default="true" id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="922" column="38" lean-forward="true" selection-start-line="922" selection-start-column="38" selection-end-line="922" selection-end-column="38" />
+            <state relative-caret-position="378">
+              <caret line="934" column="32" lean-forward="true" selection-start-line="934" selection-start-column="32" selection-end-line="934" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -49,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS/CheckTypeOf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
+            <state relative-caret-position="475">
               <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -239,6 +238,7 @@
       <workItem from="1552899363995" duration="1134000" />
       <workItem from="1553069444360" duration="1670000" />
       <workItem from="1553071267388" duration="543000" />
+      <workItem from="1553081460430" duration="218000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1552497663420</created>
@@ -296,11 +296,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553071659719</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test">
+      <created>1553081660602</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1553081660602</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301383000" />
+    <option name="totallyTimeSpent" value="301629000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -312,7 +319,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18455844" />
@@ -404,7 +411,8 @@
     <MESSAGE value="Гитигнор правка" />
     <MESSAGE value="Добавлена игра на JS" />
     <MESSAGE value="Правка гитигнор 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Правка гитигнор 2" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/fonts/signika.css" />
@@ -563,20 +571,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/CheckTypeOf.js">
+    <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="378">
+          <caret line="934" column="32" lean-forward="true" selection-start-line="934" selection-start-column="32" selection-end-line="934" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.scss">
+    <entry file="file://$PROJECT_DIR$/JS/CheckTypeOf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="922" column="38" lean-forward="true" selection-start-line="922" selection-start-column="38" selection-end-line="922" selection-end-column="38" />
+        <state relative-caret-position="644">
+          <caret line="36" column="66" lean-forward="true" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
