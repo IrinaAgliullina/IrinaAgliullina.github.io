@@ -1070,13 +1070,13 @@ body {
                                              до 640px*/
 @media screen and (max-width: 640px) {
   .BlockOne {
-    background: green;
+    background: red;
   }
   .BlockOne .Container {
     justify-content: center;
     width: 87%;
     max-width: 87%;
-    background: midnightblue;
+    background: deeppink;
     margin-top: 17px;
     margin-bottom: 60px;
   }
