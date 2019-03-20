@@ -923,7 +923,7 @@ body {
 @media screen and (max-width: 640px) {
 
     .BlockOne {
-        background: red;
+        background: green;
 
         .Container {
             justify-content: center;
@@ -1064,7 +1064,7 @@ body {
                         width: 270px;
                         margin-bottom: 40px;
 
-                        /*&:nth-child(2) {
+                        &:nth-child(2) {
                           display: none;
                         }
 
@@ -1072,9 +1072,9 @@ body {
                           display: none;
                         }
 
-                        &:nth-child(5) {
+                        &:nth-child(4) {
                           display: none;
-                        }*/
+                        }
 
                         address {
                             height: 20px;

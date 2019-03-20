@@ -1070,7 +1070,7 @@ body {
                                              до 640px*/
 @media screen and (max-width: 640px) {
   .BlockOne {
-    background: red;
+    background: green;
   }
   .BlockOne .Container {
     justify-content: center;
@@ -1191,17 +1191,15 @@ body {
   .BlockOne .Container .SliderContainer .Slider article {
     width: 270px;
     margin-bottom: 40px;
-    /*&:nth-child(2) {
-                              display: none;
-                            }
-    
-                            &:nth-child(3) {
-                              display: none;
-                            }
-    
-                            &:nth-child(5) {
-                              display: none;
-                            }*/
+  }
+  .BlockOne .Container .SliderContainer .Slider article:nth-child(2) {
+    display: none;
+  }
+  .BlockOne .Container .SliderContainer .Slider article:nth-child(3) {
+    display: none;
+  }
+  .BlockOne .Container .SliderContainer .Slider article:nth-child(4) {
+    display: none;
   }
   .BlockOne .Container .SliderContainer .Slider article address {
     height: 20px;
