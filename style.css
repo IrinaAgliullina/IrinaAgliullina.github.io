@@ -19,6 +19,7 @@ body {
   align-items: flex-start;
   margin-top: 59px;
   margin-bottom: 100px;
+  width: 1180px;
   max-width: 1180px;
 }
 .BlockOne .Container header .MenuContainer {
@@ -76,7 +77,6 @@ body {
 .BlockOne .Container header .MenuContainer .Submit {
   position: relative;
   z-index: 1;
-  width: 250px;
 }
 .BlockOne .Container header .MenuContainer .Submit:hover > .HiddenButtons {
   opacity: 1;
@@ -251,7 +251,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 .BlockOne .Container .SliderContainer .ControlRight {
   position: absolute;
@@ -357,8 +356,9 @@ body {
 }
 .BlockTwo .Container {
   display: flex;
-  max-width: 1180px;
   margin-bottom: 85px;
+  width: 1180px;
+  max-width: 1180px;
 }
 .BlockTwo .Container .WeCanHelpWith h2 {
   height: 43px;
@@ -730,8 +730,9 @@ body {
 .BlockThree .Container {
   display: flex;
   flex-direction: column;
-  max-width: 1180px;
   margin-bottom: 120px;
+  width: 1180px;
+  max-width: 1180px;
 }
 .BlockThree .Container h2 {
   font-family: playfair, serif;
@@ -845,6 +846,42 @@ body {
   line-height: 24px;
   transition: 500ms;
 }
+.BlockThree .Container .Button {
+  height: 30px;
+  width: 190px;
+  background: gray;
+  text-decoration: none;
+  color: black;
+  transition: 500ms;
+  line-height: 30px;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-family: Signika, sans-serif;
+  margin: 26px 0 27px 0;
+}
+.BlockThree .Container .Button:hover {
+  background: #E7CC89;
+}
+.BlockThree .Container .LineContainer {
+  display: flex;
+  justify-content: center;
+}
+.BlockThree .Container .LineContainer .Lines {
+  display: flex;
+  justify-content: space-between;
+  width: 124px;
+}
+.BlockThree .Container .LineContainer .Lines .Line {
+  background: url("./static/images/Line_Y.png") no-repeat;
+  opacity: 0.3;
+  width: 25px;
+  height: 2px;
+}
+.BlockThree .Container .LineContainer .Lines .Line:hover {
+  opacity: 1;
+}
 
 /*Footer*/
 .BlockFour {
@@ -852,27 +889,26 @@ body {
   justify-content: center;
   background: url("./static/bg/Footer.jpg") no-repeat center/cover;
   width: 100%;
+  padding: 53px 0 56px 0;
 }
-.BlockFour .Container {
-  position: relative;
+.BlockFour footer .Container {
   display: flex;
+  flex-direction: column;
+  width: 1180px;
   max-width: 1180px;
-  height: 235px;
-  margin-bottom: 56px;
 }
-.BlockFour .Container .FooterNav {
+.BlockFour footer .Container .FooterNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 53px;
 }
-.BlockFour .Container .FooterNav nav {
+.BlockFour footer .Container .FooterNav nav {
   display: flex;
   justify-content: space-between;
   width: 853px;
   margin-right: 102px;
 }
-.BlockFour .Container .FooterNav nav a {
+.BlockFour footer .Container .FooterNav nav a {
   font-family: signika, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -884,11 +920,11 @@ body {
   text-transform: uppercase;
   transition: 500ms;
 }
-.BlockFour .Container .FooterNav nav a:hover {
+.BlockFour footer .Container .FooterNav nav a:hover {
   color: #FFE195;
   cursor: pointer;
 }
-.BlockFour .Container .FooterNav .Button {
+.BlockFour footer .Container .FooterNav .Button {
   display: flex;
   align-items: center;
   height: 30px;
@@ -900,7 +936,7 @@ body {
   color: black;
   transition: 500ms;
 }
-.BlockFour .Container .FooterNav .Button .ButtonText {
+.BlockFour footer .Container .FooterNav .Button .ButtonText {
   white-space: nowrap;
   margin-left: 11px;
   font-family: Signika, sans-serif;
@@ -910,42 +946,42 @@ body {
   letter-spacing: -0.3px;
   text-transform: uppercase;
 }
-.BlockFour .Container .FooterNav .Button:hover {
+.BlockFour footer .Container .FooterNav .Button:hover {
   background: #E7CC89;
 }
-.BlockFour .Container .FooterNav .Button > div {
+.BlockFour footer .Container .FooterNav .Button > div {
   display: flex;
   align-items: center;
   margin-left: 12px;
   margin-right: 18px;
 }
-.BlockFour .Container .FooterNav .Button > div .Icon_Arrow_B {
+.BlockFour footer .Container .FooterNav .Button > div .Icon_Arrow_B {
   width: 14px;
   height: 9px;
   background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
   padding: 0;
 }
-.BlockFour .Container .FooterNav .Button > div .ButtonText {
+.BlockFour footer .Container .FooterNav .Button > div .ButtonText {
   letter-spacing: 0.5px;
 }
-.BlockFour .Container .Accredited {
-  position: absolute;
-  top: 73px;
-  left: 0;
+.BlockFour footer .Container .Accredited {
   display: flex;
-  width: 281px;
-  height: 50px;
+  justify-content: space-between;
   margin-top: 15px;
-  align-items: center;
+  margin-bottom: 30px;
+  align-items: flex-start;
 }
-.BlockFour .Container .Accredited .BBB {
+.BlockFour footer .Container .Accredited .Inner {
+  display: flex;
+}
+.BlockFour footer .Container .Accredited .Inner .BBB {
   background: url("./static/images/footer_img/BBBAccredited.png") no-repeat;
   background-size: contain;
   width: 110px;
   height: 41px;
   margin-right: 6px;
 }
-.BlockFour .Container .Accredited .BBBRating {
+.BlockFour footer .Container .Accredited .Inner .BBBRating {
   width: 61px;
   height: 40px;
   color: #CDCDCF;
@@ -954,54 +990,58 @@ body {
   line-height: 13px;
   font-size: 9px;
 }
-.BlockFour .Container .Accredited .BBBRating > p {
+.BlockFour footer .Container .Accredited .Inner .BBBRating > p {
   margin: 0;
   font-weight: 600;
   letter-spacing: -0.5px;
 }
-.BlockFour .Container .Accredited .Napp {
+.BlockFour footer .Container .Accredited .Inner .Napp {
   background: url("./static/images/footer_img/NAPP.svg") no-repeat;
   width: 80px;
   height: 43px;
   margin-left: 25px;
 }
-.BlockFour .Container .Socials {
-  position: absolute;
-  top: 98px;
-  right: 0;
+.BlockFour footer .Container .Accredited .Socials {
   display: flex;
 }
-.BlockFour .Container .Socials a {
+.BlockFour footer .Container .Accredited .Socials a {
   width: 31.5px;
   height: 31.5px;
   transition: 500ms;
 }
-.BlockFour .Container .Socials a:hover {
+.BlockFour footer .Container .Accredited .Socials a:hover {
   opacity: 0.5;
 }
-.BlockFour .Container .Socials .Social_1 {
+.BlockFour footer .Container .Accredited .Socials .Social_1 {
   background: url("./static/images/Sprait.svg") no-repeat 0 -185px;
   margin-right: 10px;
 }
-.BlockFour .Container .Socials .Social_2 {
+.BlockFour footer .Container .Accredited .Socials .Social_2 {
   background: url("./static/images/Sprait.svg") no-repeat -33px -185px;
   margin-right: 10px;
 }
-.BlockFour .Container .Socials .Social_3 {
+.BlockFour footer .Container .Accredited .Socials .Social_3 {
   background: url("./static/images/Sprait.svg") no-repeat -65px -185px;
   margin-right: 10px;
 }
-.BlockFour .Container .Socials .Social_4 {
+.BlockFour footer .Container .Accredited .Socials .Social_4 {
   background: url("./static/images/Sprait.svg") no-repeat -96px -185px;
 }
-.BlockFour .Container .StarRating {
-  position: absolute;
+.BlockFour footer .Container .Wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.BlockFour footer .Container .Wrapper .Inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.BlockFour footer .Container .Wrapper .Inner .StarRating {
   display: flex;
   align-items: center;
-  top: 171px;
-  left: 0;
+  margin-bottom: 10px;
 }
-.BlockFour .Container .StarRating .Text {
+.BlockFour footer .Container .Wrapper .Inner .StarRating .Text {
   font-family: roboto, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -1011,22 +1051,19 @@ body {
   color: #FFFFFF;
   margin-right: 8px;
 }
-.BlockFour .Container .StarRating .Star_Y {
+.BlockFour footer .Container .Wrapper .Inner .StarRating .Star_Y {
   background: url("./static/images/Sprait.svg") no-repeat -31px -165px;
   width: 16px;
   height: 16px;
   margin-right: 4px;
 }
-.BlockFour .Container .StarRating .Star_W {
+.BlockFour footer .Container .Wrapper .Inner .StarRating .Star_W {
   background: url("./static/images/footer_img/Star_W.png") no-repeat;
   width: 16px;
   height: 16px;
   margin-right: 4px;
 }
-.BlockFour .Container .Author {
-  position: absolute;
-  bottom: 26px;
-  left: 0;
+.BlockFour footer .Container .Wrapper .Inner .Author {
   font-family: roboto, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -1034,11 +1071,9 @@ body {
   line-height: 10px;
   letter-spacing: 0.4px;
   color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
 }
-.BlockFour .Container .Tel {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.BlockFour footer .Container .Wrapper .Inner .Tel {
   font-family: roboto, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -1046,11 +1081,14 @@ body {
   line-height: 10px;
   letter-spacing: 0.4px;
   color: rgba(255, 255, 149, 0.8);
+  margin-bottom: 10px;
 }
-.BlockFour .Container .Dev {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.BlockFour footer .Container .Wrapper .Inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.BlockFour footer .Container .Wrapper .Inner .Dev {
   text-decoration: none;
   font-family: roboto, sans-serif;
   font-size: 13px;
@@ -1061,14 +1099,14 @@ body {
   color: rgba(255, 255, 255, 0.8);
   transition: 500ms;
 }
-.BlockFour .Container .Dev:hover {
+.BlockFour footer .Container .Wrapper .Inner .Dev:hover {
   color: #FFFFFF;
 }
 
 /* Медиа-запросы
 
-                                             до 640px*/
-@media screen and (max-width: 640px) {
+                                             до 670px*/
+@media screen and (max-width: 669px) {
   .BlockOne {
     background: red;
   }
@@ -1076,7 +1114,7 @@ body {
     justify-content: center;
     width: 87%;
     max-width: 87%;
-    background: deeppink;
+    background: midnightblue;
     margin-top: 17px;
     margin-bottom: 60px;
   }
@@ -1130,7 +1168,7 @@ body {
   .BlockOne .Container .SloganContainer h2 {
     margin: 0 0 10px 0;
     padding: 0;
-    height: 32px;
+    height: auto;
     font-family: playfair, serif;
     font-size: 32px;
     font-weight: 600;
@@ -1177,7 +1215,7 @@ body {
   }
   .BlockOne .Container .SliderContainer h2 {
     width: 100%;
-    height: 35px;
+    height: auto;
     margin-top: 0;
     margin-bottom: 21px;
     font-size: 26px;
@@ -1233,8 +1271,6 @@ body {
   .BlockTwo .Container {
     width: 87%;
     max-width: 87%;
-    margin-left: 20px;
-    margin-right: 20px;
     justify-content: center;
     background: pink;
     margin-bottom: 85px;
@@ -1245,7 +1281,7 @@ body {
   }
   .BlockTwo .Container main .WeCanHelpWith h2 {
     width: 100%;
-    height: 35px;
+    height: auto;
     margin: 0 0 27px 0;
     font-family: playfair, serif;
     font-size: 32px;
@@ -1265,7 +1301,7 @@ body {
   .BlockTwo .Container main .WeCanHelpWith .SixButtons > div {
     position: relative;
     display: flex;
-    width: 46%;
+    width: 45%;
     height: 130px;
     margin-top: 0;
     margin-bottom: 82px;
@@ -1350,12 +1386,13 @@ body {
   }
   .BlockTwo .Container main .ThankYouForChoosing {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 70px;
     height: auto;
-    width: 280px;
+    width: 100%;
     position: relative;
     background: rgba(27, 49, 75, 0.75);
   }
@@ -1367,7 +1404,7 @@ body {
     background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
   }
   .BlockTwo .Container main .ThankYouForChoosing h2 {
-    width: 220px;
+    width: 100%;
     height: auto;
     margin: 20px 0 25px 0;
     line-height: normal;
@@ -1382,7 +1419,7 @@ body {
   .BlockTwo .Container main .ThankYouForChoosing p {
     margin-top: 0;
     margin-bottom: 15px;
-    width: 280px;
+    width: 100%;
     height: 168px;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -1421,7 +1458,7 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 280px;
+    width: 100%;
     margin: 48px 0 66px 0;
   }
   .BlockTwo .Container main .RecentlyWonPatents h2 {
@@ -1439,7 +1476,7 @@ body {
   .BlockTwo .Container main .RecentlyWonPatents p {
     margin-bottom: 30px;
     margin-top: 0;
-    width: 280px;
+    width: 100%;
     font-family: signika, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1479,13 +1516,12 @@ body {
     width: 14px;
     height: 9px;
     background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
-    margin-left: 12px;
     padding: 0;
   }
   .BlockTwo .Container main .CallUsToday {
     display: flex;
     position: relative;
-    width: 280px;
+    width: 100%;
     height: auto;
     background-color: rgba(27, 49, 75, 0.75);
     margin-top: 0;
@@ -1494,7 +1530,7 @@ body {
   }
   .BlockTwo .Container main .CallUsToday > div {
     margin: 0;
-    width: 280px;
+    width: 100%;
     height: auto;
   }
   .BlockTwo .Container main .CallUsToday > div h1 {
@@ -1534,7 +1570,7 @@ body {
   }
   .BlockTwo .Container main .CallUsToday > p {
     margin: 0 0 4px 0;
-    width: 280px;
+    width: 100%;
     height: 168px;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -1576,6 +1612,8 @@ body {
   .BlockThree .Container {
     width: 87%;
     max-width: 87%;
+    margin-bottom: 0;
+    align-items: flex-start;
   }
   .BlockThree .Container article {
     width: 100%;
@@ -1589,79 +1627,75 @@ body {
   .BlockThree .Container article section:nth-child(4) {
     display: none;
   }
-
   .BlockFour {
     padding-top: 64px;
     padding-bottom: 41px;
   }
-  .BlockFour .Container {
-    position: static;
+  .BlockFour footer {
     width: 87%;
     max-width: 87%;
   }
-  .BlockFour .Container footer {
+  .BlockFour footer .Container {
     width: 100%;
   }
-  .BlockFour .Container footer .FooterNav {
+  .BlockFour footer .Container .FooterNav {
     flex-wrap: wrap;
     margin: 0;
   }
-  .BlockFour .Container footer .FooterNav nav {
+  .BlockFour footer .Container .FooterNav nav {
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: stretch;
+    align-content: space-between;
     height: 104px;
+    width: 84%;
+    min-width: 270px;
     margin-right: 0;
   }
-  .BlockFour .Container footer .FooterNav nav a {
+  .BlockFour footer .Container .FooterNav nav a {
     margin-bottom: 8px;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 18px;
+    letter-spacing: -0.2px;
+    /*&:nth-child(1) {
+        margin-right: 26px;
+    }
+    &:nth-child(2) {
+        margin-right: 26px;
+    }
+    &:nth-child(3) {
+        margin-right: 26px;
+    }
+    &:nth-child(4) {
+        margin-right: 26px;
+    }*/
   }
-  .BlockFour .Container footer .FooterNav nav a:nth-child(1) {
-    margin-right: 26px;
-  }
-  .BlockFour .Container footer .FooterNav nav a:nth-child(2) {
-    margin-right: 26px;
-  }
-  .BlockFour .Container footer .FooterNav nav a:nth-child(3) {
-    margin-right: 26px;
-  }
-  .BlockFour .Container footer .FooterNav nav a:nth-child(4) {
-    margin-right: 26px;
-  }
-  .BlockFour .Container footer .FooterNav .Button {
+  .BlockFour footer .Container .FooterNav .Button {
     width: 225px;
     margin-top: 5px;
   }
-  .BlockFour .Container footer .Accredited {
-    position: static;
-    margin: 42px 0 12px 0;
+  .BlockFour footer .Container .Accredited {
     width: 100%;
+    flex-wrap: wrap;
   }
-  .BlockFour .Container footer .Socials {
-    position: static;
+  .BlockFour footer .Container .Accredited .BBBRating {
+    white-space: nowrap;
+  }
+  .BlockFour footer .Container .Accredited .Socials {
     width: 100%;
+    margin-top: 12px;
+  }
+  .BlockFour footer .Container .Wrapper {
+    flex-wrap: wrap;
+  }
+  .BlockFour footer .Container .Wrapper .Inner .Author {
+    line-height: 23px;
+  }
+  .BlockFour footer .Container .Wrapper .Inner .Tel {
     margin-bottom: 28px;
-  }
-  .BlockFour .Container footer .StarRating {
-    position: static;
-    margin-bottom: 23px;
-  }
-  .BlockFour .Container footer .Author {
-    position: static;
-    margin-bottom: 23px;
-  }
-  .BlockFour .Container footer .Tel {
-    position: static;
-    margin-bottom: 28px;
-  }
-  .BlockFour .Container footer .Dev {
-    position: static;
   }
 }
-/* 641px -- 820px */
-@media screen and (min-width: 641px) and (max-width: 820px) {
+/* 670px -- 820px */
+@media screen and (min-width: 670px) and (max-width: 820px) {
   .BlockOne .Container {
     width: 87%;
     max-width: 87%;
@@ -1670,20 +1704,525 @@ body {
     width: 100%;
     max-width: 100%;
   }
+  .BlockOne .Container header .MenuContainer {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .BlockOne .Container header .MenuContainer .Logo {
+    margin: 0;
+  }
   .BlockOne .Container header .MenuContainer .Nav {
     width: 100%;
     max-width: 100%;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 0 40px 0;
   }
   .BlockOne .Container header .MenuContainer .Tel {
     width: 100%;
     margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .BlockOne .Container header .MenuContainer .Sandwich {
+    display: none;
+  }
+  .BlockOne .Container .SloganContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+  .BlockOne .Container .SloganContainer h2 {
+    width: 450px;
+  }
+  .BlockOne .Container .SloganContainer blockquote {
+    width: 450px;
+  }
+  .BlockOne .Container .SloganContainer blockquote cite {
+    font-style: normal;
+  }
+  .BlockOne .Container .SocialsContainer {
+    width: 100%;
+    margin-bottom: 102px;
+    justify-content: center;
+  }
+  .BlockOne .Container .SocialsContainer .Socials {
+    display: none;
+  }
+  .BlockOne .Container .SocialsContainer .Mouse {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .BlockOne .Container .SliderContainer {
+    width: 100%;
+  }
+  .BlockOne .Container .SliderContainer .ControlRight {
+    display: none;
+  }
+  .BlockOne .Container .SliderContainer .ControlLeft {
+    display: none;
+  }
+  .BlockOne .Container .SliderContainer h2 {
+    width: 100%;
+    height: 35px;
+    margin-top: 0;
+    margin-bottom: 21px;
+    font-size: 26px;
+  }
+  .BlockOne .Container .SliderContainer .Slider {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    margin-bottom: 0;
+  }
+  .BlockOne .Container .SliderContainer .Slider article {
+    margin-bottom: 40px;
+  }
+  .BlockOne .Container .SliderContainer .Slider article:nth-child(3) {
+    display: none;
+  }
+  .BlockOne .Container .SliderContainer .Slider article:nth-child(4) {
+    display: none;
+  }
+  .BlockOne .Container .SliderContainer .Slider article address {
+    height: auto;
+    white-space: pre-wrap;
+    margin-bottom: 16px;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .BlockOne .Container .SliderContainer .Slider article p {
+    height: fit-content;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 23px;
+  }
+  .BlockOne .Container .SliderContainer .LineContainer {
+    justify-content: center;
+  }
+
+  .BlockTwo .Container {
+    width: 87%;
+    max-width: 87%;
+    justify-content: center;
+    background: pink;
+    margin-bottom: 85px;
+  }
+  .BlockTwo .Container main {
+    width: 100%;
+    max-width: 100%;
+  }
+  .BlockTwo .Container main .WeCanHelpWith h2 {
+    width: 100%;
+    height: 35px;
+    margin: 0 0 27px 0;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div {
+    position: relative;
+    display: flex;
+    width: 45%;
+    height: 160px;
+    margin-top: 0;
+    margin-bottom: 82px;
+    /* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* для выравнивания картинки по центру в Мозилла */
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image1 {
+    width: 68px;
+    height: 43px;
+    background: url("./static/images/Sprait.svg") no-repeat -566px -100px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image2 {
+    width: 57px;
+    height: 57px;
+    background: url("./static/images/Sprait.svg") no-repeat -92px -94px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image3 {
+    width: 44px;
+    height: 57px;
+    background: url("./static/images/Sprait.svg") no-repeat -178px -93px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image4 {
+    width: 44px;
+    height: 67px;
+    background: url("./static/images/Sprait.svg") no-repeat -259px -89px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image5 {
+    width: 65px;
+    height: 63px;
+    background: url("./static/images/Sprait.svg") no-repeat -328px -91px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image6 {
+    width: 57px;
+    height: 57px;
+    background: url("./static/images/Sprait.svg") no-repeat -411px -93px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Subtitle {
+    position: absolute;
+    top: 145px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Description {
+    display: none;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div a {
+    display: none;
+    /* Learn more*/
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover > div > div {
+    opacity: 1;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Subtitle {
+    color: #FFE195;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Description {
+    color: #FFFFFF;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover a {
+    background: #FFE195;
+    color: black;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover {
+    cursor: pointer;
+  }
+  .BlockTwo .Container main .ThankYouForChoosing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 70px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    background: rgba(27, 49, 75, 0.75);
+  }
+  .BlockTwo .Container main .ThankYouForChoosing > div {
+    margin-top: 38px;
+    margin-left: 2px;
+    width: 66px;
+    height: 76px;
+    background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
+  }
+  .BlockTwo .Container main .ThankYouForChoosing h2 {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 25px 0;
+    line-height: normal;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+  }
+  .BlockTwo .Container main .ThankYouForChoosing p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 168px;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 26px;
+  }
+  .BlockTwo .Container main .ThankYouForChoosing a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #2D3A52;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: signika, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .ThankYouForChoosing a:hover {
+    background: #FFE195;
+    color: black;
+    cursor: pointer;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 48px 0 66px 0;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents h2 {
+    margin-bottom: 21px;
+    margin-top: 0;
+    width: 257px;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents p {
+    margin-bottom: 30px;
+    margin-top: 0;
+    width: 100%;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 26px;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents .Button {
+    position: static;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 0;
+    background: #FFE195;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    transition: 500ms;
+    width: 185px;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents .Button .ButtonText {
+    white-space: nowrap;
+    margin-left: 11px;
+    font-family: Signika, sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents .Button:hover {
+    background: #E7CC89;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents .Button .Icon_Arrow_B {
+    width: 14px;
+    height: 9px;
+    background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
+    padding: 0;
+  }
+  .BlockTwo .Container main .CallUsToday {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgba(27, 49, 75, 0.75);
+    margin-top: 0;
+    padding-top: 47px;
+    padding-bottom: 170px;
+  }
+  .BlockTwo .Container main .CallUsToday > div {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .BlockTwo .Container main .CallUsToday > div h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: playfair, serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 34px;
+  }
+  .BlockTwo .Container main .CallUsToday > div > p {
+    margin: 0 0 11px 0;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+  .BlockTwo .Container main .CallUsToday > div .Tel {
+    position: absolute;
+    left: 0;
+    bottom: 110px;
+    height: 43px;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFE195;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .BlockTwo .Container main .CallUsToday > p {
+    margin: 0 0 4px 0;
+    width: 100%;
+    height: 168px;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 23px;
+    letter-spacing: 0.8px;
+  }
+  .BlockTwo .Container main .CallUsToday > a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #2D3A52;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: signika, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .CallUsToday > a:hover {
+    background: #FFE195;
+    color: black;
+    cursor: pointer;
+  }
+
+  .BlockThree .Container {
+    width: 87%;
+    max-width: 87%;
+  }
+  .BlockThree .Container article {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .BlockThree .Container article section {
+    margin-bottom: 20px;
+  }
+  .BlockThree .Container .Button {
+    display: none;
+  }
+  .BlockThree .Container .LineContainer {
+    display: none;
+  }
+
+  .BlockFour {
+    padding-top: 64px;
+    padding-bottom: 41px;
+  }
+  .BlockFour footer {
+    width: 87%;
+    max-width: 87%;
+  }
+  .BlockFour footer .Container {
+    width: 100%;
+  }
+  .BlockFour footer .Container .FooterNav {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .BlockFour footer .Container .FooterNav nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 84%;
+    height: 120px;
+    margin-right: 0;
+  }
+  .BlockFour footer .Container .FooterNav nav a {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0;
+  }
+  .BlockFour footer .Container .FooterNav .Button {
+    width: 225px;
+  }
+  .BlockFour footer .Container .Accredited {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .BlockFour footer .Container .Accredited .BBBRating {
+    white-space: nowrap;
+  }
+  .BlockFour footer .Container .Accredited .Socials {
+    width: 100%;
+    margin-top: 12px;
+  }
+  .BlockFour footer .Container .Wrapper {
+    flex-wrap: wrap;
+  }
+  .BlockFour footer .Container .Wrapper .Inner .Author {
+    line-height: 23px;
+  }
+  .BlockFour footer .Container .Wrapper .Inner .Tel {
+    margin-bottom: 28px;
   }
 }
-/* 821px -- 1220px */
-@media screen and (min-width: 821px) and (max-width: 1220px) {
+/* 821px -- 1230px */
+@media screen and (min-width: 821px) and (max-width: 1230px) {
   .BlockOne .Container {
     width: 87%;
     max-width: 87%;
@@ -1698,10 +2237,24 @@ body {
   .BlockOne .Container header .MenuContainer .Sandwich {
     display: none;
   }
+
+  .BlockThree .Container .Button {
+    display: none;
+  }
+  .BlockThree .Container .LineContainer {
+    display: none;
+  }
 }
-/* от 1221px */
-@media screen and (min-width: 1221px) {
+/* от 1231px */
+@media screen and (min-width: 1231px) {
   .BlockOne .Container header .MenuContainer .Sandwich {
+    display: none;
+  }
+
+  .BlockThree .Container .Button {
+    display: none;
+  }
+  .BlockThree .Container .LineContainer {
     display: none;
   }
 }
