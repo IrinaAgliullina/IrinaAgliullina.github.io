@@ -1,3 +1,4 @@
+// Типы данных
 /*var a = 7;
 alert("var a = 7, тип данных : " + typeof a); // number
 
@@ -35,3 +36,60 @@ while(usersAnswer != secretNumber) {
 }
 i = i + 1;
 alert("Вы угадали с " + i + " попыток, это число " + usersAnswer);*/
+
+
+// Урок 3. Циклы, массивы, структуры данных
+
+/*
+    Задача 2.
+
+    С помощью цикла do…while написать функцию для вывода чисел от 0 до 10, чтобы результат выглядел так:
+
+    0 – это ноль
+    1 – нечетное число
+    2 – четное число
+    3 – нечетное число
+    …
+    10 – четное число
+*/
+
+var the_number = 0;
+
+do {
+
+    if(the_number === 0) {
+
+        console.log(the_number + " - это ноль");
+
+    } else if(the_number % 2 === 0) {
+
+        console.log(the_number + " - это четное число");
+
+    } else {
+
+        console.log(the_number + " - это нечетное число");
+    }
+
+    the_number += 1;
+
+} while(the_number <= 10);
+
+
+/*
+    Задача 4*. Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5:
+
+    x
+    xx
+    xxx
+    xxxx
+    xxxxx
+*/
+
+var pyramid = "x";
+
+for(var i = 1; i <= 20; i += 1) {
+
+    console.log(pyramid);
+
+    pyramid += "x";
+}
