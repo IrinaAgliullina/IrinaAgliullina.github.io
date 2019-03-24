@@ -178,7 +178,7 @@ body {
   padding: 136px 0 120px 0;
   width: 100%;
 }
-.BlockOne .Container .SloganContainer h2 {
+.BlockOne .Container .SloganContainer h1 {
   width: 581px;
   margin: 0;
   padding: 0;
@@ -251,6 +251,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .BlockOne .Container .SliderContainer .ControlRight {
   position: absolute;
@@ -392,8 +393,8 @@ body {
   align-items: flex-end;
 }
 .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image1 {
-  width: 68px;
-  height: 43px;
+  width: 70px;
+  height: 45px;
   background: url("./static/images/Sprait.svg") no-repeat -566px -100px;
   opacity: 0.5;
   transition: 500ms;
@@ -427,8 +428,8 @@ body {
   transition: 500ms;
 }
 .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div .Image6 {
-  width: 57px;
-  height: 57px;
+  width: 58px;
+  height: 58px;
   background: url("./static/images/Sprait.svg") no-repeat -411px -93px;
   opacity: 0.5;
   transition: 500ms;
@@ -460,10 +461,11 @@ body {
   transition: 500ms;
 }
 .BlockTwo .Container .WeCanHelpWith .SixButtons > div a {
-  position: absolute;
+  /*position: absolute;
   left: 0;
   right: 0;
-  bottom: 20px;
+  bottom: 20px;*/
+  width: 100%;
   height: 50px;
   line-height: 50px;
   background-color: #2D3A52;
@@ -511,7 +513,7 @@ body {
 .BlockTwo .Container .ThankYouForChoosing > div {
   margin-top: 75px;
   margin-left: 112px;
-  width: 68px;
+  width: 72px;
   height: 76px;
   background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
 }
@@ -542,10 +544,11 @@ body {
   line-height: 26px;
 }
 .BlockTwo .Container .ThankYouForChoosing a {
-  position: absolute;
+  /*position: absolute;
   left: 0;
   right: 0;
-  bottom: 20px;
+  bottom: 20px;*/
+  width: 100%;
   height: 50px;
   line-height: 50px;
   background-color: #2D3A52;
@@ -643,16 +646,14 @@ body {
 .BlockTwo .Container .CallUsToday {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
-  height: 380px;
   background-color: rgba(27, 49, 75, 0.75);
 }
-.BlockTwo .Container .CallUsToday > div {
-  margin: 95px 115px 0 100px;
+.BlockTwo .Container .CallUsToday .Wrapper {
+  margin: 95px 115px 55px 100px;
   width: 380px;
   height: 160px;
 }
-.BlockTwo .Container .CallUsToday > div h1 {
+.BlockTwo .Container .CallUsToday .Wrapper h2 {
   margin-top: 0;
   margin-bottom: 5px;
   font-family: playfair, serif;
@@ -663,8 +664,8 @@ body {
   letter-spacing: 0;
   line-height: 52px;
 }
-.BlockTwo .Container .CallUsToday > div > p {
-  margin: 0 0 15px 0;
+.BlockTwo .Container .CallUsToday .Wrapper > p {
+  margin: 0 0 20px 0;
   font-family: signika, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -673,7 +674,7 @@ body {
   letter-spacing: 0;
   line-height: 26px;
 }
-.BlockTwo .Container .CallUsToday > div .Tel {
+.BlockTwo .Container .CallUsToday .Wrapper .Tel {
   height: 43px;
   font-family: playfair, serif;
   font-size: 32px;
@@ -697,11 +698,23 @@ body {
   line-height: 26px;
   letter-spacing: 0.8px;
 }
-.BlockTwo .Container .CallUsToday > a {
-  position: absolute;
+.BlockTwo .Container .CallUsToday .TelAdaptive {
+  height: 43px;
+  font-family: playfair, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFE195;
+  letter-spacing: 1px;
+  line-height: normal;
+  text-decoration: none;
+}
+.BlockTwo .Container .CallUsToday .ContactUs {
+  /*position: absolute;
   left: 0;
   right: 0;
-  bottom: 20px;
+  bottom: 20px;*/
+  width: 100%;
   height: 50px;
   line-height: 50px;
   background-color: #2D3A52;
@@ -716,10 +729,14 @@ body {
   font-size: 12px;
   transition: 500ms;
 }
-.BlockTwo .Container .CallUsToday > a:hover {
+.BlockTwo .Container .CallUsToday .ContactUs:hover {
   background: #FFE195;
   color: black;
   cursor: pointer;
+}
+.BlockTwo .Container .CallUsToday .Empty {
+  width: 100%;
+  height: 20px;
 }
 
 /*Blog*/
@@ -763,7 +780,7 @@ body {
   color: #FFFFFF;
 }
 .BlockThree .Container article section a > div {
-  width: 280px;
+  width: 100%;
   height: 200px;
 }
 .BlockThree .Container article section a .BlogImage1 {
@@ -771,7 +788,7 @@ body {
   background-size: contain;
 }
 .BlockThree .Container article section a .BlogImage1 .BlogImageHover {
-  width: 280px;
+  width: 100%;
   height: 200px;
   background: rgba(255, 255, 149, 0.6);
   opacity: 0;
@@ -782,7 +799,7 @@ body {
   background-size: contain;
 }
 .BlockThree .Container article section a .BlogImage2 .BlogImageHover {
-  width: 280px;
+  width: 100%;
   height: 200px;
   background: rgba(255, 255, 149, 0.6);
   opacity: 0;
@@ -793,7 +810,7 @@ body {
   background-size: contain;
 }
 .BlockThree .Container article section a .BlogImage3 .BlogImageHover {
-  width: 280px;
+  width: 100%;
   height: 200px;
   background: rgba(255, 255, 149, 0.6);
   opacity: 0;
@@ -804,7 +821,7 @@ body {
   background-size: contain;
 }
 .BlockThree .Container article section a .BlogImage4 .BlogImageHover {
-  width: 280px;
+  width: 100%;
   height: 200px;
   background: rgba(255, 255, 149, 0.6);
   opacity: 0;
@@ -967,8 +984,8 @@ body {
 .BlockFour footer .Container .Accredited {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 35px;
   align-items: flex-start;
 }
 .BlockFour footer .Container .Accredited .Inner {
@@ -1003,6 +1020,7 @@ body {
 }
 .BlockFour footer .Container .Accredited .Socials {
   display: flex;
+  margin-top: 5px;
 }
 .BlockFour footer .Container .Accredited .Socials a {
   width: 31.5px;
@@ -1039,7 +1057,7 @@ body {
 .BlockFour footer .Container .Wrapper .Inner .StarRating {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .BlockFour footer .Container .Wrapper .Inner .StarRating .Text {
   font-family: roboto, sans-serif;
@@ -1071,7 +1089,7 @@ body {
   line-height: 10px;
   letter-spacing: 0.4px;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .BlockFour footer .Container .Wrapper .Inner .Tel {
   font-family: roboto, sans-serif;
@@ -1081,7 +1099,6 @@ body {
   line-height: 10px;
   letter-spacing: 0.4px;
   color: rgba(255, 255, 149, 0.8);
-  margin-bottom: 10px;
 }
 .BlockFour footer .Container .Wrapper .Inner {
   display: flex;
@@ -1105,7 +1122,7 @@ body {
 
 /* Медиа-запросы
 
-                                             до 670px*/
+                                             до 669px*/
 @media screen and (max-width: 669px) {
   .BlockOne {
     background: red;
@@ -1165,7 +1182,7 @@ body {
     max-width: 100%;
     padding: 0;
   }
-  .BlockOne .Container .SloganContainer h2 {
+  .BlockOne .Container .SloganContainer h1 {
     margin: 0 0 10px 0;
     padding: 0;
     height: auto;
@@ -1227,7 +1244,7 @@ body {
     margin-bottom: 0;
   }
   .BlockOne .Container .SliderContainer .Slider article {
-    width: 270px;
+    width: 100%;
     margin-bottom: 40px;
   }
   .BlockOne .Container .SliderContainer .Slider article:nth-child(2) {
@@ -1252,6 +1269,7 @@ body {
     text-transform: uppercase;
   }
   .BlockOne .Container .SliderContainer .Slider article p {
+    margin-right: 10px;
     height: fit-content;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -1313,48 +1331,6 @@ body {
     height: 100%;
     /* для выравнивания картинки по центру в Мозилла */
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image1 {
-    width: 68px;
-    height: 43px;
-    background: url("./static/images/Sprait.svg") no-repeat -566px -100px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image2 {
-    width: 57px;
-    height: 57px;
-    background: url("./static/images/Sprait.svg") no-repeat -92px -94px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image3 {
-    width: 44px;
-    height: 57px;
-    background: url("./static/images/Sprait.svg") no-repeat -178px -93px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image4 {
-    width: 44px;
-    height: 67px;
-    background: url("./static/images/Sprait.svg") no-repeat -259px -89px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image5 {
-    width: 65px;
-    height: 63px;
-    background: url("./static/images/Sprait.svg") no-repeat -328px -91px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image6 {
-    width: 57px;
-    height: 57px;
-    background: url("./static/images/Sprait.svg") no-repeat -411px -93px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
   .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Subtitle {
     position: absolute;
     top: 145px;
@@ -1399,9 +1375,6 @@ body {
   .BlockTwo .Container main .ThankYouForChoosing > div {
     margin-top: 38px;
     margin-left: 2px;
-    width: 66px;
-    height: 76px;
-    background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
   }
   .BlockTwo .Container main .ThankYouForChoosing h2 {
     width: 100%;
@@ -1430,10 +1403,11 @@ body {
     line-height: 26px;
   }
   .BlockTwo .Container main .ThankYouForChoosing a {
-    position: absolute;
+    /*position: absolute;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: 20px;*/
+    width: 100%;
     height: 50px;
     line-height: 50px;
     background-color: #2D3A52;
@@ -1522,20 +1496,18 @@ body {
     display: flex;
     position: relative;
     width: 100%;
-    height: auto;
     background-color: rgba(27, 49, 75, 0.75);
     margin-top: 0;
     padding-top: 47px;
-    padding-bottom: 170px;
   }
-  .BlockTwo .Container main .CallUsToday > div {
+  .BlockTwo .Container main .CallUsToday .Wrapper {
     margin: 0;
     width: 100%;
     height: auto;
   }
-  .BlockTwo .Container main .CallUsToday > div h1 {
+  .BlockTwo .Container main .CallUsToday .Wrapper h2 {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     font-family: playfair, serif;
     font-size: 36px;
     font-style: normal;
@@ -1544,7 +1516,7 @@ body {
     letter-spacing: 0;
     line-height: 34px;
   }
-  .BlockTwo .Container main .CallUsToday > div > p {
+  .BlockTwo .Container main .CallUsToday .Wrapper > p {
     margin: 0 0 11px 0;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -1554,24 +1526,16 @@ body {
     letter-spacing: 0;
     line-height: 26px;
   }
-  .BlockTwo .Container main .CallUsToday > div .Tel {
-    position: absolute;
-    left: 0;
-    bottom: 110px;
-    height: 43px;
-    font-family: playfair, serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: bold;
-    color: #FFE195;
-    letter-spacing: 1px;
-    line-height: normal;
-    text-decoration: none;
+  .BlockTwo .Container main .CallUsToday .Wrapper .Tel {
+    display: none;
+  }
+  .BlockTwo .Container main .CallUsToday .TelAdaptive {
+    margin-bottom: 40px;
   }
   .BlockTwo .Container main .CallUsToday > p {
-    margin: 0 0 4px 0;
+    margin: 0 0 10px 0;
     width: 100%;
-    height: 168px;
+    height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1580,30 +1544,6 @@ body {
     letter-spacing: 0.4px;
     line-height: 23px;
     letter-spacing: 0.8px;
-  }
-  .BlockTwo .Container main .CallUsToday > a {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    height: 50px;
-    line-height: 50px;
-    background-color: #2D3A52;
-    color: rgba(255, 255, 255, 0.4);
-    font-family: signika, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .CallUsToday > a:hover {
-    background: #FFE195;
-    color: black;
-    cursor: pointer;
   }
 
   .BlockThree {
@@ -1715,11 +1655,11 @@ body {
     width: 100%;
     max-width: 100%;
     justify-content: space-between;
-    margin: 40px 0 40px 0;
+    margin: 25px 0 25px 0;
   }
   .BlockOne .Container header .MenuContainer .Tel {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     margin-right: 0;
   }
   .BlockOne .Container header .MenuContainer .Sandwich {
@@ -1732,11 +1672,12 @@ body {
     padding-top: 40px;
     padding-bottom: 90px;
   }
-  .BlockOne .Container .SloganContainer h2 {
-    width: 450px;
+  .BlockOne .Container .SloganContainer h1 {
+    width: 380px;
+    font-size: 55px;
   }
   .BlockOne .Container .SloganContainer blockquote {
-    width: 450px;
+    width: 380px;
   }
   .BlockOne .Container .SloganContainer blockquote cite {
     font-style: normal;
@@ -1776,6 +1717,7 @@ body {
     margin-bottom: 0;
   }
   .BlockOne .Container .SliderContainer .Slider article {
+    width: 50%;
     margin-bottom: 40px;
   }
   .BlockOne .Container .SliderContainer .Slider article:nth-child(3) {
@@ -1806,6 +1748,7 @@ body {
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: 0.4px;
     line-height: 23px;
+    padding-right: 20px;
   }
   .BlockOne .Container .SliderContainer .LineContainer {
     justify-content: center;
@@ -1856,51 +1799,9 @@ body {
     height: 100%;
     /* для выравнивания картинки по центру в Мозилла */
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image1 {
-    width: 68px;
-    height: 43px;
-    background: url("./static/images/Sprait.svg") no-repeat -566px -100px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image2 {
-    width: 57px;
-    height: 57px;
-    background: url("./static/images/Sprait.svg") no-repeat -92px -94px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image3 {
-    width: 44px;
-    height: 57px;
-    background: url("./static/images/Sprait.svg") no-repeat -178px -93px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image4 {
-    width: 44px;
-    height: 67px;
-    background: url("./static/images/Sprait.svg") no-repeat -259px -89px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image5 {
-    width: 65px;
-    height: 63px;
-    background: url("./static/images/Sprait.svg") no-repeat -328px -91px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image6 {
-    width: 57px;
-    height: 57px;
-    background: url("./static/images/Sprait.svg") no-repeat -411px -93px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
   .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Subtitle {
     position: absolute;
-    top: 145px;
+    top: 170px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -1973,10 +1874,11 @@ body {
     line-height: 26px;
   }
   .BlockTwo .Container main .ThankYouForChoosing a {
-    position: absolute;
+    /*position: absolute;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: 20px;*/
+    width: 100%;
     height: 50px;
     line-height: 50px;
     background-color: #2D3A52;
@@ -2069,16 +1971,15 @@ body {
     background-color: rgba(27, 49, 75, 0.75);
     margin-top: 0;
     padding-top: 47px;
-    padding-bottom: 170px;
   }
-  .BlockTwo .Container main .CallUsToday > div {
+  .BlockTwo .Container main .CallUsToday .Wrapper {
     margin: 0;
     width: 100%;
     height: auto;
   }
-  .BlockTwo .Container main .CallUsToday > div h1 {
+  .BlockTwo .Container main .CallUsToday .Wrapper h2 {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-family: playfair, serif;
     font-size: 36px;
     font-style: normal;
@@ -2087,7 +1988,7 @@ body {
     letter-spacing: 0;
     line-height: 34px;
   }
-  .BlockTwo .Container main .CallUsToday > div > p {
+  .BlockTwo .Container main .CallUsToday .Wrapper > p {
     margin: 0 0 11px 0;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -2097,24 +1998,16 @@ body {
     letter-spacing: 0;
     line-height: 26px;
   }
-  .BlockTwo .Container main .CallUsToday > div .Tel {
-    position: absolute;
-    left: 0;
-    bottom: 110px;
-    height: 43px;
-    font-family: playfair, serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: bold;
-    color: #FFE195;
-    letter-spacing: 1px;
-    line-height: normal;
-    text-decoration: none;
+  .BlockTwo .Container main .CallUsToday .Wrapper .Tel {
+    display: none;
+  }
+  .BlockTwo .Container main .CallUsToday .TelAdaptive {
+    margin-bottom: 40px;
   }
   .BlockTwo .Container main .CallUsToday > p {
-    margin: 0 0 4px 0;
+    margin: 0 0 10px 0;
     width: 100%;
-    height: 168px;
+    height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -2123,30 +2016,6 @@ body {
     letter-spacing: 0.4px;
     line-height: 23px;
     letter-spacing: 0.8px;
-  }
-  .BlockTwo .Container main .CallUsToday > a {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    height: 50px;
-    line-height: 50px;
-    background-color: #2D3A52;
-    color: rgba(255, 255, 255, 0.4);
-    font-family: signika, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .CallUsToday > a:hover {
-    background: #FFE195;
-    color: black;
-    cursor: pointer;
   }
 
   .BlockThree .Container {
@@ -2217,9 +2086,6 @@ body {
   .BlockFour footer .Container .Wrapper .Inner .Author {
     line-height: 23px;
   }
-  .BlockFour footer .Container .Wrapper .Inner .Tel {
-    margin-bottom: 28px;
-  }
 }
 /* 821px -- 1230px */
 @media screen and (min-width: 821px) and (max-width: 1230px) {
@@ -2230,11 +2096,615 @@ body {
   .BlockOne .Container header .MenuContainer {
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
+  }
+  .BlockOne .Container header .MenuContainer .Nav {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .BlockOne .Container header .MenuContainer .Tel {
+    margin-top: 40px;
   }
   .BlockOne .Container header .MenuContainer .Submit {
-    margin-top: 16px;
+    margin-top: 40px;
+    margin-right: 42px;
   }
   .BlockOne .Container header .MenuContainer .Sandwich {
+    display: none;
+  }
+  .BlockOne .Container .SloganContainer {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+  .BlockOne .Container .SloganContainer h1 {
+    width: 500px;
+  }
+  .BlockOne .Container .SloganContainer blockquote {
+    width: 500px;
+  }
+  .BlockOne .Container .SocialsContainer {
+    width: 50%;
+    justify-content: space-between;
+  }
+  .BlockOne .Container .SocialsContainer .Socials {
+    display: flex;
+    justify-content: space-between;
+    width: 154px;
+  }
+  .BlockOne .Container .SocialsContainer .Socials a {
+    width: 31px;
+    height: 31px;
+    transition: 500ms;
+  }
+  .BlockOne .Container .SocialsContainer .Socials a:hover {
+    opacity: 0.5;
+  }
+  .BlockOne .Container .SocialsContainer .Socials .Social_1 {
+    background: url("./static/images/Sprait.svg") no-repeat 0 -185px;
+  }
+  .BlockOne .Container .SocialsContainer .Socials .Social_2 {
+    background: url("./static/images/Sprait.svg") no-repeat -33px -185px;
+  }
+  .BlockOne .Container .SocialsContainer .Socials .Social_3 {
+    background: url("./static/images/Sprait.svg") no-repeat -65px -185px;
+  }
+  .BlockOne .Container .SocialsContainer .Socials .Social_4 {
+    background: url("./static/images/Sprait.svg") no-repeat -96px -185px;
+  }
+  .BlockOne .Container .SocialsContainer .Mouse {
+    margin-left: 0;
+  }
+  .BlockOne .Container .SliderContainer {
+    width: 100%;
+  }
+  .BlockOne .Container .SliderContainer .ControlRight {
+    right: -30px;
+  }
+  .BlockOne .Container .SliderContainer .ControlLeft {
+    left: -30px;
+  }
+  .BlockOne .Container .SliderContainer h2 {
+    width: 100%;
+    height: 35px;
+    margin-top: 0;
+    margin-bottom: 21px;
+    font-size: 26px;
+  }
+  .BlockOne .Container .SliderContainer .Slider {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    margin-bottom: 0;
+  }
+  .BlockOne .Container .SliderContainer .Slider article {
+    width: 47%;
+    margin-bottom: 60px;
+  }
+  .BlockOne .Container .SliderContainer .Slider article:nth-child(3) {
+    display: none;
+  }
+  .BlockOne .Container .SliderContainer .Slider article:nth-child(4) {
+    display: none;
+  }
+  .BlockOne .Container .SliderContainer .Slider article address {
+    height: auto;
+    white-space: pre-wrap;
+    margin-bottom: 16px;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .BlockOne .Container .SliderContainer .Slider article p {
+    height: fit-content;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 23px;
+  }
+  .BlockOne .Container .SliderContainer .LineContainer {
+    justify-content: center;
+  }
+
+  .BlockTwo .Container {
+    width: 87%;
+    max-width: 87%;
+  }
+  .BlockTwo .Container main {
+    width: 100%;
+    max-width: 100%;
+  }
+  .BlockTwo .Container main .WeCanHelpWith h2 {
+    width: 100%;
+    height: 35px;
+    margin: 0 0 27px 0;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div {
+    position: relative;
+    display: flex;
+    width: 45%;
+    height: 160px;
+    margin-top: 0;
+    margin-bottom: 82px;
+    /* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* для выравнивания картинки по центру в Мозилла */
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image1 {
+    width: 68px;
+    height: 43px;
+    background: url("./static/images/Sprait.svg") no-repeat -566px -100px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image2 {
+    width: 57px;
+    height: 57px;
+    background: url("./static/images/Sprait.svg") no-repeat -92px -94px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image3 {
+    width: 44px;
+    height: 57px;
+    background: url("./static/images/Sprait.svg") no-repeat -178px -93px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image4 {
+    width: 44px;
+    height: 67px;
+    background: url("./static/images/Sprait.svg") no-repeat -259px -89px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image5 {
+    width: 65px;
+    height: 63px;
+    background: url("./static/images/Sprait.svg") no-repeat -328px -91px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image6 {
+    width: 57px;
+    height: 57px;
+    background: url("./static/images/Sprait.svg") no-repeat -411px -93px;
+    opacity: 0.75;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Subtitle {
+    position: absolute;
+    top: 190px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Description {
+    display: none;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div a {
+    display: none;
+    /* Learn more*/
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover > div > div {
+    opacity: 1;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Subtitle {
+    color: #FFE195;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Description {
+    color: #FFFFFF;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover a {
+    background: #FFE195;
+    color: black;
+  }
+  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover {
+    cursor: pointer;
+  }
+  .BlockTwo .Container main .ThankYouForChoosing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 70px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    background: rgba(27, 49, 75, 0.75);
+  }
+  .BlockTwo .Container main .ThankYouForChoosing > div {
+    margin-top: 38px;
+    margin-left: 2px;
+    width: 66px;
+    height: 76px;
+    background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
+  }
+  .BlockTwo .Container main .ThankYouForChoosing h2 {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 25px 0;
+    line-height: normal;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+  }
+  .BlockTwo .Container main .ThankYouForChoosing p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 168px;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 26px;
+  }
+  .BlockTwo .Container main .ThankYouForChoosing a {
+    /*position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;*/
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #2D3A52;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: signika, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 500ms;
+  }
+  .BlockTwo .Container main .ThankYouForChoosing a:hover {
+    background: #FFE195;
+    color: black;
+    cursor: pointer;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 48px 0 66px 0;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents h2 {
+    margin-bottom: 21px;
+    margin-top: 0;
+    width: 257px;
+    font-family: playfair, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents p {
+    margin-bottom: 30px;
+    margin-top: 0;
+    width: 100%;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 26px;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents .Button {
+    position: static;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 0;
+    background: #FFE195;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    transition: 500ms;
+    width: 185px;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents .Button .ButtonText {
+    white-space: nowrap;
+    margin-left: 11px;
+    font-family: Signika, sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents .Button:hover {
+    background: #E7CC89;
+  }
+  .BlockTwo .Container main .RecentlyWonPatents .Button .Icon_Arrow_B {
+    width: 14px;
+    height: 9px;
+    background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
+    padding: 0;
+  }
+  .BlockTwo .Container main .CallUsToday {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgba(27, 49, 75, 0.75);
+    margin-top: 0;
+    padding-top: 47px;
+  }
+  .BlockTwo .Container main .CallUsToday .Wrapper {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .BlockTwo .Container main .CallUsToday .Wrapper h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: playfair, serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 34px;
+  }
+  .BlockTwo .Container main .CallUsToday .Wrapper > p {
+    margin: 0 0 11px 0;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+  .BlockTwo .Container main .CallUsToday .Wrapper .Tel {
+    display: none;
+  }
+  .BlockTwo .Container main .CallUsToday > p {
+    margin: 0 0 10px 0;
+    width: 100%;
+    height: auto;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 23px;
+    letter-spacing: 0.8px;
+  }
+  .BlockTwo .Container main .CallUsToday .TelAdaptive {
+    margin-bottom: 40px;
+  }
+
+  .BlockThree .Container {
+    width: 87%;
+    max-width: 87%;
+  }
+  .BlockThree .Container article {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .BlockThree .Container article section {
+    margin-bottom: 20px;
+    width: 45%;
+  }
+  .BlockThree .Container article section a h3 {
+    width: 100%;
+  }
+  .BlockThree .Container article section a p {
+    width: 100%;
+  }
+  .BlockThree .Container .Button {
+    display: none;
+  }
+  .BlockThree .Container .LineContainer {
+    display: none;
+  }
+
+  .BlockFour {
+    padding-top: 64px;
+    padding-bottom: 41px;
+  }
+  .BlockFour footer {
+    width: 87%;
+    max-width: 87%;
+  }
+  .BlockFour footer .Container {
+    width: 100%;
+  }
+  .BlockFour footer .Container .FooterNav {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .BlockFour footer .Container .FooterNav nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 84%;
+    height: 120px;
+    margin-right: 0;
+  }
+  .BlockFour footer .Container .FooterNav nav a {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0;
+  }
+  .BlockFour footer .Container .FooterNav .Button {
+    width: 225px;
+  }
+  .BlockFour footer .Container .Accredited {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .BlockFour footer .Container .Accredited .BBBRating {
+    white-space: nowrap;
+  }
+  .BlockFour footer .Container .Accredited .Socials {
+    width: 100%;
+    margin-top: 12px;
+  }
+  .BlockFour footer .Container .Wrapper {
+    flex-wrap: wrap;
+  }
+  .BlockFour footer .Container .Wrapper .Inner .Author {
+    line-height: 23px;
+  }
+}
+/* 1231px -- 1289px*/
+@media screen and (min-width: 1231px) and (max-width: 1289px) {
+  .BlockOne .Container {
+    width: 87%;
+    max-width: 87%;
+  }
+  .BlockOne .Container header .MenuContainer {
+    flex-wrap: wrap;
+  }
+  .BlockOne .Container header .MenuContainer .Submit {
+    margin-top: 40px;
+  }
+  .BlockOne .Container header .MenuContainer .Sandwich {
+    display: none;
+  }
+  .BlockOne .Container .SloganContainer {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+  .BlockOne .Container .SloganContainer h1 {
+    width: 500px;
+  }
+  .BlockOne .Container .SloganContainer blockquote {
+    width: 500px;
+  }
+  .BlockOne .Container .SocialsContainer {
+    width: 50%;
+    justify-content: space-between;
+  }
+  .BlockOne .Container .SocialsContainer .Socials {
+    display: flex;
+    justify-content: space-between;
+    width: 154px;
+  }
+  .BlockOne .Container .SocialsContainer .Socials a {
+    width: 31px;
+    height: 31px;
+    transition: 500ms;
+  }
+  .BlockOne .Container .SocialsContainer .Socials a:hover {
+    opacity: 0.5;
+  }
+  .BlockOne .Container .SocialsContainer .Socials .Social_1 {
+    background: url("./static/images/Sprait.svg") no-repeat 0 -185px;
+  }
+  .BlockOne .Container .SocialsContainer .Socials .Social_2 {
+    background: url("./static/images/Sprait.svg") no-repeat -33px -185px;
+  }
+  .BlockOne .Container .SocialsContainer .Socials .Social_3 {
+    background: url("./static/images/Sprait.svg") no-repeat -65px -185px;
+  }
+  .BlockOne .Container .SocialsContainer .Socials .Social_4 {
+    background: url("./static/images/Sprait.svg") no-repeat -96px -185px;
+  }
+  .BlockOne .Container .SocialsContainer .Mouse {
+    margin-left: 0;
+  }
+  .BlockOne .Container .SliderContainer {
+    width: 100%;
+  }
+  .BlockOne .Container .SliderContainer .ControlRight {
+    right: -30px;
+  }
+  .BlockOne .Container .SliderContainer .ControlLeft {
+    left: -30px;
+  }
+  .BlockOne .Container .SliderContainer h2 {
+    width: 100%;
+    height: 35px;
+    margin-top: 0;
+    margin-bottom: 21px;
+    font-size: 26px;
+  }
+  .BlockOne .Container .SliderContainer .Slider {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    margin-bottom: 0;
+  }
+  .BlockOne .Container .SliderContainer .Slider article {
+    width: 30%;
+    margin-bottom: 60px;
+  }
+  .BlockOne .Container .SliderContainer .Slider article:nth-child(3) {
+    display: none;
+  }
+  .BlockOne .Container .SliderContainer .Slider article address {
+    height: auto;
+    white-space: pre-wrap;
+    margin-bottom: 16px;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .BlockOne .Container .SliderContainer .Slider article p {
+    height: fit-content;
+    font-family: signika, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 23px;
+  }
+  .BlockOne .Container .SliderContainer .LineContainer {
+    justify-content: center;
+  }
+
+  .BlockTwo .Container main .CallUsToday .TelAdaptive {
     display: none;
   }
 
@@ -2245,9 +2715,22 @@ body {
     display: none;
   }
 }
-/* от 1231px */
-@media screen and (min-width: 1231px) {
+/* от 1290px */
+@media screen and (min-width: 1290px) {
   .BlockOne .Container header .MenuContainer .Sandwich {
+    display: none;
+  }
+  .BlockOne .Container header .SliderContainer {
+    width: 100%;
+  }
+  .BlockOne .Container header .SliderContainer .ControlRight {
+    right: -30px;
+  }
+  .BlockOne .Container header .SliderContainer .ControlLeft {
+    left: -30px;
+  }
+
+  .BlockTwo .Container main .CallUsToday .TelAdaptive {
     display: none;
   }
 

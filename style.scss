@@ -161,7 +161,7 @@ body {
             padding: 136px 0 120px 0;
             width: 100%;
 
-            h2 {
+            h1 {
                 width: 581px;
                 margin: 0;
                 padding: 0;
@@ -234,6 +234,7 @@ body {
             position: relative;
             display: flex;
             flex-direction: column;
+            width: 100%;
 
             .ControlRight {
                 position: absolute;
@@ -328,7 +329,6 @@ body {
 }
 
 
-
 /*main*/
 
 .BlockTwo {
@@ -374,8 +374,8 @@ body {
                         align-items: flex-end;
 
                         .Image1 {
-                            width: 68px;
-                            height: 43px;
+                            width: 70px;
+                            height: 45px;
                             background: url('./static/images/Sprait.svg') no-repeat -566px -100px;
                             opacity: 0.5;
                             transition: 500ms;
@@ -409,8 +409,8 @@ body {
                             transition: 500ms;
                         }
                         .Image6 {
-                            width: 57px;
-                            height: 57px;
+                            width: 58px;
+                            height: 58px;
                             background: url('./static/images/Sprait.svg') no-repeat -411px -93px;
                             opacity: 0.5;
                             transition: 500ms;
@@ -475,7 +475,7 @@ body {
             > div {
                 margin-top: 75px;
                 margin-left: 112px;
-                width: 68px;
+                width: 72px;
                 height: 76px;
                 background: url('./static/images/Sprait.svg') no-repeat -486px -84px;
             }
@@ -553,17 +553,14 @@ body {
         .CallUsToday {
             display: flex;
             flex-wrap: wrap;
-            position: relative;
-            height: 380px;
             background-color: $common_color;
 
-
-            > div {
-                margin: 95px 115px 0 100px;
+            .Wrapper {
+                margin: 95px 115px 55px 100px;
                 width: 380px;
                 height: 160px;
 
-                h1 {
+                h2 {
                     margin-top: 0;
                     margin-bottom: 5px;
                     font-family: playfair, serif;
@@ -575,7 +572,7 @@ body {
                     line-height: 52px;
                 }
                 > p {
-                    margin: 0 0 15px 0;
+                    margin: 0 0 20px 0;
                     font-family: signika, sans-serif;
                     font-size: 14px;
                     font-style: normal;
@@ -605,8 +602,25 @@ body {
                 letter-spacing: 0.8px;
             }
 
-            > a {
+            .TelAdaptive {
+                height: 43px;
+                font-family: playfair, serif;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: bold;
+                color: $common_color_yellow;
+                letter-spacing: 1px;
+                line-height: normal;
+                text-decoration: none;
+            }
+
+            .ContactUs {
                 @include LearnButton;
+            }
+
+            .Empty {
+                width: 100%;
+                height: 20px;
             }
         }
     }
@@ -653,7 +667,7 @@ body {
                     }
 
                     > div {
-                        width: 280px;
+                        width: 100%;
                         height: 200px;
                     }
 
@@ -834,8 +848,8 @@ body {
             .Accredited {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 15px;
-                margin-bottom: 30px;
+                margin-top: 10px;
+                margin-bottom: 35px;
                 align-items: flex-start;
 
                 .Inner {
@@ -873,6 +887,7 @@ body {
 
                 .Socials {
                     display: flex;
+                    margin-top: 5px;
 
                     a {
                         width: 31.5px;
@@ -914,7 +929,7 @@ body {
                     .StarRating {
                         display: flex;
                         align-items: center;
-                        margin-bottom: 10px;
+                        margin-bottom: 15px;
 
                         .Text {
                             @include roboto14(#FFFFFF);
@@ -936,12 +951,11 @@ body {
 
                     .Author {
                         @include roboto14(rgba(255, 255, 255, 0.8));
-                        margin-bottom: 10px;
+                        margin-bottom: 15px;
                     }
 
                     .Tel {
                         @include roboto14(rgba(255, 255, 149, 0.8));
-                        margin-bottom: 10px;
                     }
                 }
 
@@ -968,7 +982,7 @@ body {
 
                                           /* Медиа-запросы
 
-                                             до 670px*/
+                                             до 669px*/
 
 @media screen and (max-width: 669px) {
 
@@ -1044,7 +1058,7 @@ body {
                 max-width: 100%;
                 padding: 0;
 
-                h2 {
+                h1 {
                     margin: 0 0 10px 0;
                     padding: 0;
                     height: auto;
@@ -1111,7 +1125,7 @@ body {
                     margin-bottom: 0;
 
                     article {
-                        width: 270px;
+                        width: 100%;
                         margin-bottom: 40px;
 
                         &:nth-child(2) {
@@ -1134,6 +1148,7 @@ body {
                         }
 
                         p {
+                            margin-right: 10px;
                             height: fit-content;
                             @include sig16(23px);
                         }
@@ -1192,49 +1207,6 @@ body {
                                 display: flex;
                                 align-items: center;
                                 height: 100%;/* для выравнивания картинки по центру в Мозилла */
-
-                                .Image1 {
-                                    width: 68px;
-                                    height: 43px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -566px -100px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
-                                .Image2 {
-                                    width: 57px;
-                                    height: 57px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -92px -94px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
-                                .Image3 {
-                                    width: 44px;
-                                    height: 57px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -178px -93px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
-                                .Image4 {
-                                    width: 44px;
-                                    height: 67px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -259px -89px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
-                                .Image5 {
-                                    width: 65px;
-                                    height: 63px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -328px -91px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
-                                .Image6 {
-                                    width: 57px;
-                                    height: 57px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -411px -93px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
                             }
 
                             .Subtitle {
@@ -1287,9 +1259,6 @@ body {
                     > div {
                         margin-top: 38px;
                         margin-left: 2px;
-                        width: 66px;
-                        height: 76px;
-                        background: url('./static/images/Sprait.svg') no-repeat -486px -84px;
                     }
 
                     h2 {
@@ -1355,20 +1324,18 @@ body {
                     display: flex;
                     position: relative;
                     width: 100%;
-                    height: auto;
                     background-color: $common_color;
                     margin-top: 0;
                     padding-top: 47px;
-                    padding-bottom: 170px;
 
-                    > div {
+                    .Wrapper {
                         margin: 0;
                         width: 100%;
                         height: auto;
 
-                        h1 {
+                        h2 {
                             margin-top: 0;
-                            margin-bottom: 0;
+                            margin-bottom: 5px;
                             font-family: playfair, serif;
                             font-size: 36px;
                             font-style: normal;
@@ -1388,31 +1355,20 @@ body {
                             line-height: 26px;
                         }
                         .Tel {
-                            position: absolute;
-                            left: 0;
-                            bottom: 110px;
-                            height: 43px;
-                            font-family: playfair, serif;
-                            font-size: 32px;
-                            font-style: normal;
-                            font-weight: bold;
-                            color: $common_color_yellow;
-                            letter-spacing: 1px;
-                            line-height: normal;
-                            text-decoration: none;
+                            display: none;
                         }
                     }
 
-                    > p {
-                        margin: 0 0 4px 0;
-                        width: 100%;
-                        height: 168px;
-                        @include sig16(23px);
-                        letter-spacing: 0.8px;
+                    .TelAdaptive {
+                        margin-bottom: 40px;
                     }
 
-                    > a {
-                        @include LearnButton;
+                    > p {
+                        margin: 0 0 10px 0;
+                        width: 100%;
+                        height: auto;
+                        @include sig16(23px);
+                        letter-spacing: 0.8px;
                     }
                 }
             }
@@ -1584,11 +1540,11 @@ body {
                         width: 100%;
                         max-width: 100%;
                         justify-content: space-between;
-                        margin: 40px 0 40px 0;
+                        margin: 25px 0 25px 0;
                     }
                     .Tel {
                         width: 100%;
-                        margin-bottom: 40px;
+                        margin-bottom: 25px;
                         margin-right: 0;
                     }
 
@@ -1606,12 +1562,13 @@ body {
                 padding-top: 40px;
                 padding-bottom: 90px;
 
-                h2 {
-                    width: 450px;
+                h1 {
+                    width: 380px;
+                    font-size: 55px;
                 }
 
                 blockquote {
-                    width: 450px;
+                    width: 380px;
 
                     cite {
                         font-style: normal;
@@ -1660,6 +1617,7 @@ body {
                     margin-bottom: 0;
 
                     article {
+                        width: 50%;
                         margin-bottom: 40px;
 
                         &:nth-child(3) {
@@ -1681,6 +1639,7 @@ body {
                         p {
                             height: fit-content;
                             @include sig16(23px);
+                            padding-right: 20px;
                         }
                     }
                 }
@@ -1736,54 +1695,11 @@ body {
                                 display: flex;
                                 align-items: center;
                                 height: 100%;/* для выравнивания картинки по центру в Мозилла */
-
-                                .Image1 {
-                                    width: 68px;
-                                    height: 43px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -566px -100px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
-                                .Image2 {
-                                    width: 57px;
-                                    height: 57px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -92px -94px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
-                                .Image3 {
-                                    width: 44px;
-                                    height: 57px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -178px -93px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
-                                .Image4 {
-                                    width: 44px;
-                                    height: 67px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -259px -89px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
-                                .Image5 {
-                                    width: 65px;
-                                    height: 63px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -328px -91px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
-                                .Image6 {
-                                    width: 57px;
-                                    height: 57px;
-                                    background: url('./static/images/Sprait.svg') no-repeat -411px -93px;
-                                    opacity: 0.75;
-                                    transition: 500ms;
-                                }
                             }
 
                             .Subtitle {
                                 position: absolute;
-                                top: 145px;
+                                top: 170px;
                                 margin-top: 0;
                                 margin-bottom: 0;
                             }
@@ -1903,16 +1819,15 @@ body {
                     background-color: $common_color;
                     margin-top: 0;
                     padding-top: 47px;
-                    padding-bottom: 170px;
 
-                    > div {
+                    .Wrapper {
                         margin: 0;
                         width: 100%;
                         height: auto;
 
-                        h1 {
+                        h2 {
                             margin-top: 0;
-                            margin-bottom: 0;
+                            margin-bottom: 10px;
                             font-family: playfair, serif;
                             font-size: 36px;
                             font-style: normal;
@@ -1932,31 +1847,20 @@ body {
                             line-height: 26px;
                         }
                         .Tel {
-                            position: absolute;
-                            left: 0;
-                            bottom: 110px;
-                            height: 43px;
-                            font-family: playfair, serif;
-                            font-size: 32px;
-                            font-style: normal;
-                            font-weight: bold;
-                            color: $common_color_yellow;
-                            letter-spacing: 1px;
-                            line-height: normal;
-                            text-decoration: none;
+                            display: none;
                         }
                     }
 
-                    > p {
-                        margin: 0 0 4px 0;
-                        width: 100%;
-                        height: 168px;
-                        @include sig16(23px);
-                        letter-spacing: 0.8px;
+                    .TelAdaptive {
+                        margin-bottom: 40px;
                     }
 
-                    > a {
-                        @include LearnButton;
+                    > p {
+                        margin: 0 0 10px 0;
+                        width: 100%;
+                        height: auto;
+                        @include sig16(23px);
+                        letter-spacing: 0.8px;
                     }
                 }
             }
@@ -1977,25 +1881,524 @@ body {
                 section {
                     margin-bottom: 20px;
 
+
+                }
+            }
+
+            .Button {
+                display: none;
+            }
+
+            .LineContainer {
+                display: none;
+            }
+        }
+    }
+
+    .BlockFour {
+        padding-top: 64px;
+        padding-bottom: 41px;
+
+        footer {
+            width: 87%;
+            max-width: 87%;
+
+            .Container {
+                width: 100%;
+
+                .FooterNav {
+                    flex-wrap: nowrap;
+                    align-items: flex-start;
+                    margin: 0;
+
+                    nav {
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        width: 84%;
+                        height: 120px;
+                        margin-right: 0;
+
+                        a {
+                            margin-bottom: 8px;
+                            font-size: 12px;
+                            line-height: 18px;
+                            letter-spacing: 0;
+                        }
+                    }
+
+                    .Button {
+                        width: 225px;
+                    }
+                }
+
+                .Accredited {
+                    width: 100%;
+                    flex-wrap: wrap;
+
+                    .BBB {
+
+                    }
+                    .BBBRating {
+                        white-space: nowrap;
+                    }
+                    .Napp {
+
+                    }
+                    .Socials {
+                        width: 100%;
+                        margin-top: 12px;
+                    }
+                }
+
+                .Wrapper {
+                    flex-wrap: wrap;
+
+                    .Inner {
+
+                        .StarRating {
+                        }
+
+                        .Author {
+                            line-height: 23px;
+                        }
+
+                        .Tel {
+
+                        }
+                    }
+
+                    .Inner {
+
+                        .Dev {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+                                          /* 821px -- 1230px */
+
+@media screen and (min-width: 821px) and (max-width: 1230px) {
+
+    .BlockOne {
+
+        .Container {
+            width: 87%;
+            max-width: 87%;
+
+            header{
+
+                .MenuContainer {
+                    flex-wrap: wrap;
+                    width: 100%;
+                    justify-content: space-between;
+
+                    .Nav {
+                        width: 100%;
+                        margin-top: 40px;
+                    }
+
+                    .Tel {
+                        margin-top: 40px;
+                    }
+
+                    .Submit {
+                        margin-top: 40px;
+                        margin-right: 42px;
+                    }
+
+                    .Sandwich {
+                        display: none;
+                    }
+                }
+            }
+
+            .SloganContainer {
+                padding-top: 70px;
+                padding-bottom: 100px;
+
+                h1 {
+                    width: 500px;
+                }
+                blockquote {
+                    width: 500px;
+                }
+            }
+
+            .SocialsContainer {
+                width: 50%;
+                justify-content: space-between;
+
+                .Socials {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 154px;
+
                     a {
+                        width: 31px;
+                        height: 31px;
+                        transition: 500ms;
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
 
-                        > div {
+                    .Social_1 {
+                        background: url('./static/images/Sprait.svg') no-repeat 0 -185px;
+                    }
+                    .Social_2 {
+                        background: url('./static/images/Sprait.svg') no-repeat -33px -185px;
+                    }
+                    .Social_3 {
+                        background: url('./static/images/Sprait.svg') no-repeat -65px -185px;
+                    }
+                    .Social_4 {
+                        background: url('./static/images/Sprait.svg') no-repeat -96px -185px;
+                    }
+                }
+                .Mouse {
+                    margin-left: 0;
+                }
+            }
 
-                            .BlogImageHover {
+            .SliderContainer {
+                width: 100%;
 
-                            }
+                .ControlRight {
+                    right: -30px;
+                }
+
+                .ControlLeft {
+                    left: -30px;
+                }
+
+                h2 {
+                    width: 100%;
+                    height: 35px;
+                    margin-top: 0;
+                    margin-bottom: 21px;
+                    font-size: 26px;
+                }
+
+                .Slider {
+                    display: flex;
+                    justify-content: space-between;
+                    height: fit-content;
+                    margin-bottom: 0;
+
+                    article {
+                        width: 47%;
+                        margin-bottom: 60px;
+
+                        &:nth-child(3) {
+                            display: none;
                         }
 
-                        time {
-
+                        &:nth-child(4) {
+                            display: none;
                         }
 
-                        h3 {
-
+                        address {
+                            height: auto;
+                            white-space: pre-wrap;
+                            margin-bottom: 16px;
+                            @include sig16(normal);
+                            text-transform: uppercase;
                         }
 
                         p {
+                            height: fit-content;
+                            @include sig16(23px);
+                        }
+                    }
+                }
 
+                .LineContainer {
+                    justify-content: center;
+                }
+
+            }
+        }
+    }
+
+    .BlockTwo {
+
+        .Container {
+            width: 87%;
+            max-width: 87%;
+            main {
+                width: 100%;
+                max-width: 100%;
+
+                .WeCanHelpWith {
+
+                    h2 {
+                        width: 100%;
+
+                        height: 35px;
+                        margin: 0 0 27px 0;
+                        @include playfair32;
+                        font-size: 26px;
+                    }
+
+                    .SixButtons {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin-bottom: 30px;
+
+                        > div {
+                            position: relative;
+                            display: flex;
+                            width: 45%;
+                            height: 160px;
+                            margin-top: 0;
+                            margin-bottom: 82px;/* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
+
+                            > div {
+                                display: flex;
+                                align-items: center;
+                                height: 100%;/* для выравнивания картинки по центру в Мозилла */
+
+                                .Image1 {
+                                    width: 68px;
+                                    height: 43px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -566px -100px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
+                                .Image2 {
+                                    width: 57px;
+                                    height: 57px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -92px -94px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
+                                .Image3 {
+                                    width: 44px;
+                                    height: 57px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -178px -93px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
+                                .Image4 {
+                                    width: 44px;
+                                    height: 67px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -259px -89px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
+                                .Image5 {
+                                    width: 65px;
+                                    height: 63px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -328px -91px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
+                                .Image6 {
+                                    width: 57px;
+                                    height: 57px;
+                                    background: url('./static/images/Sprait.svg') no-repeat -411px -93px;
+                                    opacity: 0.75;
+                                    transition: 500ms;
+                                }
+                            }
+
+                            .Subtitle {
+                                position: absolute;
+                                top: 190px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                            }
+
+                            .Description {
+                                display: none;
+                            }
+
+                            a {
+                                display: none; /* Learn more*/
+                            }
+
+                            &:hover > div > div {
+                                opacity: 1;
+                            }
+                            &:hover .Subtitle {
+                                color: $common_color_yellow;
+                            }
+                            &:hover .Description {
+                                color: #FFFFFF;
+                            }
+                            &:hover a {
+                                background: $common_color_yellow;
+                                color: black;
+                            }
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .ThankYouForChoosing {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding-bottom: 70px;
+                    height: auto;
+                    width: 100%;
+                    position: relative;
+                    background: $common_color;
+
+                    > div {
+                        margin-top: 38px;
+                        margin-left: 2px;
+                        width: 66px;
+                        height: 76px;
+                        background: url('./static/images/Sprait.svg') no-repeat -486px -84px;
+                    }
+
+                    h2 {
+                        width: 100%;
+                        height: auto;
+                        margin: 20px 0 25px 0;
+                        line-height: normal;
+                        @include playfair32;
+                        font-size: 26px;
+                    }
+
+                    p {
+                        margin-top: 0;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        height: 168px;
+                        @include sig16(26px);
+                    }
+
+                    a {
+                        @include LearnButton;
+                    }
+                }
+
+                .RecentlyWonPatents {
+                    position: static;
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                    width: 100%;
+                    margin: 48px 0 66px 0;
+
+                    h2 {
+                        margin-bottom: 21px;
+                        margin-top: 0;
+                        width: 257px;
+                        @include playfair32;
+                        font-size: 26px;
+                    }
+
+                    p {
+                        margin-bottom: 30px;
+                        margin-top: 0;
+                        width: 100%;
+                        @include sig16(26px);
+                    }
+
+                    .Button {
+                        position: static;
+                        @include SubmitButton;
+                        width: 185px;
+
+                        .Icon_Arrow_B {
+                            width: 14px;
+                            height: 9px;
+                            background: url('./static/images/Sprait.svg') no-repeat -1px -174px;
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .CallUsToday {
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+                    background-color: $common_color;
+                    margin-top: 0;
+                    padding-top: 47px;
+
+                    .Wrapper {
+                        margin: 0;
+                        width: 100%;
+                        height: auto;
+
+                        h2 {
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                            font-family: playfair, serif;
+                            font-size: 36px;
+                            font-style: normal;
+                            font-weight: bold;
+                            color: #FFFFFF;
+                            letter-spacing: 0;
+                            line-height: 34px;
+                        }
+                        > p {
+                            margin: 0 0 11px 0;
+                            font-family: signika, sans-serif;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: normal;
+                            color: #FFFFFF;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                        }
+                        .Tel {
+                            display: none;
+                        }
+                    }
+
+                    > p {
+                        margin: 0 0 10px 0;
+                        width: 100%;
+                        height: auto;
+                        @include sig16(23px);
+                        letter-spacing: 0.8px;
+                    }
+
+                    .TelAdaptive {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .BlockThree {
+
+        .Container {
+            width: 87%;
+            max-width: 87%;
+
+            article {
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                section {
+                    margin-bottom: 20px;
+                    width: 45%;
+
+                    a {
+
+                        h3 {
+                            width: 100%;
+                        }
+                        p {
+                            width: 100%;
                         }
                     }
                 }
@@ -2079,7 +2482,7 @@ body {
                         }
 
                         .Tel {
-                            margin-bottom: 28px;
+
                         }
                     }
 
@@ -2095,9 +2498,10 @@ body {
 }
 
 
-                                          /* 821px -- 1230px */
 
-@media screen and (min-width: 821px) and (max-width: 1230px) {
+                                          /* 1231px -- 1289px*/
+
+@media screen and (min-width: 1231px) and (max-width: 1289px){
 
     .BlockOne {
 
@@ -2109,10 +2513,18 @@ body {
 
                 .MenuContainer {
                     flex-wrap: wrap;
-                    width: 100%;
+
+                    .Nav {
+
+
+                    }
+
+                    .Tel {
+
+                    }
 
                     .Submit {
-                        margin-top: 16px;
+                        margin-top: 40px;
                     }
 
                     .Sandwich {
@@ -2120,12 +2532,124 @@ body {
                     }
                 }
             }
+
+            .SloganContainer {
+                padding-top: 70px;
+                padding-bottom: 100px;
+
+                h1 {
+                    width: 500px;
+                }
+                blockquote {
+                    width: 500px;
+                }
+            }
+
+            .SocialsContainer {
+                width: 50%;
+                justify-content: space-between;
+
+                .Socials {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 154px;
+
+                    a {
+                        width: 31px;
+                        height: 31px;
+                        transition: 500ms;
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+
+                    .Social_1 {
+                        background: url('./static/images/Sprait.svg') no-repeat 0 -185px;
+                    }
+                    .Social_2 {
+                        background: url('./static/images/Sprait.svg') no-repeat -33px -185px;
+                    }
+                    .Social_3 {
+                        background: url('./static/images/Sprait.svg') no-repeat -65px -185px;
+                    }
+                    .Social_4 {
+                        background: url('./static/images/Sprait.svg') no-repeat -96px -185px;
+                    }
+                }
+                .Mouse {
+                    margin-left: 0;
+                }
+            }
+
+            .SliderContainer {
+                width: 100%;
+
+                .ControlRight {
+                    right: -30px;
+                }
+
+                .ControlLeft {
+                    left: -30px;
+                }
+
+                h2 {
+                    width: 100%;
+                    height: 35px;
+                    margin-top: 0;
+                    margin-bottom: 21px;
+                    font-size: 26px;
+                }
+
+                .Slider {
+                    display: flex;
+                    justify-content: space-between;
+                    height: fit-content;
+                    margin-bottom: 0;
+
+                    article {
+                        width: 30%;
+                        margin-bottom: 60px;
+
+                        &:nth-child(3) {
+                            display: none;
+                        }
+
+                        address {
+                            height: auto;
+                            white-space: pre-wrap;
+                            margin-bottom: 16px;
+                            @include sig16(normal);
+                            text-transform: uppercase;
+                        }
+
+                        p {
+                            height: fit-content;
+                            @include sig16(23px);
+                        }
+                    }
+                }
+
+                .LineContainer {
+                    justify-content: center;
+                }
+
+            }
         }
     }
 
     .BlockTwo {
+
         .Container {
 
+            main {
+
+                .CallUsToday {
+
+                    .TelAdaptive {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 
@@ -2146,16 +2670,32 @@ body {
 
 
 
-                                          /* от 1231px */
 
-@media screen and (min-width: 1231px) {
+                                          /* от 1290px */
+@media screen and (min-width: 1290px) {
 
     .BlockOne {
+
         .Container {
+
             header {
+
                 .MenuContainer {
+
                     .Sandwich {
                         display: none;
+                    }
+                }
+
+                .SliderContainer {
+                    width: 100%;
+
+                    .ControlRight {
+                        right: -30px;
+                    }
+
+                    .ControlLeft {
+                        left: -30px;
                     }
                 }
             }
@@ -2163,8 +2703,18 @@ body {
     }
 
     .BlockTwo {
+
         .Container {
 
+            main {
+
+                .CallUsToday {
+
+                    .TelAdaptive {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 
@@ -2182,4 +2732,3 @@ body {
         }
     }
 }
-
