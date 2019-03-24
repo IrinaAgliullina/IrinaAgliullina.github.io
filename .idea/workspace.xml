@@ -42,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
+            <state relative-caret-position="39000">
               <caret line="2148" column="57" selection-start-line="2148" selection-start-column="57" selection-end-line="2148" selection-end-column="57" />
               <folding>
                 <element signature="e#598#10030#0" />
@@ -57,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JS/CheckTypeOf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="694">
+              <caret line="110" column="19" lean-forward="true" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -250,7 +250,8 @@
       <workItem from="1553102622597" duration="288000" />
       <workItem from="1553161775002" duration="6655000" />
       <workItem from="1553241817951" duration="18334000" />
-      <workItem from="1553365398409" duration="1147000" />
+      <workItem from="1553365398409" duration="1429000" />
+      <workItem from="1553412068756" duration="418000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1552497663420</created>
@@ -329,11 +330,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553263971964</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="JS - задачи 2, 4.">
+      <created>1553366660748</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1553366660748</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330885000" />
+    <option name="totallyTimeSpent" value="331585000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -440,7 +448,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="Отключение игры" />
     <MESSAGE value="Переработана структура footer, &#10;медиа от 320 до 820px." />
-    <option name="LAST_COMMIT_MESSAGE" value="Переработана структура footer, &#10;медиа от 320 до 820px." />
+    <MESSAGE value="JS - задачи 2, 4." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS - задачи 2, 4." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/fonts/signika.css" />
@@ -606,7 +615,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state relative-caret-position="39000">
           <caret line="2148" column="57" selection-start-line="2148" selection-start-column="57" selection-end-line="2148" selection-end-column="57" />
           <folding>
             <element signature="e#598#10030#0" />
@@ -619,8 +628,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/CheckTypeOf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="694">
+          <caret line="110" column="19" lean-forward="true" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
         </state>
       </provider>
     </entry>

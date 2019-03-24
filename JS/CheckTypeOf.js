@@ -93,3 +93,19 @@ for(var i = 1; i <= 20; i += 1) {
 
     pyramid += "x";
 }
+
+
+/*
+    Задача с добавлением элемента в середину массива.
+*/
+
+var array = [1, 1, 1, 1];
+
+if(array.length % 2 === 0) {
+    array.splice(array.length / 2, 0, "середина массива");
+
+} else {
+    array.splice( (array.length / 2) + 0.5, 0, "середина массива");
+}
+
+console.log(array);
