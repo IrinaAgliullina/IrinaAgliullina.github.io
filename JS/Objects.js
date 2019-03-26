@@ -35,3 +35,35 @@ function expandNumber(theNumber) {
 }
 
 console.log(expandNumber(theNumber) );
+
+
+
+/* ДЗ 2:
+   Копирование и изменение объектов: bodypositive. */
+
+var menu = [
+    {
+        fruits: "mango",
+        vegetables: "tomato",
+        cheese: "Chedder"
+    },
+
+    {
+        fruits: "mango",
+        vegetables: "tomato",
+        cheese: "Chedder"
+    },
+
+    {
+        fruits: "mango",
+        vegetables: "tomato",
+        cheese: "Chedder"
+    }
+];
+
+var menu2 = JSON.parse(JSON.stringify(menu) );
+
+menu2[0].bodypositive = true;
+
+console.log(menu);
+console.log(menu2);
