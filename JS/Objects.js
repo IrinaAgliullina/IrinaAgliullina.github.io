@@ -7,7 +7,7 @@
    {‘единицы’: 5, ‘десятки’: 4, ‘сотни’: 2}. Если число превышает 999, необходимо выдать
    соответствующее сообщение с помощью console.log и вернуть пустой объект.*/
 
-var theNumber = prompt("Число от 0 до 999", "");
+var theNumber = 123;
 
 var theObject = {};
 
@@ -34,6 +34,7 @@ function expandNumber(theNumber) {
     return theObject;
 }
 
+console.log("Число" + theNumber);
 console.log(expandNumber(theNumber) );
 
 
