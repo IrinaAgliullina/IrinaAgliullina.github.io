@@ -37,6 +37,7 @@ function expandNumber(theNumber) {
 console.log(expandNumber(theNumber) );
 
 
+console.log("\n");
 
 /* ДЗ 2:
    Копирование и изменение объектов: bodypositive. */
@@ -67,3 +68,7 @@ menu2[0].bodypositive = true;
 
 console.log(menu);
 console.log(menu2);
+
+
+
+console.log("\n");

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JS/Objects.js" afterDir="false" />
+    <list default="true" id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="JS - задача с bodypositive.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/CheckTypeOf.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/CheckTypeOf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/Objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/Objects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1825">
-              <caret line="252" column="22" selection-start-line="252" selection-start-column="22" selection-end-line="252" selection-end-column="22" />
+            <state relative-caret-position="500">
+              <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -43,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
+            <state relative-caret-position="1750">
               <caret line="578" column="40" selection-start-line="578" selection-start-column="40" selection-end-line="578" selection-end-column="40" />
               <folding>
                 <element signature="e#598#10055#0" />
@@ -58,11 +60,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS/Objects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="1050">
+              <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/CheckTypeOf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -114,12 +125,12 @@
         <option value="$PROJECT_DIR$/JS/CheckTypeOf_2.js" />
         <option value="$PROJECT_DIR$/components/HiddenSubmit.scss" />
         <option value="$PROJECT_DIR$/components/SubmitButton.scss" />
-        <option value="$PROJECT_DIR$/JS/CheckTypeOf.js" />
         <option value="$PROJECT_DIR$/components/BlogImageHover.scss" />
         <option value="$PROJECT_DIR$/components/LearnButton.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.scss" />
         <option value="$PROJECT_DIR$/JS/Objects.js" />
+        <option value="$PROJECT_DIR$/JS/CheckTypeOf.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -135,6 +146,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,18 +157,12 @@
             <path>
               <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
               <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
               <item name="style.scss" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,7 +263,8 @@
       <workItem from="1553241817951" duration="18334000" />
       <workItem from="1553365398409" duration="1429000" />
       <workItem from="1553412068756" duration="26318000" />
-      <workItem from="1553604785697" duration="1121000" />
+      <workItem from="1553604785697" duration="5989000" />
+      <workItem from="1553612868405" duration="409000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1552497663420</created>
@@ -357,11 +364,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553442029870</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="JS - задача на преобразование числа в объект со свойствами: сотни, десятки, единицы.">
+      <created>1553606078550</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1553606078551</updated>
+    </task>
+    <task id="LOCAL-00016" summary="JS - задача с bodypositive.">
+      <created>1553612047012</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1553612047022</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358606000" />
+    <option name="totallyTimeSpent" value="363883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,7 +493,9 @@
     <MESSAGE value="JS - задача с добавлением элемента в середину массива." />
     <MESSAGE value="JS - задача 3." />
     <MESSAGE value="JS - задача 3.&#10;Адаптив." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS - задача 3.&#10;Адаптив." />
+    <MESSAGE value="JS - задача на преобразование числа в объект со свойствами: сотни, десятки, единицы." />
+    <MESSAGE value="JS - задача с bodypositive." />
+    <option name="LAST_COMMIT_MESSAGE" value="JS - задача с bodypositive." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/fonts/signika.css" />
@@ -621,10 +644,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="578" column="40" selection-start-line="578" selection-start-column="40" selection-end-line="578" selection-end-column="40" />
+          <folding>
+            <element signature="e#598#10055#0" />
+            <element signature="e#966#5064#0" />
+            <element signature="e#5091#5912#0" />
+            <element signature="e#5940#7311#0" />
+            <element signature="e#10356#14689#0" />
+            <element signature="e#14720#15703#0" />
+            <element signature="e#15733#17021#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/CheckTypeOf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/Objects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1825">
-          <caret line="252" column="22" selection-start-line="252" selection-start-column="22" selection-end-line="252" selection-end-column="22" />
+        <state relative-caret-position="500">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -640,36 +693,6 @@
             <element signature="n#div#0;n#div#0;n#footer#0;n#section#3;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#footer#0;n#section#3;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/CheckTypeOf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="578" column="40" selection-start-line="578" selection-start-column="40" selection-end-line="578" selection-end-column="40" />
-          <folding>
-            <element signature="e#598#10055#0" />
-            <element signature="e#966#5064#0" />
-            <element signature="e#5091#5912#0" />
-            <element signature="e#5940#7311#0" />
-            <element signature="e#10356#14689#0" />
-            <element signature="e#14720#15703#0" />
-            <element signature="e#15733#17021#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/Objects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
         </state>
       </provider>
     </entry>
