@@ -457,6 +457,7 @@ body {
   line-height: 26px;
   text-align: center;
   width: 280px;
+  height: 125px;
   margin: 0;
   transition: 500ms;
 }
@@ -468,6 +469,7 @@ body {
   width: 100%;
   height: 50px;
   line-height: 50px;
+  margin-bottom: 20px;
   background-color: #2D3A52;
   color: rgba(255, 255, 255, 0.4);
   font-family: signika, sans-serif;
@@ -533,6 +535,7 @@ body {
 }
 .BlockTwo .Container .ThankYouForChoosing p {
   margin-top: 79px;
+  margin-bottom: 80px;
   width: 370px;
   height: 100px;
   font-family: signika, sans-serif;
@@ -551,6 +554,7 @@ body {
   width: 100%;
   height: 50px;
   line-height: 50px;
+  margin-bottom: 20px;
   background-color: #2D3A52;
   color: rgba(255, 255, 255, 0.4);
   font-family: signika, sans-serif;
@@ -717,6 +721,7 @@ body {
   width: 100%;
   height: 50px;
   line-height: 50px;
+  margin-bottom: 20px;
   background-color: #2D3A52;
   color: rgba(255, 255, 255, 0.4);
   font-family: signika, sans-serif;
@@ -733,10 +738,6 @@ body {
   background: #FFE195;
   color: black;
   cursor: pointer;
-}
-.BlockTwo .Container .CallUsToday .Empty {
-  width: 100%;
-  height: 20px;
 }
 
 /*Blog*/
@@ -1124,14 +1125,10 @@ body {
 
                                              до 669px*/
 @media screen and (max-width: 669px) {
-  .BlockOne {
-    background: red;
-  }
   .BlockOne .Container {
     justify-content: center;
     width: 87%;
     max-width: 87%;
-    background: midnightblue;
     margin-top: 17px;
     margin-bottom: 60px;
   }
@@ -1284,18 +1281,17 @@ body {
   }
 
   .BlockTwo {
-    background: cornflowerblue;
+    background: #050713;
   }
   .BlockTwo .Container {
-    width: 87%;
-    max-width: 87%;
+    width: 100%;
+    max-width: 100%;
     justify-content: center;
-    background: pink;
     margin-bottom: 85px;
   }
   .BlockTwo .Container main {
-    width: 100%;
-    max-width: 100%;
+    width: 87%;
+    max-width: 87%;
   }
   .BlockTwo .Container main .WeCanHelpWith h2 {
     width: 100%;
@@ -1366,10 +1362,8 @@ body {
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 70px;
     height: auto;
     width: 100%;
-    position: relative;
     background: rgba(27, 49, 75, 0.75);
   }
   .BlockTwo .Container main .ThankYouForChoosing > div {
@@ -1377,7 +1371,7 @@ body {
     margin-left: 2px;
   }
   .BlockTwo .Container main .ThankYouForChoosing h2 {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 20px 0 25px 0;
     line-height: normal;
@@ -1391,9 +1385,9 @@ body {
   }
   .BlockTwo .Container main .ThankYouForChoosing p {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 55px;
     width: 100%;
-    height: 168px;
+    height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1410,6 +1404,7 @@ body {
     width: 100%;
     height: 50px;
     line-height: 50px;
+    margin-bottom: 20px;
     background-color: #2D3A52;
     color: rgba(255, 255, 255, 0.4);
     font-family: signika, sans-serif;
@@ -1758,7 +1753,6 @@ body {
     width: 87%;
     max-width: 87%;
     justify-content: center;
-    background: pink;
     margin-bottom: 85px;
   }
   .BlockTwo .Container main {
@@ -1834,7 +1828,6 @@ body {
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 70px;
     height: auto;
     width: 100%;
     position: relative;
@@ -1862,9 +1855,9 @@ body {
   }
   .BlockTwo .Container main .ThankYouForChoosing p {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 55px;
     width: 100%;
-    height: 168px;
+    height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1881,6 +1874,7 @@ body {
     width: 100%;
     height: 50px;
     line-height: 50px;
+    margin-bottom: 20px;
     background-color: #2D3A52;
     color: rgba(255, 255, 255, 0.4);
     font-family: signika, sans-serif;
@@ -2029,6 +2023,26 @@ body {
   }
   .BlockThree .Container article section {
     margin-bottom: 20px;
+    width: 45%;
+  }
+  .BlockThree .Container article section a > div {
+    width: 100%;
+    height: 200px;
+  }
+  .BlockThree .Container article section a .BlogImage1 {
+    background-size: cover;
+  }
+  .BlockThree .Container article section a .BlogImage2 {
+    background-size: cover;
+  }
+  .BlockThree .Container article section a .BlogImage3 {
+    background-size: cover;
+  }
+  .BlockThree .Container article section a .BlogImage4 {
+    background-size: cover;
+  }
+  .BlockThree .Container article section a p {
+    width: 100%;
   }
   .BlockThree .Container .Button {
     display: none;
@@ -2243,71 +2257,17 @@ body {
   .BlockTwo .Container main .WeCanHelpWith .SixButtons > div {
     position: relative;
     display: flex;
-    width: 45%;
-    height: 160px;
+    width: 49%;
+    height: 380px;
     margin-top: 0;
-    margin-bottom: 82px;
-    /* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
+    margin-bottom: 20px;
   }
   .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div {
+    /* обертка для картинок*/
     display: flex;
     align-items: center;
-    height: 100%;
-    /* для выравнивания картинки по центру в Мозилла */
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image1 {
-    width: 68px;
-    height: 43px;
-    background: url("./static/images/Sprait.svg") no-repeat -566px -100px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image2 {
-    width: 57px;
-    height: 57px;
-    background: url("./static/images/Sprait.svg") no-repeat -92px -94px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image3 {
-    width: 44px;
-    height: 57px;
-    background: url("./static/images/Sprait.svg") no-repeat -178px -93px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image4 {
-    width: 44px;
-    height: 67px;
-    background: url("./static/images/Sprait.svg") no-repeat -259px -89px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image5 {
-    width: 65px;
-    height: 63px;
-    background: url("./static/images/Sprait.svg") no-repeat -328px -91px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div .Image6 {
-    width: 57px;
-    height: 57px;
-    background: url("./static/images/Sprait.svg") no-repeat -411px -93px;
-    opacity: 0.75;
-    transition: 500ms;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Subtitle {
-    position: absolute;
-    top: 190px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Description {
-    display: none;
   }
   .BlockTwo .Container main .WeCanHelpWith .SixButtons > div a {
-    display: none;
     /* Learn more*/
   }
   .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover > div > div {
@@ -2328,14 +2288,11 @@ body {
   }
   .BlockTwo .Container main .ThankYouForChoosing {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 70px;
     height: auto;
     width: 100%;
-    position: relative;
     background: rgba(27, 49, 75, 0.75);
   }
   .BlockTwo .Container main .ThankYouForChoosing > div {
@@ -2360,9 +2317,9 @@ body {
   }
   .BlockTwo .Container main .ThankYouForChoosing p {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 55px;
     width: 100%;
-    height: 168px;
+    height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -2379,6 +2336,7 @@ body {
     width: 100%;
     height: 50px;
     line-height: 50px;
+    margin-bottom: 20px;
     background-color: #2D3A52;
     color: rgba(255, 255, 255, 0.4);
     font-family: signika, sans-serif;
@@ -2528,8 +2486,33 @@ body {
     margin-bottom: 20px;
     width: 45%;
   }
-  .BlockThree .Container article section a h3 {
+  .BlockThree .Container article section a > div {
     width: 100%;
+    height: 280px;
+  }
+  .BlockThree .Container article section a .BlogImage1 {
+    background-size: cover;
+  }
+  .BlockThree .Container article section a .BlogImage1 .BlogImageHover {
+    height: 280px;
+  }
+  .BlockThree .Container article section a .BlogImage2 {
+    background-size: cover;
+  }
+  .BlockThree .Container article section a .BlogImage2 .BlogImageHover {
+    height: 280px;
+  }
+  .BlockThree .Container article section a .BlogImage3 {
+    background-size: cover;
+  }
+  .BlockThree .Container article section a .BlogImage3 .BlogImageHover {
+    height: 280px;
+  }
+  .BlockThree .Container article section a .BlogImage4 {
+    background-size: cover;
+  }
+  .BlockThree .Container article section a .BlogImage4 .BlogImageHover {
+    height: 280px;
   }
   .BlockThree .Container article section a p {
     width: 100%;

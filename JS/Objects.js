@@ -34,11 +34,14 @@ function expandNumber(theNumber) {
     return theObject;
 }
 
-console.log("Число" + theNumber);
+console.log("Число: " + theNumber);
 console.log(expandNumber(theNumber) );
 
 
 console.log("\n");
+
+
+console.log("Задача с bodypositive:");
 
 /* ДЗ 2:
    Копирование и изменение объектов: bodypositive. */
