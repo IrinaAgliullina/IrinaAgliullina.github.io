@@ -2,6 +2,7 @@
 @import url("./static/fonts/signika/signika.css");
 @import url("./static/fonts/playfair/playfair.css");
 @import url("./static/fonts/roboto/roboto.css");
+/* Основной стиль */
 body {
   margin: 0;
   background-color: #050713;
@@ -21,6 +22,7 @@ body {
   margin-bottom: 100px;
   width: 1180px;
   max-width: 1180px;
+  position: relative;
 }
 .BlockOne .Container header .MenuContainer {
   display: flex;
@@ -178,7 +180,7 @@ body {
   padding: 136px 0 120px 0;
   width: 100%;
 }
-.BlockOne .Container .SloganContainer h1 {
+.BlockOne .Container .SloganContainer main h1 {
   width: 581px;
   margin: 0;
   padding: 0;
@@ -191,7 +193,7 @@ body {
   letter-spacing: -0.3px;
   color: #FFFFFF;
 }
-.BlockOne .Container .SloganContainer blockquote {
+.BlockOne .Container .SloganContainer main blockquote {
   width: 581px;
   height: 151px;
   margin: 0;
@@ -203,7 +205,7 @@ body {
   letter-spacing: 0.4px;
   line-height: 25px;
 }
-.BlockOne .Container .SloganContainer blockquote cite {
+.BlockOne .Container .SloganContainer main blockquote cite {
   font-style: normal;
 }
 .BlockOne .Container .SocialsContainer {
@@ -347,8 +349,19 @@ body {
 .BlockOne .Container .SliderContainer .LineContainer .Lines .Line:hover {
   opacity: 1;
 }
+.BlockOne .Container .DZ {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.BlockOne .Container .DZ a {
+  color: white;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
 
-/*main*/
 .BlockTwo {
   display: flex;
   justify-content: center;
@@ -357,6 +370,7 @@ body {
 }
 .BlockTwo .Container {
   display: flex;
+  flex-direction: column;
   margin-bottom: 85px;
   width: 1180px;
   max-width: 1180px;
@@ -740,7 +754,6 @@ body {
   cursor: pointer;
 }
 
-/*Blog*/
 .BlockThree {
   display: flex;
   justify-content: center;
@@ -901,7 +914,6 @@ body {
   opacity: 1;
 }
 
-/*Footer*/
 .BlockFour {
   display: flex;
   justify-content: center;
@@ -1179,7 +1191,7 @@ body {
     max-width: 100%;
     padding: 0;
   }
-  .BlockOne .Container .SloganContainer h1 {
+  .BlockOne .Container .SloganContainer main h1 {
     margin: 0 0 10px 0;
     padding: 0;
     height: auto;
@@ -1192,7 +1204,7 @@ body {
     color: #FFFFFF;
     width: 100%;
   }
-  .BlockOne .Container .SloganContainer blockquote {
+  .BlockOne .Container .SloganContainer main blockquote {
     margin: 0 0 60px 0;
     height: auto;
     font-family: signika, sans-serif;
@@ -1204,7 +1216,7 @@ body {
     line-height: 23px;
     width: 100%;
   }
-  .BlockOne .Container .SloganContainer blockquote cite {
+  .BlockOne .Container .SloganContainer main blockquote cite {
     font-style: normal;
   }
   .BlockOne .Container .SocialsContainer {
@@ -1279,21 +1291,20 @@ body {
   .BlockOne .Container .SliderContainer .LineContainer {
     justify-content: flex-start;
   }
+  .BlockOne .Container .DZ {
+    display: none;
+  }
 
   .BlockTwo {
     background: #050713;
   }
   .BlockTwo .Container {
-    width: 100%;
-    max-width: 100%;
+    width: 88%;
+    max-width: 88%;
     justify-content: center;
     margin-bottom: 85px;
   }
-  .BlockTwo .Container main {
-    width: 87%;
-    max-width: 87%;
-  }
-  .BlockTwo .Container main .WeCanHelpWith h2 {
+  .BlockTwo .Container .WeCanHelpWith h2 {
     width: 100%;
     height: auto;
     margin: 0 0 27px 0;
@@ -1305,14 +1316,14 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 30px;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div {
     position: relative;
     display: flex;
     width: 45%;
@@ -1321,42 +1332,42 @@ body {
     margin-bottom: 82px;
     /* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div {
     display: flex;
     align-items: center;
     height: 100%;
     /* для выравнивания картинки по центру в Мозилла */
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Subtitle {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div .Subtitle {
     position: absolute;
     top: 145px;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Description {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div .Description {
     display: none;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div a {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div a {
     display: none;
     /* Learn more*/
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover > div > div {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover > div > div {
     opacity: 1;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Subtitle {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Subtitle {
     color: #FFE195;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Description {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Description {
     color: #FFFFFF;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover a {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover a {
     background: #FFE195;
     color: black;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover {
     cursor: pointer;
   }
-  .BlockTwo .Container main .ThankYouForChoosing {
+  .BlockTwo .Container .ThankYouForChoosing {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1366,11 +1377,11 @@ body {
     width: 100%;
     background: rgba(27, 49, 75, 0.75);
   }
-  .BlockTwo .Container main .ThankYouForChoosing > div {
+  .BlockTwo .Container .ThankYouForChoosing > div {
     margin-top: 38px;
     margin-left: 2px;
   }
-  .BlockTwo .Container main .ThankYouForChoosing h2 {
+  .BlockTwo .Container .ThankYouForChoosing h2 {
     width: 90%;
     height: auto;
     margin: 20px 0 25px 0;
@@ -1383,7 +1394,7 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container main .ThankYouForChoosing p {
+  .BlockTwo .Container .ThankYouForChoosing p {
     margin-top: 0;
     margin-bottom: 55px;
     width: 100%;
@@ -1396,7 +1407,7 @@ body {
     letter-spacing: 0.4px;
     line-height: 26px;
   }
-  .BlockTwo .Container main .ThankYouForChoosing a {
+  .BlockTwo .Container .ThankYouForChoosing a {
     /*position: absolute;
     left: 0;
     right: 0;
@@ -1417,12 +1428,12 @@ body {
     font-size: 12px;
     transition: 500ms;
   }
-  .BlockTwo .Container main .ThankYouForChoosing a:hover {
+  .BlockTwo .Container .ThankYouForChoosing a:hover {
     background: #FFE195;
     color: black;
     cursor: pointer;
   }
-  .BlockTwo .Container main .RecentlyWonPatents {
+  .BlockTwo .Container .RecentlyWonPatents {
     position: static;
     display: flex;
     flex-direction: column;
@@ -1430,7 +1441,7 @@ body {
     width: 100%;
     margin: 48px 0 66px 0;
   }
-  .BlockTwo .Container main .RecentlyWonPatents h2 {
+  .BlockTwo .Container .RecentlyWonPatents h2 {
     margin-bottom: 21px;
     margin-top: 0;
     width: 257px;
@@ -1442,7 +1453,7 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container main .RecentlyWonPatents p {
+  .BlockTwo .Container .RecentlyWonPatents p {
     margin-bottom: 30px;
     margin-top: 0;
     width: 100%;
@@ -1454,7 +1465,7 @@ body {
     letter-spacing: 0.4px;
     line-height: 26px;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button {
+  .BlockTwo .Container .RecentlyWonPatents .Button {
     position: static;
     display: flex;
     align-items: center;
@@ -1468,7 +1479,7 @@ body {
     transition: 500ms;
     width: 185px;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button .ButtonText {
+  .BlockTwo .Container .RecentlyWonPatents .Button .ButtonText {
     white-space: nowrap;
     margin-left: 11px;
     font-family: Signika, sans-serif;
@@ -1478,16 +1489,16 @@ body {
     letter-spacing: -0.3px;
     text-transform: uppercase;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button:hover {
+  .BlockTwo .Container .RecentlyWonPatents .Button:hover {
     background: #E7CC89;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button .Icon_Arrow_B {
+  .BlockTwo .Container .RecentlyWonPatents .Button .Icon_Arrow_B {
     width: 14px;
     height: 9px;
     background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
     padding: 0;
   }
-  .BlockTwo .Container main .CallUsToday {
+  .BlockTwo .Container .CallUsToday {
     display: flex;
     position: relative;
     width: 100%;
@@ -1495,12 +1506,12 @@ body {
     margin-top: 0;
     padding-top: 47px;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper {
+  .BlockTwo .Container .CallUsToday .Wrapper {
     margin: 0;
     width: 100%;
     height: auto;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper h2 {
+  .BlockTwo .Container .CallUsToday .Wrapper h2 {
     margin-top: 0;
     margin-bottom: 5px;
     font-family: playfair, serif;
@@ -1511,7 +1522,7 @@ body {
     letter-spacing: 0;
     line-height: 34px;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper > p {
+  .BlockTwo .Container .CallUsToday .Wrapper > p {
     margin: 0 0 11px 0;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -1521,13 +1532,13 @@ body {
     letter-spacing: 0;
     line-height: 26px;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper .Tel {
+  .BlockTwo .Container .CallUsToday .Wrapper .Tel {
     display: none;
   }
-  .BlockTwo .Container main .CallUsToday .TelAdaptive {
+  .BlockTwo .Container .CallUsToday .TelAdaptive {
     margin-bottom: 40px;
   }
-  .BlockTwo .Container main .CallUsToday > p {
+  .BlockTwo .Container .CallUsToday > p {
     margin: 0 0 10px 0;
     width: 100%;
     height: auto;
@@ -1667,14 +1678,14 @@ body {
     padding-top: 40px;
     padding-bottom: 90px;
   }
-  .BlockOne .Container .SloganContainer h1 {
+  .BlockOne .Container .SloganContainer main h1 {
     width: 380px;
     font-size: 55px;
   }
-  .BlockOne .Container .SloganContainer blockquote {
+  .BlockOne .Container .SloganContainer main blockquote {
     width: 380px;
   }
-  .BlockOne .Container .SloganContainer blockquote cite {
+  .BlockOne .Container .SloganContainer main blockquote cite {
     font-style: normal;
   }
   .BlockOne .Container .SocialsContainer {
@@ -1748,6 +1759,9 @@ body {
   .BlockOne .Container .SliderContainer .LineContainer {
     justify-content: center;
   }
+  .BlockOne .Container .DZ {
+    display: none;
+  }
 
   .BlockTwo .Container {
     width: 87%;
@@ -1755,11 +1769,7 @@ body {
     justify-content: center;
     margin-bottom: 85px;
   }
-  .BlockTwo .Container main {
-    width: 100%;
-    max-width: 100%;
-  }
-  .BlockTwo .Container main .WeCanHelpWith h2 {
+  .BlockTwo .Container .WeCanHelpWith h2 {
     width: 100%;
     height: 35px;
     margin: 0 0 27px 0;
@@ -1771,14 +1781,14 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 30px;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div {
     position: relative;
     display: flex;
     width: 45%;
@@ -1787,42 +1797,42 @@ body {
     margin-bottom: 82px;
     /* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div {
     display: flex;
     align-items: center;
     height: 100%;
     /* для выравнивания картинки по центру в Мозилла */
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Subtitle {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div .Subtitle {
     position: absolute;
     top: 170px;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div .Description {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div .Description {
     display: none;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div a {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div a {
     display: none;
     /* Learn more*/
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover > div > div {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover > div > div {
     opacity: 1;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Subtitle {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Subtitle {
     color: #FFE195;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Description {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Description {
     color: #FFFFFF;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover a {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover a {
     background: #FFE195;
     color: black;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover {
     cursor: pointer;
   }
-  .BlockTwo .Container main .ThankYouForChoosing {
+  .BlockTwo .Container .ThankYouForChoosing {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1833,14 +1843,14 @@ body {
     position: relative;
     background: rgba(27, 49, 75, 0.75);
   }
-  .BlockTwo .Container main .ThankYouForChoosing > div {
+  .BlockTwo .Container .ThankYouForChoosing > div {
     margin-top: 38px;
     margin-left: 2px;
     width: 66px;
     height: 76px;
     background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
   }
-  .BlockTwo .Container main .ThankYouForChoosing h2 {
+  .BlockTwo .Container .ThankYouForChoosing h2 {
     width: 100%;
     height: auto;
     margin: 20px 0 25px 0;
@@ -1853,7 +1863,7 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container main .ThankYouForChoosing p {
+  .BlockTwo .Container .ThankYouForChoosing p {
     margin-top: 0;
     margin-bottom: 55px;
     width: 100%;
@@ -1866,7 +1876,7 @@ body {
     letter-spacing: 0.4px;
     line-height: 26px;
   }
-  .BlockTwo .Container main .ThankYouForChoosing a {
+  .BlockTwo .Container .ThankYouForChoosing a {
     /*position: absolute;
     left: 0;
     right: 0;
@@ -1887,12 +1897,12 @@ body {
     font-size: 12px;
     transition: 500ms;
   }
-  .BlockTwo .Container main .ThankYouForChoosing a:hover {
+  .BlockTwo .Container .ThankYouForChoosing a:hover {
     background: #FFE195;
     color: black;
     cursor: pointer;
   }
-  .BlockTwo .Container main .RecentlyWonPatents {
+  .BlockTwo .Container .RecentlyWonPatents {
     position: static;
     display: flex;
     flex-direction: column;
@@ -1900,7 +1910,7 @@ body {
     width: 100%;
     margin: 48px 0 66px 0;
   }
-  .BlockTwo .Container main .RecentlyWonPatents h2 {
+  .BlockTwo .Container .RecentlyWonPatents h2 {
     margin-bottom: 21px;
     margin-top: 0;
     width: 257px;
@@ -1912,7 +1922,7 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container main .RecentlyWonPatents p {
+  .BlockTwo .Container .RecentlyWonPatents p {
     margin-bottom: 30px;
     margin-top: 0;
     width: 100%;
@@ -1924,7 +1934,7 @@ body {
     letter-spacing: 0.4px;
     line-height: 26px;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button {
+  .BlockTwo .Container .RecentlyWonPatents .Button {
     position: static;
     display: flex;
     align-items: center;
@@ -1938,7 +1948,7 @@ body {
     transition: 500ms;
     width: 185px;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button .ButtonText {
+  .BlockTwo .Container .RecentlyWonPatents .Button .ButtonText {
     white-space: nowrap;
     margin-left: 11px;
     font-family: Signika, sans-serif;
@@ -1948,16 +1958,16 @@ body {
     letter-spacing: -0.3px;
     text-transform: uppercase;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button:hover {
+  .BlockTwo .Container .RecentlyWonPatents .Button:hover {
     background: #E7CC89;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button .Icon_Arrow_B {
+  .BlockTwo .Container .RecentlyWonPatents .Button .Icon_Arrow_B {
     width: 14px;
     height: 9px;
     background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
     padding: 0;
   }
-  .BlockTwo .Container main .CallUsToday {
+  .BlockTwo .Container .CallUsToday {
     display: flex;
     position: relative;
     width: 100%;
@@ -1966,12 +1976,12 @@ body {
     margin-top: 0;
     padding-top: 47px;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper {
+  .BlockTwo .Container .CallUsToday .Wrapper {
     margin: 0;
     width: 100%;
     height: auto;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper h2 {
+  .BlockTwo .Container .CallUsToday .Wrapper h2 {
     margin-top: 0;
     margin-bottom: 10px;
     font-family: playfair, serif;
@@ -1982,7 +1992,7 @@ body {
     letter-spacing: 0;
     line-height: 34px;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper > p {
+  .BlockTwo .Container .CallUsToday .Wrapper > p {
     margin: 0 0 11px 0;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -1992,13 +2002,13 @@ body {
     letter-spacing: 0;
     line-height: 26px;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper .Tel {
+  .BlockTwo .Container .CallUsToday .Wrapper .Tel {
     display: none;
   }
-  .BlockTwo .Container main .CallUsToday .TelAdaptive {
+  .BlockTwo .Container .CallUsToday .TelAdaptive {
     margin-bottom: 40px;
   }
-  .BlockTwo .Container main .CallUsToday > p {
+  .BlockTwo .Container .CallUsToday > p {
     margin: 0 0 10px 0;
     width: 100%;
     height: auto;
@@ -2130,10 +2140,10 @@ body {
     padding-top: 70px;
     padding-bottom: 100px;
   }
-  .BlockOne .Container .SloganContainer h1 {
+  .BlockOne .Container .SloganContainer main h1 {
     width: 500px;
   }
-  .BlockOne .Container .SloganContainer blockquote {
+  .BlockOne .Container .SloganContainer main blockquote {
     width: 500px;
   }
   .BlockOne .Container .SocialsContainer {
@@ -2226,16 +2236,15 @@ body {
   .BlockOne .Container .SliderContainer .LineContainer {
     justify-content: center;
   }
+  .BlockOne .Container .DZ {
+    display: none;
+  }
 
   .BlockTwo .Container {
     width: 87%;
     max-width: 87%;
   }
-  .BlockTwo .Container main {
-    width: 100%;
-    max-width: 100%;
-  }
-  .BlockTwo .Container main .WeCanHelpWith h2 {
+  .BlockTwo .Container .WeCanHelpWith h2 {
     width: 100%;
     height: 35px;
     margin: 0 0 27px 0;
@@ -2247,14 +2256,14 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 30px;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div {
     position: relative;
     display: flex;
     width: 49%;
@@ -2262,31 +2271,31 @@ body {
     margin-top: 0;
     margin-bottom: 20px;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div > div {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div {
     /* обертка для картинок*/
     display: flex;
     align-items: center;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div a {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div a {
     /* Learn more*/
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover > div > div {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover > div > div {
     opacity: 1;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Subtitle {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Subtitle {
     color: #FFE195;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover .Description {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Description {
     color: #FFFFFF;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover a {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover a {
     background: #FFE195;
     color: black;
   }
-  .BlockTwo .Container main .WeCanHelpWith .SixButtons > div:hover {
+  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover {
     cursor: pointer;
   }
-  .BlockTwo .Container main .ThankYouForChoosing {
+  .BlockTwo .Container .ThankYouForChoosing {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
@@ -2295,14 +2304,14 @@ body {
     width: 100%;
     background: rgba(27, 49, 75, 0.75);
   }
-  .BlockTwo .Container main .ThankYouForChoosing > div {
+  .BlockTwo .Container .ThankYouForChoosing > div {
     margin-top: 38px;
     margin-left: 2px;
     width: 66px;
     height: 76px;
     background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
   }
-  .BlockTwo .Container main .ThankYouForChoosing h2 {
+  .BlockTwo .Container .ThankYouForChoosing h2 {
     width: 100%;
     height: auto;
     margin: 20px 0 25px 0;
@@ -2315,7 +2324,7 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container main .ThankYouForChoosing p {
+  .BlockTwo .Container .ThankYouForChoosing p {
     margin-top: 0;
     margin-bottom: 55px;
     width: 100%;
@@ -2328,7 +2337,7 @@ body {
     letter-spacing: 0.4px;
     line-height: 26px;
   }
-  .BlockTwo .Container main .ThankYouForChoosing a {
+  .BlockTwo .Container .ThankYouForChoosing a {
     /*position: absolute;
     left: 0;
     right: 0;
@@ -2349,12 +2358,12 @@ body {
     font-size: 12px;
     transition: 500ms;
   }
-  .BlockTwo .Container main .ThankYouForChoosing a:hover {
+  .BlockTwo .Container .ThankYouForChoosing a:hover {
     background: #FFE195;
     color: black;
     cursor: pointer;
   }
-  .BlockTwo .Container main .RecentlyWonPatents {
+  .BlockTwo .Container .RecentlyWonPatents {
     position: static;
     display: flex;
     flex-direction: column;
@@ -2362,7 +2371,7 @@ body {
     width: 100%;
     margin: 48px 0 66px 0;
   }
-  .BlockTwo .Container main .RecentlyWonPatents h2 {
+  .BlockTwo .Container .RecentlyWonPatents h2 {
     margin-bottom: 21px;
     margin-top: 0;
     width: 257px;
@@ -2374,7 +2383,7 @@ body {
     letter-spacing: 0.5px;
     font-size: 26px;
   }
-  .BlockTwo .Container main .RecentlyWonPatents p {
+  .BlockTwo .Container .RecentlyWonPatents p {
     margin-bottom: 30px;
     margin-top: 0;
     width: 100%;
@@ -2386,7 +2395,7 @@ body {
     letter-spacing: 0.4px;
     line-height: 26px;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button {
+  .BlockTwo .Container .RecentlyWonPatents .Button {
     position: static;
     display: flex;
     align-items: center;
@@ -2400,7 +2409,7 @@ body {
     transition: 500ms;
     width: 185px;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button .ButtonText {
+  .BlockTwo .Container .RecentlyWonPatents .Button .ButtonText {
     white-space: nowrap;
     margin-left: 11px;
     font-family: Signika, sans-serif;
@@ -2410,16 +2419,16 @@ body {
     letter-spacing: -0.3px;
     text-transform: uppercase;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button:hover {
+  .BlockTwo .Container .RecentlyWonPatents .Button:hover {
     background: #E7CC89;
   }
-  .BlockTwo .Container main .RecentlyWonPatents .Button .Icon_Arrow_B {
+  .BlockTwo .Container .RecentlyWonPatents .Button .Icon_Arrow_B {
     width: 14px;
     height: 9px;
     background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
     padding: 0;
   }
-  .BlockTwo .Container main .CallUsToday {
+  .BlockTwo .Container .CallUsToday {
     display: flex;
     width: 100%;
     height: auto;
@@ -2427,12 +2436,12 @@ body {
     margin-top: 0;
     padding-top: 47px;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper {
+  .BlockTwo .Container .CallUsToday .Wrapper {
     margin: 0;
     width: 100%;
     height: auto;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper h2 {
+  .BlockTwo .Container .CallUsToday .Wrapper h2 {
     margin-top: 0;
     margin-bottom: 10px;
     font-family: playfair, serif;
@@ -2443,7 +2452,7 @@ body {
     letter-spacing: 0;
     line-height: 34px;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper > p {
+  .BlockTwo .Container .CallUsToday .Wrapper > p {
     margin: 0 0 11px 0;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -2453,10 +2462,10 @@ body {
     letter-spacing: 0;
     line-height: 26px;
   }
-  .BlockTwo .Container main .CallUsToday .Wrapper .Tel {
+  .BlockTwo .Container .CallUsToday .Wrapper .Tel {
     display: none;
   }
-  .BlockTwo .Container main .CallUsToday > p {
+  .BlockTwo .Container .CallUsToday > p {
     margin: 0 0 10px 0;
     width: 100%;
     height: auto;
@@ -2469,7 +2478,7 @@ body {
     line-height: 23px;
     letter-spacing: 0.8px;
   }
-  .BlockTwo .Container main .CallUsToday .TelAdaptive {
+  .BlockTwo .Container .CallUsToday .TelAdaptive {
     margin-bottom: 40px;
   }
 
@@ -2593,10 +2602,10 @@ body {
     padding-top: 70px;
     padding-bottom: 100px;
   }
-  .BlockOne .Container .SloganContainer h1 {
+  .BlockOne .Container .SloganContainer main h1 {
     width: 500px;
   }
-  .BlockOne .Container .SloganContainer blockquote {
+  .BlockOne .Container .SloganContainer main blockquote {
     width: 500px;
   }
   .BlockOne .Container .SocialsContainer {
@@ -2686,8 +2695,11 @@ body {
   .BlockOne .Container .SliderContainer .LineContainer {
     justify-content: center;
   }
+  .BlockOne .Container .DZ {
+    display: none;
+  }
 
-  .BlockTwo .Container main .CallUsToday .TelAdaptive {
+  .BlockTwo .Container .CallUsToday .TelAdaptive {
     display: none;
   }
 
@@ -2713,7 +2725,7 @@ body {
     left: -30px;
   }
 
-  .BlockTwo .Container main .CallUsToday .TelAdaptive {
+  .BlockTwo .Container .CallUsToday .TelAdaptive {
     display: none;
   }
 

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="JS - задачи с объектами.">
+    <list default="true" id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="Адаптив.">
+      <change afterPath="$PROJECT_DIR$/DZ/DZ_5/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FAQ/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FAQ/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FAQ/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/Objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/Objects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LearnButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/LearnButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FAQ/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/CheckTypeOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/Objects.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
@@ -26,15 +29,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="259" column="60" selection-start-line="259" selection-start-column="60" selection-end-line="259" selection-end-column="60" />
+            <state relative-caret-position="474">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#main#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#3;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#1;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#2;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
@@ -47,76 +55,84 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="328" column="1" lean-forward="true" selection-start-line="328" selection-start-column="1" selection-end-line="328" selection-end-column="1" />
+            <state relative-caret-position="59">
+              <caret line="1003" column="14" selection-start-line="1003" selection-start-column="14" selection-end-line="1003" selection-end-column="14" />
               <folding>
-                <element signature="e#598#10055#0" />
-                <element signature="e#966#5064#0" />
-                <element signature="e#5091#5912#0" />
-                <element signature="e#5940#7311#0" />
-                <element signature="e#10078#19247#0" />
-                <element signature="e#10356#14689#0" />
-                <element signature="e#11030#13159#0" />
-                <element signature="e#13191#13726#0" />
-                <element signature="e#14125#14184#0" />
-                <element signature="e#14223#14299#0" />
-                <element signature="e#14341#14404#0" />
-                <element signature="e#14435#14554#0" />
-                <element signature="e#14583#14647#0" />
-                <element signature="e#15733#17021#0" />
-                <element signature="e#17044#19239#0" />
-                <element signature="e#17299#17673#0" />
-                <element signature="e#17694#18039#0" />
-                <element signature="e#18061#18454#0" />
-                <element signature="e#18703#19056#0" />
-                <element signature="e#19272#23548#0" />
-                <element signature="e#23573#30176#0" />
-                <element signature="e#30351#35067#0" />
-                <element signature="e#35083#42141#0" />
-                <element signature="e#35409#37824#0" />
-                <element signature="e#39087#40269#0" />
-                <element signature="e#42159#42867#0" />
-                <element signature="e#42884#45433#0" />
-                <element signature="e#45579#48987#0" />
-                <element signature="e#49003#56229#0" />
-                <element signature="e#49293#51708#0" />
-                <element signature="e#56247#57684#0" />
-                <element signature="e#57701#59594#0" />
-                <element signature="e#59742#63588#0" />
-                <element signature="e#59837#60480#0" />
-                <element signature="e#59871#60466#0" />
-                <element signature="e#60511#60755#0" />
-                <element signature="e#60787#61980#0" />
-                <element signature="e#62011#63572#0" />
-                <element signature="e#62455#63460#0" />
-                <element signature="e#63604#73012#0" />
-                <element signature="e#63793#68531#0" />
-                <element signature="e#65414#66606#0" />
-                <element signature="e#65666#65942#0" />
-                <element signature="e#69963#71145#0" />
-                <element signature="e#71176#72982#0" />
-                <element signature="e#73030#73767#0" />
-                <element signature="e#73052#73761#0" />
-                <element signature="e#73784#75677#0" />
-                <element signature="e#75826#79314#0" />
-                <element signature="e#79330#79550#0" />
-                <element signature="e#79568#79750#0" />
-                <element signature="e#79870#80370#0" />
-                <element signature="e#80386#80606#0" />
-                <element signature="e#80624#80806#0" />
+                <element signature="e#1034#5132#0" />
+                <element signature="e#5159#6103#0" />
+                <element signature="e#6131#7502#0" />
+                <element signature="e#7529#10238#0" />
+                <element signature="e#10259#19441#0" />
+                <element signature="e#19456#23732#0" />
+                <element signature="e#23746#30349#0" />
+                <element signature="e#30524#35306#0" />
+                <element signature="e#30720#32138#0" />
+                <element signature="e#32169#33275#0" />
+                <element signature="e#33307#33587#0" />
+                <element signature="e#33618#35290#0" />
+                <element signature="e#35322#41492#0" />
+                <element signature="e#41510#42218#0" />
+                <element signature="e#42235#44784#0" />
+                <element signature="e#44930#48420#0" />
+                <element signature="e#45026#45809#0" />
+                <element signature="e#45840#46407#0" />
+                <element signature="e#46439#46760#0" />
+                <element signature="e#46791#48404#0" />
+                <element signature="e#48436#54801#0" />
+                <element signature="e#54819#56068#0" />
+                <element signature="e#56085#57978#0" />
+                <element signature="e#58126#62039#0" />
+                <element signature="e#58221#58864#0" />
+                <element signature="e#58895#59206#0" />
+                <element signature="e#59238#60431#0" />
+                <element signature="e#60462#62023#0" />
+                <element signature="e#62055#67891#0" />
+                <element signature="e#67909#69649#0" />
+                <element signature="e#69666#71559#0" />
+                <element signature="e#71708#75160#0" />
+                <element signature="e#71803#72096#0" />
+                <element signature="e#72127#72438#0" />
+                <element signature="e#72470#73663#0" />
+                <element signature="e#73694#75144#0" />
+                <element signature="e#75176#75342#0" />
+                <element signature="e#75360#75542#0" />
+                <element signature="e#75662#76162#0" />
+                <element signature="e#76178#76344#0" />
+                <element signature="e#76362#76544#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DZ/DZ_5/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="76" column="60" lean-forward="true" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
+              <folding>
+                <element signature="e#1756#1832#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/LearnButton.scss">
+        <entry file="file://$PROJECT_DIR$/DZ/DZ_5/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="32">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DZ/DZ_5/DZ_5_DOM_Chess.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -129,8 +145,8 @@
         <option value="Less File" />
         <option value="CSS File" />
         <option value="Sass File" />
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -163,17 +179,33 @@
         <option value="$PROJECT_DIR$/style1.scss" />
         <option value="$PROJECT_DIR$/components/_HiddenSubmit.scss" />
         <option value="$PROJECT_DIR$/components/_LearnButton.scss" />
-        <option value="$PROJECT_DIR$/FAQ/index.html" />
-        <option value="$PROJECT_DIR$/FAQ/style.scss" />
         <option value="$PROJECT_DIR$/JS/CheckTypeOf_2.js" />
         <option value="$PROJECT_DIR$/components/HiddenSubmit.scss" />
         <option value="$PROJECT_DIR$/components/SubmitButton.scss" />
         <option value="$PROJECT_DIR$/components/BlogImageHover.scss" />
-        <option value="$PROJECT_DIR$/JS/CheckTypeOf.js" />
         <option value="$PROJECT_DIR$/JS/Objects.js" />
         <option value="$PROJECT_DIR$/components/LearnButton.scss" />
+        <option value="$PROJECT_DIR$/JS/DZ_3.js" />
+        <option value="$PROJECT_DIR$/JS/CheckTypeOf.js" />
+        <option value="$PROJECT_DIR$/JS/DZ_4_Objects.js" />
+        <option value="$PROJECT_DIR$/JS/DZ_1_CheckTypeOf.js" />
+        <option value="$PROJECT_DIR$/JS/DZ_2_Number_Game.js" />
+        <option value="$PROJECT_DIR$/JS/DZ_3_Cycle_Massive.js" />
+        <option value="$PROJECT_DIR$/FAQ/index.html" />
+        <option value="$PROJECT_DIR$/FAQ/style.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/DZ/DZ_1/index.html" />
+        <option value="$PROJECT_DIR$/DZ/DZ_1/DZ_1_CheckTypeOf.js" />
+        <option value="$PROJECT_DIR$/DZ/DZ_2/index.html" />
+        <option value="$PROJECT_DIR$/DZ/DZ_2/DZ_2_Number_Game.js" />
+        <option value="$PROJECT_DIR$/DZ/DZ_3/index.html" />
+        <option value="$PROJECT_DIR$/DZ/DZ_3/DZ_3_Cycle_Array.js" />
         <option value="$PROJECT_DIR$/style.scss" />
+        <option value="$PROJECT_DIR$/DZ/DZ_4/index.html" />
+        <option value="$PROJECT_DIR$/DZ/DZ_4/DZ_4_Objects.js" />
+        <option value="$PROJECT_DIR$/DZ/DZ_5/DZ_5_DOM_Chess.js" />
+        <option value="$PROJECT_DIR$/DZ/DZ_5/style.scss" />
+        <option value="$PROJECT_DIR$/DZ/DZ_5/index.html" />
       </list>
     </option>
   </component>
@@ -189,6 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,13 +232,23 @@
             <path>
               <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
               <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
+              <item name="DZ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
+              <item name="DZ" type="462c0819:PsiDirectoryNode" />
+              <item name="DZ_5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
               <item name="style.scss" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -308,7 +351,11 @@
       <workItem from="1553412068756" duration="26318000" />
       <workItem from="1553604785697" duration="5989000" />
       <workItem from="1553612868405" duration="4620000" />
-      <workItem from="1553686702725" duration="7169000" />
+      <workItem from="1553686702725" duration="7271000" />
+      <workItem from="1553925252985" duration="4077000" />
+      <workItem from="1553932975692" duration="45000" />
+      <workItem from="1553940324866" duration="3667000" />
+      <workItem from="1554053556983" duration="11878000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1552497663420</created>
@@ -443,11 +490,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553614147562</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Адаптив.">
+      <created>1553694217313</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1553694217356</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="375263000" />
+    <option name="totallyTimeSpent" value="395032000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,12 +516,12 @@
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18455844" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1842661" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295583" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5022676" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5022472" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -485,16 +539,16 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295583" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295583" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5022676" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295583" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295583" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.34994337" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4997356" weight="0.32993197" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32993197" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002644" side_tool="true" weight="0.32993197" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -562,40 +616,10 @@
     <MESSAGE value="JS - задача на преобразование числа в объект со свойствами: сотни, десятки, единицы." />
     <MESSAGE value="JS - задача с bodypositive." />
     <MESSAGE value="JS - задачи с объектами." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS - задачи с объектами." />
+    <MESSAGE value="Адаптив." />
+    <option name="LAST_COMMIT_MESSAGE" value="Адаптив." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/fonts/signika.css" />
-    <entry file="file://$PROJECT_DIR$/components/font_signika16.css" />
-    <entry file="file://$PROJECT_DIR$/components/3.less" />
-    <entry file="file://$PROJECT_DIR$/static/fonts/playfair/playfair.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/fonts/roboto/roboto.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/fonts/signika/signika.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/HiddenSubmit.less" />
     <entry file="file://$PROJECT_DIR$/components/LearnButton.less" />
     <entry file="file://$PROJECT_DIR$/components/style.css" />
@@ -649,30 +673,6 @@
     <entry file="file://$PROJECT_DIR$/components/_LearnButton.scss" />
     <entry file="file://$PROJECT_DIR$/components/_HiddenSubmit.scss" />
     <entry file="file://$PROJECT_DIR$/FAQ/style.less" />
-    <entry file="file://$PROJECT_DIR$/FAQ/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FAQ/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="208" column="36" lean-forward="true" selection-start-line="208" selection-start-column="36" selection-end-line="208" selection-end-column="36" />
-          <folding>
-            <element signature="e#10428#11196#0" />
-            <element signature="e#11822#11884#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS/CheckTypeOf_2.js" />
     <entry file="file://$PROJECT_DIR$/components/HiddenSubmit.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -704,31 +704,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/Objects.js">
+    <entry file="file://$PROJECT_DIR$/JS/Objects.js" />
+    <entry file="file://$PROJECT_DIR$/JS/DZ_3.js" />
+    <entry file="file://$PROJECT_DIR$/JS/CheckTypeOf.js" />
+    <entry file="file://$PROJECT_DIR$/JS/DZ_4_Objects.js" />
+    <entry file="file://$PROJECT_DIR$/JS/DZ_1_CheckTypeOf.js" />
+    <entry file="file://$PROJECT_DIR$/JS/DZ_2_Number_Game.js" />
+    <entry file="file://$PROJECT_DIR$/JS/DZ_3_Cycle_Massive.js" />
+    <entry file="file://$PROJECT_DIR$/components/LearnButton.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+        <state relative-caret-position="200">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/CheckTypeOf.js">
+    <entry file="file://$PROJECT_DIR$/FAQ/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="650">
+          <caret line="568" column="1" lean-forward="true" selection-start-line="568" selection-start-column="1" selection-end-line="568" selection-end-column="1" />
+          <folding>
+            <element signature="e#607#6676#0" />
+            <element signature="e#878#902#0" />
+            <element signature="e#908#4598#0" />
+            <element signature="e#4602#6286#0" />
+            <element signature="e#5225#5257#0" />
+            <element signature="e#5219#5713#0" />
+            <element signature="e#5730#6050#0" />
+            <element signature="e#6065#6218#0" />
+            <element signature="e#6239#6719#0" />
+            <element signature="e#6312#6668#0" />
+            <element signature="e#6688#10208#0" />
+            <element signature="e#6875#8413#0" />
+            <element signature="e#9906#10251#0" />
+            <element signature="e#10273#10666#0" />
+            <element signature="e#10698#10888#0" />
+            <element signature="e#10222#15546#0" />
+            <element signature="e#15585#15765#0" />
+            <element signature="e#15601#15763#0" />
+            <element signature="e#16315#16412#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_1/DZ_1_CheckTypeOf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_2/DZ_2_Number_Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="66" lean-forward="true" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FAQ/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="97" column="28" lean-forward="true" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#main#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#article#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="7" lean-forward="true" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_3/DZ_3_Cycle_Array.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_4/DZ_4_Objects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="85" column="18" lean-forward="true" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_4/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="259" column="60" selection-start-line="259" selection-start-column="60" selection-end-line="259" selection-end-column="60" />
+        <state relative-caret-position="474">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#main#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#2;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
@@ -740,72 +847,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/LearnButton.scss">
+    <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="59">
+          <caret line="1003" column="14" selection-start-line="1003" selection-start-column="14" selection-end-line="1003" selection-end-column="14" />
+          <folding>
+            <element signature="e#1034#5132#0" />
+            <element signature="e#5159#6103#0" />
+            <element signature="e#6131#7502#0" />
+            <element signature="e#7529#10238#0" />
+            <element signature="e#10259#19441#0" />
+            <element signature="e#19456#23732#0" />
+            <element signature="e#23746#30349#0" />
+            <element signature="e#30524#35306#0" />
+            <element signature="e#30720#32138#0" />
+            <element signature="e#32169#33275#0" />
+            <element signature="e#33307#33587#0" />
+            <element signature="e#33618#35290#0" />
+            <element signature="e#35322#41492#0" />
+            <element signature="e#41510#42218#0" />
+            <element signature="e#42235#44784#0" />
+            <element signature="e#44930#48420#0" />
+            <element signature="e#45026#45809#0" />
+            <element signature="e#45840#46407#0" />
+            <element signature="e#46439#46760#0" />
+            <element signature="e#46791#48404#0" />
+            <element signature="e#48436#54801#0" />
+            <element signature="e#54819#56068#0" />
+            <element signature="e#56085#57978#0" />
+            <element signature="e#58126#62039#0" />
+            <element signature="e#58221#58864#0" />
+            <element signature="e#58895#59206#0" />
+            <element signature="e#59238#60431#0" />
+            <element signature="e#60462#62023#0" />
+            <element signature="e#62055#67891#0" />
+            <element signature="e#67909#69649#0" />
+            <element signature="e#69666#71559#0" />
+            <element signature="e#71708#75160#0" />
+            <element signature="e#71803#72096#0" />
+            <element signature="e#72127#72438#0" />
+            <element signature="e#72470#73663#0" />
+            <element signature="e#73694#75144#0" />
+            <element signature="e#75176#75342#0" />
+            <element signature="e#75360#75542#0" />
+            <element signature="e#75662#76162#0" />
+            <element signature="e#76178#76344#0" />
+            <element signature="e#76362#76544#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.scss">
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_5/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="328" column="1" lean-forward="true" selection-start-line="328" selection-start-column="1" selection-end-line="328" selection-end-column="1" />
+        <state relative-caret-position="32">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_5/DZ_5_DOM_Chess.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="76" column="60" lean-forward="true" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
           <folding>
-            <element signature="e#598#10055#0" />
-            <element signature="e#966#5064#0" />
-            <element signature="e#5091#5912#0" />
-            <element signature="e#5940#7311#0" />
-            <element signature="e#10078#19247#0" />
-            <element signature="e#10356#14689#0" />
-            <element signature="e#11030#13159#0" />
-            <element signature="e#13191#13726#0" />
-            <element signature="e#14125#14184#0" />
-            <element signature="e#14223#14299#0" />
-            <element signature="e#14341#14404#0" />
-            <element signature="e#14435#14554#0" />
-            <element signature="e#14583#14647#0" />
-            <element signature="e#15733#17021#0" />
-            <element signature="e#17044#19239#0" />
-            <element signature="e#17299#17673#0" />
-            <element signature="e#17694#18039#0" />
-            <element signature="e#18061#18454#0" />
-            <element signature="e#18703#19056#0" />
-            <element signature="e#19272#23548#0" />
-            <element signature="e#23573#30176#0" />
-            <element signature="e#30351#35067#0" />
-            <element signature="e#35083#42141#0" />
-            <element signature="e#35409#37824#0" />
-            <element signature="e#39087#40269#0" />
-            <element signature="e#42159#42867#0" />
-            <element signature="e#42884#45433#0" />
-            <element signature="e#45579#48987#0" />
-            <element signature="e#49003#56229#0" />
-            <element signature="e#49293#51708#0" />
-            <element signature="e#56247#57684#0" />
-            <element signature="e#57701#59594#0" />
-            <element signature="e#59742#63588#0" />
-            <element signature="e#59837#60480#0" />
-            <element signature="e#59871#60466#0" />
-            <element signature="e#60511#60755#0" />
-            <element signature="e#60787#61980#0" />
-            <element signature="e#62011#63572#0" />
-            <element signature="e#62455#63460#0" />
-            <element signature="e#63604#73012#0" />
-            <element signature="e#63793#68531#0" />
-            <element signature="e#65414#66606#0" />
-            <element signature="e#65666#65942#0" />
-            <element signature="e#69963#71145#0" />
-            <element signature="e#71176#72982#0" />
-            <element signature="e#73030#73767#0" />
-            <element signature="e#73052#73761#0" />
-            <element signature="e#73784#75677#0" />
-            <element signature="e#75826#79314#0" />
-            <element signature="e#79330#79550#0" />
-            <element signature="e#79568#79750#0" />
-            <element signature="e#79870#80370#0" />
-            <element signature="e#80386#80606#0" />
-            <element signature="e#80624#80806#0" />
+            <element signature="e#1756#1832#0" />
           </folding>
         </state>
       </provider>

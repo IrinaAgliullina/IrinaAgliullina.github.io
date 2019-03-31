@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>ДЗ 5 - DOM - шахматы</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="DZ_5_DOM_Chess.js"></script>
+
+</head>
+
+<body>
+
+    <div class="Container">
+
+        <div id="Chess">
+
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var Chess = document . getElementById ( "Chess" );
+
+        function Empty() {
+
+            var Empty = document . createElement ( "div" );
+            Empty . className = "Empty";
+            Chess.appendChild(Empty);
+        }
+
+        function Letters () {
+
+            var Bykvy = ["A", "B", "C", "D", "E", "F", "G", "H"];
+            var Letters = document . createElement ( "div" );
+            Letters . className = "Letters";
+            Chess.appendChild(Letters);
+            Letters . innerHTML = Bykvy[o];
+        }
+
+        Empty();
+
+        for (var o = 0; o <= 7; o += 1) {
+            Letters();
+        }
+
+        Empty();
+
+        function divB () {
+
+            var divB = document . createElement ( "div" );
+            divB . className = "Black";
+            Chess.appendChild(divB);
+        }
+
+        function divW () {
+
+            var divW = document . createElement ( "div" );
+            divW . className = "White";
+            Chess.appendChild(divW);
+        }
+
+        function Numbers (cyfra) {
+
+            var Numbers = document . createElement ( "div" );
+            Numbers . className = "Numbers";
+            Numbers.innerHTML = cyfra;
+            Chess.appendChild(Numbers);
+        }
+
+        function peshki() {
+            var peshki = document . createElement ( "div" );
+        }
+
+        for (var i = 8; i >= 1; i -= 1) {
+
+            if(i % 2 === 0){
+
+                Numbers(i);
+
+                for (var m = 1; m <= 4; m += 1) {
+
+                    divB();
+                    divW();
+                }
+
+                Numbers(i);
+
+            } else {
+
+                Numbers(i);
+
+                for (var k = 1; k <= 4; k += 1) {
+
+                    divW();
+                    divB();
+                }
+
+                Numbers(i);
+            }
+
+            if(i === 2) {
+
+            }
+        }
+
+        Empty();
+
+        for (var o = 0; o <= 7; o += 1) {
+            Letters();
+        }
+
+        Empty();
+
+    </script>
+
+</body>
+
+</html>

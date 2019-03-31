@@ -26,122 +26,127 @@ body {
 
     .Container {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin-top: 59px;
         margin-bottom: 55px;
         width: 1180px;
 
-        .MenuContainer {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            font-family: Signika, sans-serif;
-            font-weight: 600;
-            line-height: normal;
-            font-size: 13px;
-            letter-spacing: -0.3px;
-            text-transform: uppercase;
-            text-decoration: none;
-            margin-bottom: 49px;
+        header {
 
-            .Logo {
-                width: 82px;
-                height: 82px;
-                background: url('../static/images/Sprait.svg') no-repeat;
-                margin-right: 24px;
-            }
-
-            .Nav {
+            .MenuContainer {
                 display: flex;
-                width: 642px;
-                height: 18px;
+                flex-wrap: wrap;
                 align-items: center;
-                justify-content: space-between;
-                margin-right: 42px;
-
-                a {
-                    color: rgba(255, 255, 255, 0.8);
-                    text-decoration: none;
-                    transition: 500ms;
-                    &:hover {
-                        color: $common_color_yellow;
-                        cursor: pointer;
-                    }
-                }
-            }
-
-            .Tel {
-                font-family: signika, sans-serif;
-                margin-right: 18px;
-                color: $common_color_yellow;
-                font-size: 15px;
+                font-family: Signika, sans-serif;
+                font-weight: 600;
+                line-height: normal;
+                font-size: 13px;
+                letter-spacing: -0.3px;
                 text-transform: uppercase;
                 text-decoration: none;
-                letter-spacing: 1.1px;
-                &:hover {
-                    color: $yellow_hover;
-                }
-            }
+                margin-bottom: 49px;
 
-            .Sandwich {
-                width: 30px;
-                height: 24px;
-                background: url('../static/mobile_images/Mobile_sandwich.png') no-repeat;
-            }
-
-            .Submit {
-                position: relative;
-                z-index: 1;
-
-                &:hover > .HiddenButtons {
-                    opacity: 1;
-                    pointer-events: auto;
+                .Logo {
+                    width: 82px;
+                    height: 82px;
+                    background: url('../static/images/Sprait.svg') no-repeat;
+                    margin-right: 24px;
                 }
 
-                > a {
-                    position: inherit;
-                    z-index: 2;
-                    @include SubmitButton;
+                .Nav {
+                    display: flex;
+                    width: 642px;
+                    height: 18px;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-right: 42px;
 
-                    > div {
-                        display: flex;
-                        align-items: center;
-                        margin-left: 12px;
-                        margin-right: 18px;
-
-                        .Icon_Arrow_B {
-                            width: 14px;
-                            height: 9px;
-                            background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
-                            padding: 0;
+                    a {
+                        color: rgba(255, 255, 255, 0.8);
+                        text-decoration: none;
+                        transition: 500ms;
+                        &:hover {
+                            color: $common_color_yellow;
+                            cursor: pointer;
                         }
                     }
                 }
 
-                .HiddenButtons {
-                    position: absolute;
-                    top: 0;
-                    padding-top: 36px;
-                    opacity: 0;
-                    pointer-events: none;
-                    transition: opacity 500ms;/*плавное появление блока скрытых кнопок*/
+                .Tel {
+                    font-family: signika, sans-serif;
+                    margin-right: 18px;
+                    color: $common_color_yellow;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    letter-spacing: 1.1px;
+                    &:hover {
+                        color: $yellow_hover;
+                    }
+                }
+
+                .Sandwich {
+                    width: 30px;
+                    height: 24px;
+                    background: url('../static/mobile_images/Mobile_sandwich.png') no-repeat;
+                }
+
+                .Submit {
+                    position: relative;
+                    z-index: 1;
+
+                    &:hover > .HiddenButtons {
+                        opacity: 1;
+                        pointer-events: auto;
+                    }
 
                     > a {
-                        @include HiddenSubmit;
+                        position: inherit;
+                        z-index: 2;
+                        @include SubmitButton;
 
-                        &:not(:last-child) {
-                            margin-bottom: 6px;
-                        }
-
-                        .Icon_Arrow_Y {
-                            width: 14px;
-                            height: 9px;
-                            background: url('../static/images/Sprait.svg') no-repeat -1px -163px;
+                        > div {
+                            display: flex;
+                            align-items: center;
                             margin-left: 12px;
-                            padding: 0;
-                        }
+                            margin-right: 18px;
 
-                        &:hover .Icon_Arrow_Y {
-                            background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+                            .Icon_Arrow_B {
+                                width: 14px;
+                                height: 9px;
+                                background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+                                padding: 0;
+                            }
+                        }
+                    }
+
+                    .HiddenButtons {
+                        position: absolute;
+                        top: 0;
+                        padding-top: 36px;
+                        opacity: 0;
+                        pointer-events: none;
+                        transition: opacity 500ms;/*плавное появление блока скрытых кнопок*/
+
+                        > a {
+                            @include HiddenSubmit;
+
+                            &:not(:last-child) {
+                                margin-bottom: 6px;
+                            }
+
+                            .Icon_Arrow_Y {
+                                width: 14px;
+                                height: 9px;
+                                background: url('../static/images/Sprait.svg') no-repeat -1px -163px;
+                                margin-left: 12px;
+                                padding: 0;
+                            }
+
+                            &:hover .Icon_Arrow_Y {
+                                background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+                            }
                         }
                     }
                 }
@@ -151,55 +156,63 @@ body {
         .StartContainer {
             display: flex;
             flex-direction: column;
-            width: 580px;
+            align-items: flex-end;
+            width: 100%;
             margin-bottom: 119px;
-            margin-left: 600px;
 
-            nav {
-                height: 27px;
-                font-family: signika, sans-serif;
-                font-size: 16px;
-                line-height: 26px;
-                color: rgba(255, 255, 255, 0.5);
-                > a {
-                    text-decoration: none;
-                    color: rgba(255, 255, 149, 0.5);
-                    transition: 500ms;
-                    &:hover {
-                        color: rgba(255, 255, 149, 1);
+            main {
+
+                nav {
+                    height: 27px;
+                    font-family: signika, sans-serif;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: rgba(255, 255, 255, 0.5);
+
+                    > a {
+                        text-decoration: none;
+                        color: rgba(255, 255, 149, 0.5);
+                        transition: 500ms;
+                        &:hover {
+                            color: rgba(255, 255, 149, 1);
+                        }
                     }
                 }
-            }
 
-            h2 {
-                margin: 0;
-                padding: 0;
-                height: 93px;
-                font-family: playfair, serif;
-                font-size: 56px;
-                font-weight: 600;
-                line-height: 93px;
-                letter-spacing: -0.3px;
-                color: #FFFFFF;
-            }
-            p {
-                height: 75px;
-                margin-bottom: 30px;
-                @include sig16(26px);
-                font-size: 16px;
-            }
-            .Button {
-                @include HiddenSubmit;
-
-                .Icon_Arrow_Y {
-                    width: 14px;
-                    height: 9px;
-                    background: url('../static/images/Sprait.svg') no-repeat -1px -163px;
-                    margin-left: 12px;
+                h1 {
+                    width: 580px;
+                    margin: 0;
                     padding: 0;
+                    height: 93px;
+                    font-family: playfair, serif;
+                    font-size: 56px;
+                    font-weight: 600;
+                    line-height: 93px;
+                    letter-spacing: -0.3px;
+                    color: #FFFFFF;
                 }
-                &:hover .Icon_Arrow_Y {
-                    background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+
+                p {
+                    width: 580px;
+                    height: 75px;
+                    margin-bottom: 30px;
+                    @include sig16(26px);
+                    font-size: 16px;
+                }
+
+                .Button {
+                    @include HiddenSubmit;
+
+                    .Icon_Arrow_Y {
+                        width: 14px;
+                        height: 9px;
+                        background: url('../static/images/Sprait.svg') no-repeat -1px -163px;
+                        margin-left: 12px;
+                        padding: 0;
+                    }
+                    &:hover .Icon_Arrow_Y {
+                        background: url('../static/images/Sprait.svg') no-repeat -1px -174px;
+                    }
                 }
             }
         }
@@ -207,6 +220,7 @@ body {
         .MouseContainer {
             display: flex;
             justify-content: center;
+            width: 100%;
 
             .Mouse {
                 width: 22px;
@@ -227,6 +241,7 @@ body {
 
     .Container {
         display: flex;
+        flex-direction: column;
         margin-top: 86px;
         margin-bottom: 122px;
         width: 1180px;
@@ -284,17 +299,15 @@ body {
 
         .CallUsToday {
             display: flex;
-            position: relative;
-            height: 380px;
-            width: 1180px;
+            flex-wrap: wrap;
             background-color: $common_color;
 
-            > div {
-                margin: 95px 115px 0 100px;
+            .Wrapper {
+                margin: 95px 115px 55px 100px;
                 width: 380px;
                 height: 160px;
 
-                h1 {
+                h2 {
                     margin-top: 0;
                     margin-bottom: 5px;
                     font-family: playfair, serif;
@@ -305,8 +318,9 @@ body {
                     letter-spacing: 0;
                     line-height: 52px;
                 }
+
                 > p {
-                    margin: 0 0 15px 0;
+                    margin: 0 0 20px 0;
                     font-family: signika, sans-serif;
                     font-size: 14px;
                     font-style: normal;
@@ -315,6 +329,7 @@ body {
                     letter-spacing: 0;
                     line-height: 26px;
                 }
+
                 .Tel {
                     height: 43px;
                     font-family: playfair, serif;
@@ -336,7 +351,7 @@ body {
                 letter-spacing: 0.8px;
             }
 
-            > a {
+            .ContactUs {
                 @include LearnButton;
             }
         }
@@ -535,11 +550,18 @@ body {
 }
 
 @media screen and (min-width: 600px) {
+
     .BlockOne {
+
         .Container {
-            .MenuContainer {
-                .Sandwich {
-                    display: none;
+
+            header {
+
+                .MenuContainer {
+
+                    .Sandwich {
+                        display: none;
+                    }
                 }
             }
         }

@@ -13,6 +13,8 @@ $common_color: rgba(27, 49, 75, 0.75);
 $common_color_yellow: #FFE195;
 $yellow_hover: #E7CC89;
 
+                                              /* Основной стиль */
+
 body {
     margin: 0;
     background-color: #050713;
@@ -33,6 +35,8 @@ body {
         margin-bottom: 100px;
         width: 1180px;
         max-width: 1180px;
+
+        position: relative;
 
         header {
 
@@ -161,26 +165,30 @@ body {
             padding: 136px 0 120px 0;
             width: 100%;
 
-            h1 {
-                width: 581px;
-                margin: 0;
-                padding: 0;
-                height: 95px;
-                font-family: playfair, serif;
-                font-size: 66px;
-                font-weight: 600;
-                font-style: normal;
-                line-height: 90px;
-                letter-spacing: -0.3px;
-                color: #FFFFFF;
-            }
-            blockquote {
-                width: 581px;
-                height: 151px;
-                margin: 0;
-                @include sig16(25px);
-                cite {
+            main {
+
+                h1 {
+                    width: 581px;
+                    margin: 0;
+                    padding: 0;
+                    height: 95px;
+                    font-family: playfair, serif;
+                    font-size: 66px;
+                    font-weight: 600;
                     font-style: normal;
+                    line-height: 90px;
+                    letter-spacing: -0.3px;
+                    color: #FFFFFF;
+                }
+
+                blockquote {
+                    width: 581px;
+                    height: 151px;
+                    margin: 0;
+                    @include sig16(25px);
+                    cite {
+                        font-style: normal;
+                    }
                 }
             }
         }
@@ -325,11 +333,23 @@ body {
             }
 
         }
+
+        .DZ {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                color: white;
+                margin-bottom: 10px;
+                text-decoration: none;
+            }
+        }
     }
 }
 
-
-/*main*/
 
 .BlockTwo {
     display: flex;
@@ -339,6 +359,7 @@ body {
 
     .Container {
         display: flex;
+        flex-direction: column;
         margin-bottom: 85px;
         width: 1180px;
         max-width: 1180px;
@@ -624,8 +645,6 @@ body {
 }
 
 
-/*Blog*/
-
 .BlockThree {
     display: flex;
     justify-content: center;
@@ -774,7 +793,6 @@ body {
     }
 }
 
-/*Footer*/
 
 .BlockFour {
     display: flex;
@@ -1052,28 +1070,31 @@ body {
                 max-width: 100%;
                 padding: 0;
 
-                h1 {
-                    margin: 0 0 10px 0;
-                    padding: 0;
-                    height: auto;
-                    font-family: playfair, serif;
-                    font-size: 32px;
-                    font-weight: 600;
-                    font-style: normal;
-                    line-height: 32px;
-                    letter-spacing: -0.3px;
-                    color: #FFFFFF;
-                    width: 100%;
-                }
+                main {
 
-                blockquote {
-                    margin: 0 0 60px 0;
-                    height: auto;
-                    @include sig16(23px);
-                    width: 100%;
-
-                    cite {
+                    h1 {
+                        margin: 0 0 10px 0;
+                        padding: 0;
+                        height: auto;
+                        font-family: playfair, serif;
+                        font-size: 32px;
+                        font-weight: 600;
                         font-style: normal;
+                        line-height: 32px;
+                        letter-spacing: -0.3px;
+                        color: #FFFFFF;
+                        width: 100%;
+                    }
+
+                    blockquote {
+                        margin: 0 0 60px 0;
+                        height: auto;
+                        @include sig16(23px);
+                        width: 100%;
+
+                        cite {
+                            font-style: normal;
+                        }
                     }
                 }
             }
@@ -1154,6 +1175,10 @@ body {
                 }
 
             }
+
+            .DZ {
+                display: none;
+            }
         }
     }
 
@@ -1162,206 +1187,201 @@ body {
         background: #050713;
 
         .Container {
-            width: 100%;
-            max-width: 100%;
+            width: 88%;
+            max-width: 88%;
             justify-content: center;
             margin-bottom: 85px;
 
-            main {
-                width: 87%;
-                max-width: 87%;
+            .WeCanHelpWith {
 
-                .WeCanHelpWith {
-
-                    h2 {
-                        width: 100%;
-                        height: auto;
-                        margin: 0 0 27px 0;
-                        @include playfair32;
-                        font-size: 26px;
-                    }
-
-                    .SixButtons {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        width: 100%;
-                        margin-bottom: 30px;
-
-                        > div {
-                            position: relative;
-                            display: flex;
-                            width: 45%;
-                            height: 130px;
-
-                            margin-top: 0;
-                            margin-bottom: 82px;/* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
-
-                            > div {
-                                display: flex;
-                                align-items: center;
-                                height: 100%;/* для выравнивания картинки по центру в Мозилла */
-                            }
-
-                            .Subtitle {
-                                position: absolute;
-                                top: 145px;
-                                margin-top: 0;
-                                margin-bottom: 0;
-                            }
-
-                            .Description {
-                                display: none;
-                            }
-
-                            a {
-                                display: none; /* Learn more*/
-                            }
-
-                            &:hover > div > div {
-                                opacity: 1;
-                            }
-                            &:hover .Subtitle {
-                                color: $common_color_yellow;
-                            }
-                            &:hover .Description {
-                                color: #FFFFFF;
-                            }
-                            &:hover a {
-                                background: $common_color_yellow;
-                                color: black;
-                            }
-                            &:hover {
-                                cursor: pointer;
-                            }
-                        }
-                    }
+                h2 {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 0 27px 0;
+                    @include playfair32;
+                    font-size: 26px;
                 }
 
-                .ThankYouForChoosing {
+                .SixButtons {
                     display: flex;
-                    flex-direction: column;
                     flex-wrap: wrap;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    height: auto;
+                    justify-content: space-between;
                     width: 100%;
-                    background: $common_color;
+                    margin-bottom: 30px;
 
                     > div {
-                        margin-top: 38px;
-                        margin-left: 2px;
-                    }
+                        position: relative;
+                        display: flex;
+                        width: 45%;
+                        height: 130px;
 
-                    h2 {
-                        width: 90%;
-                        height: auto;
-                        margin: 20px 0 25px 0;
-                        line-height: normal;
-                        @include playfair32;
-                        font-size: 26px;
-                    }
-
-                    p {
                         margin-top: 0;
-                        margin-bottom: 55px;
-                        width: 100%;
-                        height: auto;
-                        @include sig16(26px);
-                    }
+                        margin-bottom: 82px;/* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
 
-                    a {
-                        @include LearnButton;
-                    }
-                }
-
-                .RecentlyWonPatents {
-                    position: static;
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    width: 100%;
-                    margin: 48px 0 66px 0;
-
-                    h2 {
-                        margin-bottom: 21px;
-                        margin-top: 0;
-                        width: 257px;
-                        @include playfair32;
-                        font-size: 26px;
-                    }
-
-                    p {
-                        margin-bottom: 30px;
-                        margin-top: 0;
-                        width: 100%;
-                        @include sig16(26px);
-                    }
-
-                    .Button {
-                        position: static;
-                        @include SubmitButton;
-                        width: 185px;
-
-                        .Icon_Arrow_B {
-                            width: 14px;
-                            height: 9px;
-                            background: url('./static/images/Sprait.svg') no-repeat -1px -174px;
-                            padding: 0;
+                        > div {
+                            display: flex;
+                            align-items: center;
+                            height: 100%;/* для выравнивания картинки по центру в Мозилла */
                         }
-                    }
-                }
 
-                .CallUsToday {
-                    display: flex;
-                    position: relative;
-                    width: 100%;
-                    background-color: $common_color;
-                    margin-top: 0;
-                    padding-top: 47px;
-
-                    .Wrapper {
-                        margin: 0;
-                        width: 100%;
-                        height: auto;
-
-                        h2 {
+                        .Subtitle {
+                            position: absolute;
+                            top: 145px;
                             margin-top: 0;
-                            margin-bottom: 5px;
-                            font-family: playfair, serif;
-                            font-size: 36px;
-                            font-style: normal;
-                            font-weight: bold;
-                            color: #FFFFFF;
-                            letter-spacing: 0;
-                            line-height: 34px;
+                            margin-bottom: 0;
                         }
-                        > p {
-                            margin: 0 0 11px 0;
-                            font-family: signika, sans-serif;
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: normal;
-                            color: #FFFFFF;
-                            letter-spacing: 0;
-                            line-height: 26px;
-                        }
-                        .Tel {
+
+                        .Description {
                             display: none;
                         }
-                    }
 
-                    .TelAdaptive {
-                        margin-bottom: 40px;
-                    }
+                        a {
+                            display: none; /* Learn more*/
+                        }
 
+                        &:hover > div > div {
+                            opacity: 1;
+                        }
+                        &:hover .Subtitle {
+                            color: $common_color_yellow;
+                        }
+                        &:hover .Description {
+                            color: #FFFFFF;
+                        }
+                        &:hover a {
+                            background: $common_color_yellow;
+                            color: black;
+                        }
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .ThankYouForChoosing {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-top: 0;
+                margin-bottom: 0;
+                height: auto;
+                width: 100%;
+                background: $common_color;
+
+                > div {
+                    margin-top: 38px;
+                    margin-left: 2px;
+                }
+
+                h2 {
+                    width: 90%;
+                    height: auto;
+                    margin: 20px 0 25px 0;
+                    line-height: normal;
+                    @include playfair32;
+                    font-size: 26px;
+                }
+
+                p {
+                    margin-top: 0;
+                    margin-bottom: 55px;
+                    width: 100%;
+                    height: auto;
+                    @include sig16(26px);
+                }
+
+                a {
+                    @include LearnButton;
+                }
+            }
+
+            .RecentlyWonPatents {
+                position: static;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                margin: 48px 0 66px 0;
+
+                h2 {
+                    margin-bottom: 21px;
+                    margin-top: 0;
+                    width: 257px;
+                    @include playfair32;
+                    font-size: 26px;
+                }
+
+                p {
+                    margin-bottom: 30px;
+                    margin-top: 0;
+                    width: 100%;
+                    @include sig16(26px);
+                }
+
+                .Button {
+                    position: static;
+                    @include SubmitButton;
+                    width: 185px;
+
+                    .Icon_Arrow_B {
+                        width: 14px;
+                        height: 9px;
+                        background: url('./static/images/Sprait.svg') no-repeat -1px -174px;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .CallUsToday {
+                display: flex;
+                position: relative;
+                width: 100%;
+                background-color: $common_color;
+                margin-top: 0;
+                padding-top: 47px;
+
+                .Wrapper {
+                    margin: 0;
+                    width: 100%;
+                    height: auto;
+
+                    h2 {
+                        margin-top: 0;
+                        margin-bottom: 5px;
+                        font-family: playfair, serif;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        line-height: 34px;
+                    }
                     > p {
-                        margin: 0 0 10px 0;
-                        width: 100%;
-                        height: auto;
-                        @include sig16(23px);
-                        letter-spacing: 0.8px;
+                        margin: 0 0 11px 0;
+                        font-family: signika, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: normal;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        line-height: 26px;
                     }
+                    .Tel {
+                        display: none;
+                    }
+                }
+
+                .TelAdaptive {
+                    margin-bottom: 40px;
+                }
+
+                > p {
+                    margin: 0 0 10px 0;
+                    width: 100%;
+                    height: auto;
+                    @include sig16(23px);
+                    letter-spacing: 0.8px;
                 }
             }
         }
@@ -1554,16 +1574,19 @@ body {
                 padding-top: 40px;
                 padding-bottom: 90px;
 
-                h1 {
-                    width: 380px;
-                    font-size: 55px;
-                }
+                main {
 
-                blockquote {
-                    width: 380px;
+                    h1 {
+                        width: 380px;
+                        font-size: 55px;
+                    }
 
-                    cite {
-                        font-style: normal;
+                    blockquote {
+                        width: 380px;
+
+                        cite {
+                            font-style: normal;
+                        }
                     }
                 }
             }
@@ -1641,6 +1664,10 @@ body {
                 }
 
             }
+
+            .DZ {
+                display: none;
+            }
         }
     }
 
@@ -1652,206 +1679,201 @@ body {
             justify-content: center;
             margin-bottom: 85px;
 
-            main {
-                width: 100%;
-                max-width: 100%;
+            .WeCanHelpWith {
 
-                .WeCanHelpWith {
+                h2 {
+                    width: 100%;
 
-                    h2 {
-                        width: 100%;
-
-                        height: 35px;
-                        margin: 0 0 27px 0;
-                        @include playfair32;
-                        font-size: 26px;
-                    }
-
-                    .SixButtons {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        width: 100%;
-                        margin-bottom: 30px;
-
-                        > div {
-                            position: relative;
-                            display: flex;
-                            width: 45%;
-                            height: 160px;
-                            margin-top: 0;
-                            margin-bottom: 82px;/* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
-
-                            > div {
-                                display: flex;
-                                align-items: center;
-                                height: 100%;/* для выравнивания картинки по центру в Мозилла */
-                            }
-
-                            .Subtitle {
-                                position: absolute;
-                                top: 170px;
-                                margin-top: 0;
-                                margin-bottom: 0;
-                            }
-
-                            .Description {
-                                display: none;
-                            }
-
-                            a {
-                                display: none; /* Learn more*/
-                            }
-
-                            &:hover > div > div {
-                                opacity: 1;
-                            }
-                            &:hover .Subtitle {
-                                color: $common_color_yellow;
-                            }
-                            &:hover .Description {
-                                color: #FFFFFF;
-                            }
-                            &:hover a {
-                                background: $common_color_yellow;
-                                color: black;
-                            }
-                            &:hover {
-                                cursor: pointer;
-                            }
-                        }
-                    }
+                    height: 35px;
+                    margin: 0 0 27px 0;
+                    @include playfair32;
+                    font-size: 26px;
                 }
 
-                .ThankYouForChoosing {
+                .SixButtons {
                     display: flex;
-                    flex-direction: column;
                     flex-wrap: wrap;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    height: auto;
+                    justify-content: space-between;
                     width: 100%;
-                    position: relative;
-                    background: $common_color;
+                    margin-bottom: 30px;
 
                     > div {
-                        margin-top: 38px;
-                        margin-left: 2px;
-                        width: 66px;
-                        height: 76px;
-                        background: url('./static/images/Sprait.svg') no-repeat -486px -84px;
-                    }
-
-                    h2 {
-                        width: 100%;
-                        height: auto;
-                        margin: 20px 0 25px 0;
-                        line-height: normal;
-                        @include playfair32;
-                        font-size: 26px;
-                    }
-
-                    p {
+                        position: relative;
+                        display: flex;
+                        width: 45%;
+                        height: 160px;
                         margin-top: 0;
-                        margin-bottom: 55px;
-                        width: 100%;
-                        height: auto;
-                        @include sig16(26px);
-                    }
+                        margin-bottom: 82px;/* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
 
-                    a {
-                        @include LearnButton;
-                    }
-                }
-
-                .RecentlyWonPatents {
-                    position: static;
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    width: 100%;
-                    margin: 48px 0 66px 0;
-
-                    h2 {
-                        margin-bottom: 21px;
-                        margin-top: 0;
-                        width: 257px;
-                        @include playfair32;
-                        font-size: 26px;
-                    }
-
-                    p {
-                        margin-bottom: 30px;
-                        margin-top: 0;
-                        width: 100%;
-                        @include sig16(26px);
-                    }
-
-                    .Button {
-                        position: static;
-                        @include SubmitButton;
-                        width: 185px;
-
-                        .Icon_Arrow_B {
-                            width: 14px;
-                            height: 9px;
-                            background: url('./static/images/Sprait.svg') no-repeat -1px -174px;
-                            padding: 0;
+                        > div {
+                            display: flex;
+                            align-items: center;
+                            height: 100%;/* для выравнивания картинки по центру в Мозилла */
                         }
-                    }
-                }
 
-                .CallUsToday {
-                    display: flex;
-                    position: relative;
-                    width: 100%;
-                    height: auto;
-                    background-color: $common_color;
-                    margin-top: 0;
-                    padding-top: 47px;
-
-                    .Wrapper {
-                        margin: 0;
-                        width: 100%;
-                        height: auto;
-
-                        h2 {
+                        .Subtitle {
+                            position: absolute;
+                            top: 170px;
                             margin-top: 0;
-                            margin-bottom: 10px;
-                            font-family: playfair, serif;
-                            font-size: 36px;
-                            font-style: normal;
-                            font-weight: bold;
-                            color: #FFFFFF;
-                            letter-spacing: 0;
-                            line-height: 34px;
+                            margin-bottom: 0;
                         }
-                        > p {
-                            margin: 0 0 11px 0;
-                            font-family: signika, sans-serif;
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: normal;
-                            color: #FFFFFF;
-                            letter-spacing: 0;
-                            line-height: 26px;
-                        }
-                        .Tel {
+
+                        .Description {
                             display: none;
                         }
-                    }
 
-                    .TelAdaptive {
-                        margin-bottom: 40px;
-                    }
+                        a {
+                            display: none; /* Learn more*/
+                        }
 
+                        &:hover > div > div {
+                            opacity: 1;
+                        }
+                        &:hover .Subtitle {
+                            color: $common_color_yellow;
+                        }
+                        &:hover .Description {
+                            color: #FFFFFF;
+                        }
+                        &:hover a {
+                            background: $common_color_yellow;
+                            color: black;
+                        }
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .ThankYouForChoosing {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-top: 0;
+                margin-bottom: 0;
+                height: auto;
+                width: 100%;
+                position: relative;
+                background: $common_color;
+
+                > div {
+                    margin-top: 38px;
+                    margin-left: 2px;
+                    width: 66px;
+                    height: 76px;
+                    background: url('./static/images/Sprait.svg') no-repeat -486px -84px;
+                }
+
+                h2 {
+                    width: 100%;
+                    height: auto;
+                    margin: 20px 0 25px 0;
+                    line-height: normal;
+                    @include playfair32;
+                    font-size: 26px;
+                }
+
+                p {
+                    margin-top: 0;
+                    margin-bottom: 55px;
+                    width: 100%;
+                    height: auto;
+                    @include sig16(26px);
+                }
+
+                a {
+                    @include LearnButton;
+                }
+            }
+
+            .RecentlyWonPatents {
+                position: static;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                margin: 48px 0 66px 0;
+
+                h2 {
+                    margin-bottom: 21px;
+                    margin-top: 0;
+                    width: 257px;
+                    @include playfair32;
+                    font-size: 26px;
+                }
+
+                p {
+                    margin-bottom: 30px;
+                    margin-top: 0;
+                    width: 100%;
+                    @include sig16(26px);
+                }
+
+                .Button {
+                    position: static;
+                    @include SubmitButton;
+                    width: 185px;
+
+                    .Icon_Arrow_B {
+                        width: 14px;
+                        height: 9px;
+                        background: url('./static/images/Sprait.svg') no-repeat -1px -174px;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .CallUsToday {
+                display: flex;
+                position: relative;
+                width: 100%;
+                height: auto;
+                background-color: $common_color;
+                margin-top: 0;
+                padding-top: 47px;
+
+                .Wrapper {
+                    margin: 0;
+                    width: 100%;
+                    height: auto;
+
+                    h2 {
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                        font-family: playfair, serif;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        line-height: 34px;
+                    }
                     > p {
-                        margin: 0 0 10px 0;
-                        width: 100%;
-                        height: auto;
-                        @include sig16(23px);
-                        letter-spacing: 0.8px;
+                        margin: 0 0 11px 0;
+                        font-family: signika, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: normal;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        line-height: 26px;
                     }
+                    .Tel {
+                        display: none;
+                    }
+                }
+
+                .TelAdaptive {
+                    margin-bottom: 40px;
+                }
+
+                > p {
+                    margin: 0 0 10px 0;
+                    width: 100%;
+                    height: auto;
+                    @include sig16(23px);
+                    letter-spacing: 0.8px;
                 }
             }
         }
@@ -2034,11 +2056,15 @@ body {
                 padding-top: 70px;
                 padding-bottom: 100px;
 
-                h1 {
-                    width: 500px;
-                }
-                blockquote {
-                    width: 500px;
+                main {
+
+                    h1 {
+                        width: 500px;
+                    }
+
+                    blockquote {
+                        width: 500px;
+                    }
                 }
             }
 
@@ -2135,6 +2161,10 @@ body {
                 }
 
             }
+
+            .DZ {
+                display: none;
+            }
         }
     }
 
@@ -2144,200 +2174,195 @@ body {
             width: 87%;
             max-width: 87%;
 
-            main {
-                width: 100%;
-                max-width: 100%;
+            .WeCanHelpWith {
 
-                .WeCanHelpWith {
+                h2 {
+                    width: 100%;
 
-                    h2 {
-                        width: 100%;
-
-                        height: 35px;
-                        margin: 0 0 27px 0;
-                        @include playfair32;
-                        font-size: 26px;
-                    }
-
-                    .SixButtons {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        width: 100%;
-                        margin-bottom: 30px;
-
-                        > div {
-                            position: relative;
-                            display: flex;
-                            width: 49%;
-                            height: 380px;
-                            margin-top: 0;
-                            margin-bottom: 20px;
-
-                            > div {
-                                /* обертка для картинок*/
-                                display: flex;
-                                align-items: center;
-                            }
-
-                            .Subtitle {
-
-                            }
-
-                            .Description {
-
-                            }
-
-                            a {
-                                 /* Learn more*/
-                            }
-
-                            &:hover > div > div {
-                                opacity: 1;
-                            }
-                            &:hover .Subtitle {
-                                color: $common_color_yellow;
-                            }
-                            &:hover .Description {
-                                color: #FFFFFF;
-                            }
-                            &:hover a {
-                                background: $common_color_yellow;
-                                color: black;
-                            }
-                            &:hover {
-                                cursor: pointer;
-                            }
-                        }
-                    }
+                    height: 35px;
+                    margin: 0 0 27px 0;
+                    @include playfair32;
+                    font-size: 26px;
                 }
 
-                .ThankYouForChoosing {
+                .SixButtons {
                     display: flex;
                     flex-wrap: wrap;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    height: auto;
+                    justify-content: space-between;
                     width: 100%;
-                    background: $common_color;
+                    margin-bottom: 30px;
 
                     > div {
-                        margin-top: 38px;
-                        margin-left: 2px;
-                        width: 66px;
-                        height: 76px;
-                        background: url('./static/images/Sprait.svg') no-repeat -486px -84px;
-                    }
-
-                    h2 {
-                        width: 100%;
-                        height: auto;
-                        margin: 20px 0 25px 0;
-                        line-height: normal;
-                        @include playfair32;
-                        font-size: 26px;
-                    }
-
-                    p {
+                        position: relative;
+                        display: flex;
+                        width: 49%;
+                        height: 380px;
                         margin-top: 0;
-                        margin-bottom: 55px;
-                        width: 100%;
-                        height: auto;
-                        @include sig16(26px);
-                    }
+                        margin-bottom: 20px;
 
-                    a {
-                        @include LearnButton;
-                    }
-                }
+                        > div {
+                            /* обертка для картинок*/
+                            display: flex;
+                            align-items: center;
+                        }
 
-                .RecentlyWonPatents {
-                    position: static;
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    width: 100%;
-                    margin: 48px 0 66px 0;
+                        .Subtitle {
 
-                    h2 {
-                        margin-bottom: 21px;
-                        margin-top: 0;
-                        width: 257px;
-                        @include playfair32;
-                        font-size: 26px;
-                    }
+                        }
 
-                    p {
-                        margin-bottom: 30px;
-                        margin-top: 0;
-                        width: 100%;
-                        @include sig16(26px);
-                    }
+                        .Description {
 
-                    .Button {
-                        position: static;
-                        @include SubmitButton;
-                        width: 185px;
+                        }
 
-                        .Icon_Arrow_B {
-                            width: 14px;
-                            height: 9px;
-                            background: url('./static/images/Sprait.svg') no-repeat -1px -174px;
-                            padding: 0;
+                        a {
+                            /* Learn more*/
+                        }
+
+                        &:hover > div > div {
+                            opacity: 1;
+                        }
+                        &:hover .Subtitle {
+                            color: $common_color_yellow;
+                        }
+                        &:hover .Description {
+                            color: #FFFFFF;
+                        }
+                        &:hover a {
+                            background: $common_color_yellow;
+                            color: black;
+                        }
+                        &:hover {
+                            cursor: pointer;
                         }
                     }
                 }
+            }
 
-                .CallUsToday {
-                    display: flex;
+            .ThankYouForChoosing {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 0;
+                margin-bottom: 0;
+                height: auto;
+                width: 100%;
+                background: $common_color;
+
+                > div {
+                    margin-top: 38px;
+                    margin-left: 2px;
+                    width: 66px;
+                    height: 76px;
+                    background: url('./static/images/Sprait.svg') no-repeat -486px -84px;
+                }
+
+                h2 {
                     width: 100%;
                     height: auto;
-                    background-color: $common_color;
+                    margin: 20px 0 25px 0;
+                    line-height: normal;
+                    @include playfair32;
+                    font-size: 26px;
+                }
+
+                p {
                     margin-top: 0;
-                    padding-top: 47px;
+                    margin-bottom: 55px;
+                    width: 100%;
+                    height: auto;
+                    @include sig16(26px);
+                }
 
-                    .Wrapper {
-                        margin: 0;
-                        width: 100%;
-                        height: auto;
+                a {
+                    @include LearnButton;
+                }
+            }
 
-                        h2 {
-                            margin-top: 0;
-                            margin-bottom: 10px;
-                            font-family: playfair, serif;
-                            font-size: 36px;
-                            font-style: normal;
-                            font-weight: bold;
-                            color: #FFFFFF;
-                            letter-spacing: 0;
-                            line-height: 34px;
-                        }
-                        > p {
-                            margin: 0 0 11px 0;
-                            font-family: signika, sans-serif;
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: normal;
-                            color: #FFFFFF;
-                            letter-spacing: 0;
-                            line-height: 26px;
-                        }
-                        .Tel {
-                            display: none;
-                        }
+            .RecentlyWonPatents {
+                position: static;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                margin: 48px 0 66px 0;
+
+                h2 {
+                    margin-bottom: 21px;
+                    margin-top: 0;
+                    width: 257px;
+                    @include playfair32;
+                    font-size: 26px;
+                }
+
+                p {
+                    margin-bottom: 30px;
+                    margin-top: 0;
+                    width: 100%;
+                    @include sig16(26px);
+                }
+
+                .Button {
+                    position: static;
+                    @include SubmitButton;
+                    width: 185px;
+
+                    .Icon_Arrow_B {
+                        width: 14px;
+                        height: 9px;
+                        background: url('./static/images/Sprait.svg') no-repeat -1px -174px;
+                        padding: 0;
                     }
+                }
+            }
 
+            .CallUsToday {
+                display: flex;
+                width: 100%;
+                height: auto;
+                background-color: $common_color;
+                margin-top: 0;
+                padding-top: 47px;
+
+                .Wrapper {
+                    margin: 0;
+                    width: 100%;
+                    height: auto;
+
+                    h2 {
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                        font-family: playfair, serif;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        line-height: 34px;
+                    }
                     > p {
-                        margin: 0 0 10px 0;
-                        width: 100%;
-                        height: auto;
-                        @include sig16(23px);
-                        letter-spacing: 0.8px;
+                        margin: 0 0 11px 0;
+                        font-family: signika, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: normal;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        line-height: 26px;
                     }
+                    .Tel {
+                        display: none;
+                    }
+                }
 
-                    .TelAdaptive {
-                        margin-bottom: 40px;
-                    }
+                > p {
+                    margin: 0 0 10px 0;
+                    width: 100%;
+                    height: auto;
+                    @include sig16(23px);
+                    letter-spacing: 0.8px;
+                }
+
+                .TelAdaptive {
+                    margin-bottom: 40px;
                 }
             }
         }
@@ -2506,15 +2531,6 @@ body {
                 .MenuContainer {
                     flex-wrap: wrap;
 
-                    .Nav {
-
-
-                    }
-
-                    .Tel {
-
-                    }
-
                     .Submit {
                         margin-top: 40px;
                     }
@@ -2529,11 +2545,15 @@ body {
                 padding-top: 70px;
                 padding-bottom: 100px;
 
-                h1 {
-                    width: 500px;
-                }
-                blockquote {
-                    width: 500px;
+                main {
+
+                    h1 {
+                        width: 500px;
+                    }
+
+                    blockquote {
+                        width: 500px;
+                    }
                 }
             }
 
@@ -2626,6 +2646,10 @@ body {
                 }
 
             }
+
+            .DZ {
+                display: none;
+            }
         }
     }
 
@@ -2633,13 +2657,10 @@ body {
 
         .Container {
 
-            main {
+            .CallUsToday {
 
-                .CallUsToday {
-
-                    .TelAdaptive {
-                        display: none;
-                    }
+                .TelAdaptive {
+                    display: none;
                 }
             }
         }
@@ -2698,13 +2719,10 @@ body {
 
         .Container {
 
-            main {
+            .CallUsToday {
 
-                .CallUsToday {
-
-                    .TelAdaptive {
-                        display: none;
-                    }
+                .TelAdaptive {
+                    display: none;
                 }
             }
         }

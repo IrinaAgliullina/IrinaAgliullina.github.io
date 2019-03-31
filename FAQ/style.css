@@ -15,11 +15,13 @@ body {
 }
 .BlockOne .Container {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-top: 59px;
   margin-bottom: 55px;
   width: 1180px;
 }
-.BlockOne .Container .MenuContainer {
+.BlockOne .Container header .MenuContainer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -32,13 +34,13 @@ body {
   text-decoration: none;
   margin-bottom: 49px;
 }
-.BlockOne .Container .MenuContainer .Logo {
+.BlockOne .Container header .MenuContainer .Logo {
   width: 82px;
   height: 82px;
   background: url("../static/images/Sprait.svg") no-repeat;
   margin-right: 24px;
 }
-.BlockOne .Container .MenuContainer .Nav {
+.BlockOne .Container header .MenuContainer .Nav {
   display: flex;
   width: 642px;
   height: 18px;
@@ -46,16 +48,16 @@ body {
   justify-content: space-between;
   margin-right: 42px;
 }
-.BlockOne .Container .MenuContainer .Nav a {
+.BlockOne .Container header .MenuContainer .Nav a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: 500ms;
 }
-.BlockOne .Container .MenuContainer .Nav a:hover {
+.BlockOne .Container header .MenuContainer .Nav a:hover {
   color: #FFE195;
   cursor: pointer;
 }
-.BlockOne .Container .MenuContainer .Tel {
+.BlockOne .Container header .MenuContainer .Tel {
   font-family: signika, sans-serif;
   margin-right: 18px;
   color: #FFE195;
@@ -64,23 +66,23 @@ body {
   text-decoration: none;
   letter-spacing: 1.1px;
 }
-.BlockOne .Container .MenuContainer .Tel:hover {
+.BlockOne .Container header .MenuContainer .Tel:hover {
   color: #E7CC89;
 }
-.BlockOne .Container .MenuContainer .Sandwich {
+.BlockOne .Container header .MenuContainer .Sandwich {
   width: 30px;
   height: 24px;
   background: url("../static/mobile_images/Mobile_sandwich.png") no-repeat;
 }
-.BlockOne .Container .MenuContainer .Submit {
+.BlockOne .Container header .MenuContainer .Submit {
   position: relative;
   z-index: 1;
 }
-.BlockOne .Container .MenuContainer .Submit:hover > .HiddenButtons {
+.BlockOne .Container header .MenuContainer .Submit:hover > .HiddenButtons {
   opacity: 1;
   pointer-events: auto;
 }
-.BlockOne .Container .MenuContainer .Submit > a {
+.BlockOne .Container header .MenuContainer .Submit > a {
   position: inherit;
   z-index: 2;
   display: flex;
@@ -94,7 +96,7 @@ body {
   color: black;
   transition: 500ms;
 }
-.BlockOne .Container .MenuContainer .Submit > a .ButtonText {
+.BlockOne .Container header .MenuContainer .Submit > a .ButtonText {
   white-space: nowrap;
   margin-left: 11px;
   font-family: Signika, sans-serif;
@@ -104,22 +106,22 @@ body {
   letter-spacing: -0.3px;
   text-transform: uppercase;
 }
-.BlockOne .Container .MenuContainer .Submit > a:hover {
+.BlockOne .Container header .MenuContainer .Submit > a:hover {
   background: #E7CC89;
 }
-.BlockOne .Container .MenuContainer .Submit > a > div {
+.BlockOne .Container header .MenuContainer .Submit > a > div {
   display: flex;
   align-items: center;
   margin-left: 12px;
   margin-right: 18px;
 }
-.BlockOne .Container .MenuContainer .Submit > a > div .Icon_Arrow_B {
+.BlockOne .Container header .MenuContainer .Submit > a > div .Icon_Arrow_B {
   width: 14px;
   height: 9px;
   background: url("../static/images/Sprait.svg") no-repeat -1px -174px;
   padding: 0;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons {
   position: absolute;
   top: 0;
   padding-top: 36px;
@@ -128,7 +130,7 @@ body {
   transition: opacity 500ms;
   /*плавное появление блока скрытых кнопок*/
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
@@ -141,7 +143,7 @@ body {
   color: #FFE195;
   transition: 500ms;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a .ButtonText {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a .ButtonText {
   white-space: nowrap;
   padding-left: 11px;
   padding-right: 18px;
@@ -152,46 +154,47 @@ body {
   letter-spacing: -0.3px;
   text-transform: uppercase;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:hover {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a:hover {
   background: #E7CC89;
   color: black;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:not(:last-child) {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a:not(:last-child) {
   margin-bottom: 6px;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a .Icon_Arrow_Y {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a .Icon_Arrow_Y {
   width: 14px;
   height: 9px;
   background: url("../static/images/Sprait.svg") no-repeat -1px -163px;
   margin-left: 12px;
   padding: 0;
 }
-.BlockOne .Container .MenuContainer .Submit .HiddenButtons > a:hover .Icon_Arrow_Y {
+.BlockOne .Container header .MenuContainer .Submit .HiddenButtons > a:hover .Icon_Arrow_Y {
   background: url("../static/images/Sprait.svg") no-repeat -1px -174px;
 }
 .BlockOne .Container .StartContainer {
   display: flex;
   flex-direction: column;
-  width: 580px;
+  align-items: flex-end;
+  width: 100%;
   margin-bottom: 119px;
-  margin-left: 600px;
 }
-.BlockOne .Container .StartContainer nav {
+.BlockOne .Container .StartContainer main nav {
   height: 27px;
   font-family: signika, sans-serif;
   font-size: 16px;
   line-height: 26px;
   color: rgba(255, 255, 255, 0.5);
 }
-.BlockOne .Container .StartContainer nav > a {
+.BlockOne .Container .StartContainer main nav > a {
   text-decoration: none;
   color: rgba(255, 255, 149, 0.5);
   transition: 500ms;
 }
-.BlockOne .Container .StartContainer nav > a:hover {
+.BlockOne .Container .StartContainer main nav > a:hover {
   color: #ffff95;
 }
-.BlockOne .Container .StartContainer h2 {
+.BlockOne .Container .StartContainer main h1 {
+  width: 580px;
   margin: 0;
   padding: 0;
   height: 93px;
@@ -202,7 +205,8 @@ body {
   letter-spacing: -0.3px;
   color: #FFFFFF;
 }
-.BlockOne .Container .StartContainer p {
+.BlockOne .Container .StartContainer main p {
+  width: 580px;
   height: 75px;
   margin-bottom: 30px;
   font-family: signika, sans-serif;
@@ -214,7 +218,7 @@ body {
   line-height: 26px;
   font-size: 16px;
 }
-.BlockOne .Container .StartContainer .Button {
+.BlockOne .Container .StartContainer main .Button {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
@@ -227,7 +231,7 @@ body {
   color: #FFE195;
   transition: 500ms;
 }
-.BlockOne .Container .StartContainer .Button .ButtonText {
+.BlockOne .Container .StartContainer main .Button .ButtonText {
   white-space: nowrap;
   padding-left: 11px;
   padding-right: 18px;
@@ -238,23 +242,24 @@ body {
   letter-spacing: -0.3px;
   text-transform: uppercase;
 }
-.BlockOne .Container .StartContainer .Button:hover {
+.BlockOne .Container .StartContainer main .Button:hover {
   background: #E7CC89;
   color: black;
 }
-.BlockOne .Container .StartContainer .Button .Icon_Arrow_Y {
+.BlockOne .Container .StartContainer main .Button .Icon_Arrow_Y {
   width: 14px;
   height: 9px;
   background: url("../static/images/Sprait.svg") no-repeat -1px -163px;
   margin-left: 12px;
   padding: 0;
 }
-.BlockOne .Container .StartContainer .Button:hover .Icon_Arrow_Y {
+.BlockOne .Container .StartContainer main .Button:hover .Icon_Arrow_Y {
   background: url("../static/images/Sprait.svg") no-repeat -1px -174px;
 }
 .BlockOne .Container .MouseContainer {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .BlockOne .Container .MouseContainer .Mouse {
   width: 22px;
@@ -272,6 +277,7 @@ body {
 }
 .BlockTwo .Container {
   display: flex;
+  flex-direction: column;
   margin-top: 86px;
   margin-bottom: 122px;
   width: 1180px;
@@ -324,17 +330,15 @@ body {
 }
 .BlockTwo .Container .CallUsToday {
   display: flex;
-  position: relative;
-  height: 380px;
-  width: 1180px;
+  flex-wrap: wrap;
   background-color: rgba(27, 49, 75, 0.75);
 }
-.BlockTwo .Container .CallUsToday > div {
-  margin: 95px 115px 0 100px;
+.BlockTwo .Container .CallUsToday .Wrapper {
+  margin: 95px 115px 55px 100px;
   width: 380px;
   height: 160px;
 }
-.BlockTwo .Container .CallUsToday > div h1 {
+.BlockTwo .Container .CallUsToday .Wrapper h2 {
   margin-top: 0;
   margin-bottom: 5px;
   font-family: playfair, serif;
@@ -345,8 +349,8 @@ body {
   letter-spacing: 0;
   line-height: 52px;
 }
-.BlockTwo .Container .CallUsToday > div > p {
-  margin: 0 0 15px 0;
+.BlockTwo .Container .CallUsToday .Wrapper > p {
+  margin: 0 0 20px 0;
   font-family: signika, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -355,7 +359,7 @@ body {
   letter-spacing: 0;
   line-height: 26px;
 }
-.BlockTwo .Container .CallUsToday > div .Tel {
+.BlockTwo .Container .CallUsToday .Wrapper .Tel {
   height: 43px;
   font-family: playfair, serif;
   font-size: 32px;
@@ -379,7 +383,7 @@ body {
   line-height: 26px;
   letter-spacing: 0.8px;
 }
-.BlockTwo .Container .CallUsToday > a {
+.BlockTwo .Container .CallUsToday .ContactUs {
   /*position: absolute;
   left: 0;
   right: 0;
@@ -400,7 +404,7 @@ body {
   font-size: 12px;
   transition: 500ms;
 }
-.BlockTwo .Container .CallUsToday > a:hover {
+.BlockTwo .Container .CallUsToday .ContactUs:hover {
   background: #FFE195;
   color: black;
   cursor: pointer;
@@ -625,7 +629,7 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  .BlockOne .Container .MenuContainer .Sandwich {
+  .BlockOne .Container header .MenuContainer .Sandwich {
     display: none;
   }
 }
