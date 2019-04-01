@@ -51,17 +51,19 @@
 
         Empty();
 
-        function divB () {
+        function divB (figure) {
 
             var divB = document . createElement ( "div" );
             divB . className = "Black";
+            divB.innerHTML = figure;
             Chess.appendChild(divB);
         }
 
-        function divW () {
+        function divW (figure) {
 
             var divW = document . createElement ( "div" );
             divW . className = "White";
+            divW.innerHTML = figure;
             Chess.appendChild(divW);
         }
 
@@ -73,45 +75,98 @@
             Chess.appendChild(Numbers);
         }
 
-        function peshki() {
-            var peshki = document . createElement ( "div" );
-        }
-
         for (var i = 8; i >= 1; i -= 1) {
 
             if(i % 2 === 0){
 
-                Numbers(i);
+                if(i === 2) {
 
-                for (var m = 1; m <= 4; m += 1) {
+                    Numbers(i);
 
-                    divB();
-                    divW();
+                    for (var m = 1; m <= 4; m += 1) {
+
+                        divB("пешка");
+                        divW("пешка");
+                    }
+
+                    Numbers(i);
+
+                } else if(i === 8){
+
+                    Numbers(i);
+
+                    divB("Черная Ладья");
+                    divW("Черный Конь");
+                    divB("Черный Слон");
+                    divW("Черный Король");
+                    divB("Черный Ферзь");
+                    divW("Черный Слон");
+                    divB("Черный Конь");
+                    divW("Черная Ладья");
+
+                    Numbers(i);
+
+                } else {
+
+                    Numbers(i);
+
+                    for (m = 1; m <= 4; m += 1) {
+
+                        divB("");
+                        divW("");
+                    }
+
+                    Numbers(i);
                 }
-
-                Numbers(i);
 
             } else {
 
-                Numbers(i);
 
-                for (var k = 1; k <= 4; k += 1) {
+                if(i === 7) {
 
-                    divW();
-                    divB();
+                    Numbers(i);
+
+                    for (m = 1; m <= 4; m += 1) {
+
+                        divW("пешка");
+                        divB("пешка");
+                    }
+
+                    Numbers(i);
+
+                } else if(i === 1) {
+
+                    Numbers(i);
+
+                    divW("Белая Ладья");
+                    divB("Белый Конь");
+                    divW("Белый Слон");
+                    divB("Белый Король");
+                    divW("Белый Ферзь");
+                    divB("Белый Слон");
+                    divW("Белый Конь");
+                    divB("Белая Ладья");
+
+                    Numbers(i);
+
+                } else {
+
+                    Numbers(i);
+
+                    for (m = 1; m <= 4; m += 1) {
+
+                        divW("");
+                        divB("");
+                    }
+
+                    Numbers(i);
                 }
-
-                Numbers(i);
-            }
-
-            if(i === 2) {
-
             }
         }
 
         Empty();
 
-        for (var o = 0; o <= 7; o += 1) {
+        for (o = 0; o <= 7; o += 1) {
             Letters();
         }
 

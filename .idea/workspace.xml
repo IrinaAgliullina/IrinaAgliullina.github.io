@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="Адаптив.">
-      <change afterPath="$PROJECT_DIR$/DZ/DZ_5/style.scss" afterDir="false" />
+    <list default="true" id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FAQ/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FAQ/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FAQ/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FAQ/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/CheckTypeOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/Objects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DZ/DZ_5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/DZ/DZ_5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DZ/DZ_5/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/DZ/DZ_5/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DZ/DZ_5/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DZ/DZ_5/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DZ/DZ_5/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/DZ/DZ_5/style.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
+            <state relative-caret-position="475">
               <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -58,51 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
+            <state relative-caret-position="25075">
               <caret line="1003" column="14" selection-start-line="1003" selection-start-column="14" selection-end-line="1003" selection-end-column="14" />
-              <folding>
-                <element signature="e#1034#5132#0" />
-                <element signature="e#5159#6103#0" />
-                <element signature="e#6131#7502#0" />
-                <element signature="e#7529#10238#0" />
-                <element signature="e#10259#19441#0" />
-                <element signature="e#19456#23732#0" />
-                <element signature="e#23746#30349#0" />
-                <element signature="e#30524#35306#0" />
-                <element signature="e#30720#32138#0" />
-                <element signature="e#32169#33275#0" />
-                <element signature="e#33307#33587#0" />
-                <element signature="e#33618#35290#0" />
-                <element signature="e#35322#41492#0" />
-                <element signature="e#41510#42218#0" />
-                <element signature="e#42235#44784#0" />
-                <element signature="e#44930#48420#0" />
-                <element signature="e#45026#45809#0" />
-                <element signature="e#45840#46407#0" />
-                <element signature="e#46439#46760#0" />
-                <element signature="e#46791#48404#0" />
-                <element signature="e#48436#54801#0" />
-                <element signature="e#54819#56068#0" />
-                <element signature="e#56085#57978#0" />
-                <element signature="e#58126#62039#0" />
-                <element signature="e#58221#58864#0" />
-                <element signature="e#58895#59206#0" />
-                <element signature="e#59238#60431#0" />
-                <element signature="e#60462#62023#0" />
-                <element signature="e#62055#67891#0" />
-                <element signature="e#67909#69649#0" />
-                <element signature="e#69666#71559#0" />
-                <element signature="e#71708#75160#0" />
-                <element signature="e#71803#72096#0" />
-                <element signature="e#72127#72438#0" />
-                <element signature="e#72470#73663#0" />
-                <element signature="e#73694#75144#0" />
-                <element signature="e#75176#75342#0" />
-                <element signature="e#75360#75542#0" />
-                <element signature="e#75662#76162#0" />
-                <element signature="e#76178#76344#0" />
-                <element signature="e#76362#76544#0" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -110,11 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DZ/DZ_5/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="76" column="60" lean-forward="true" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
-              <folding>
-                <element signature="e#1756#1832#0" />
-              </folding>
+            <state relative-caret-position="582">
+              <caret line="147" column="40" lean-forward="true" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -122,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DZ/DZ_5/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="707">
+              <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -132,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/DZ/DZ_5/DZ_5_DOM_Chess.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="600">
-              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -221,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,6 +195,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,7 +302,8 @@
       <workItem from="1553925252985" duration="4077000" />
       <workItem from="1553932975692" duration="45000" />
       <workItem from="1553940324866" duration="3667000" />
-      <workItem from="1554053556983" duration="11878000" />
+      <workItem from="1554053556983" duration="12288000" />
+      <workItem from="1554106089070" duration="2654000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1552497663420</created>
@@ -497,11 +445,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553694217356</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="ДЗ по JS: 1 - 5.">
+      <created>1554066990742</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1554066990758</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="395032000" />
+    <option name="totallyTimeSpent" value="398096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -617,7 +572,8 @@
     <MESSAGE value="JS - задача с bodypositive." />
     <MESSAGE value="JS - задачи с объектами." />
     <MESSAGE value="Адаптив." />
-    <option name="LAST_COMMIT_MESSAGE" value="Адаптив." />
+    <MESSAGE value="ДЗ по JS: 1 - 5." />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ по JS: 1 - 5." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/components/HiddenSubmit.less" />
@@ -822,7 +778,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
+        <state relative-caret-position="475">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -849,75 +805,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
+        <state relative-caret-position="25075">
           <caret line="1003" column="14" selection-start-line="1003" selection-start-column="14" selection-end-line="1003" selection-end-column="14" />
-          <folding>
-            <element signature="e#1034#5132#0" />
-            <element signature="e#5159#6103#0" />
-            <element signature="e#6131#7502#0" />
-            <element signature="e#7529#10238#0" />
-            <element signature="e#10259#19441#0" />
-            <element signature="e#19456#23732#0" />
-            <element signature="e#23746#30349#0" />
-            <element signature="e#30524#35306#0" />
-            <element signature="e#30720#32138#0" />
-            <element signature="e#32169#33275#0" />
-            <element signature="e#33307#33587#0" />
-            <element signature="e#33618#35290#0" />
-            <element signature="e#35322#41492#0" />
-            <element signature="e#41510#42218#0" />
-            <element signature="e#42235#44784#0" />
-            <element signature="e#44930#48420#0" />
-            <element signature="e#45026#45809#0" />
-            <element signature="e#45840#46407#0" />
-            <element signature="e#46439#46760#0" />
-            <element signature="e#46791#48404#0" />
-            <element signature="e#48436#54801#0" />
-            <element signature="e#54819#56068#0" />
-            <element signature="e#56085#57978#0" />
-            <element signature="e#58126#62039#0" />
-            <element signature="e#58221#58864#0" />
-            <element signature="e#58895#59206#0" />
-            <element signature="e#59238#60431#0" />
-            <element signature="e#60462#62023#0" />
-            <element signature="e#62055#67891#0" />
-            <element signature="e#67909#69649#0" />
-            <element signature="e#69666#71559#0" />
-            <element signature="e#71708#75160#0" />
-            <element signature="e#71803#72096#0" />
-            <element signature="e#72127#72438#0" />
-            <element signature="e#72470#73663#0" />
-            <element signature="e#73694#75144#0" />
-            <element signature="e#75176#75342#0" />
-            <element signature="e#75360#75542#0" />
-            <element signature="e#75662#76162#0" />
-            <element signature="e#76178#76344#0" />
-            <element signature="e#76362#76544#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DZ/DZ_5/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DZ/DZ_5/DZ_5_DOM_Chess.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
-          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZ/DZ_5/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DZ/DZ_5/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="76" column="60" lean-forward="true" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
-          <folding>
-            <element signature="e#1756#1832#0" />
-          </folding>
+        <state relative-caret-position="582">
+          <caret line="147" column="40" lean-forward="true" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
         </state>
       </provider>
     </entry>

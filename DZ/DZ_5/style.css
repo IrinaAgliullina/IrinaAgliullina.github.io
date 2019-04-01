@@ -10,7 +10,6 @@ body {
   justify-content: center;
 }
 .Container #Chess {
-  background: green;
   width: 1000px;
   height: 1000px;
   padding: 100px;
@@ -20,6 +19,7 @@ body {
 .Container #Chess .Empty {
   width: 100px;
   height: 100px;
+  background: darkgreen;
   margin: 0;
 }
 .Container #Chess .Letters {
@@ -28,6 +28,7 @@ body {
   line-height: 100px;
   font-size: 50px;
   text-align: center;
+  background: darkgreen;
   margin: 0;
 }
 .Container #Chess .Numbers {
@@ -36,6 +37,7 @@ body {
   line-height: 100px;
   font-size: 50px;
   text-align: center;
+  background: darkgreen;
   margin: 0;
 }
 .Container #Chess .Black {
@@ -43,12 +45,19 @@ body {
   height: 100px;
   background: black;
   margin: 0;
+  color: wheat;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
 }
 .Container #Chess .White {
   width: 100px;
   height: 100px;
   background: wheat;
   margin: 0;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
