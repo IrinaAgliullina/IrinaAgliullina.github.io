@@ -526,7 +526,7 @@ body {
   position: relative;
   background: rgba(27, 49, 75, 0.75);
 }
-.BlockTwo .Container .ThankYouForChoosing > div {
+.BlockTwo .Container .ThankYouForChoosing .Wrapper > div {
   margin-top: 75px;
   margin-left: 112px;
   width: 72px;
@@ -618,7 +618,7 @@ body {
   letter-spacing: 0.4px;
   line-height: 26px;
 }
-.BlockTwo .Container .RecentlyWonPatents .Button {
+.BlockTwo .Container .RecentlyWonPatents .Wrapper .Button {
   position: absolute;
   top: 134.6px;
   left: 0;
@@ -633,7 +633,7 @@ body {
   color: black;
   transition: 500ms;
 }
-.BlockTwo .Container .RecentlyWonPatents .Button .ButtonText {
+.BlockTwo .Container .RecentlyWonPatents .Wrapper .Button .ButtonText {
   white-space: nowrap;
   margin-left: 11px;
   font-family: Signika, sans-serif;
@@ -643,22 +643,22 @@ body {
   letter-spacing: -0.3px;
   text-transform: uppercase;
 }
-.BlockTwo .Container .RecentlyWonPatents .Button:hover {
+.BlockTwo .Container .RecentlyWonPatents .Wrapper .Button:hover {
   background: #E7CC89;
 }
-.BlockTwo .Container .RecentlyWonPatents .Button > div {
+.BlockTwo .Container .RecentlyWonPatents .Wrapper .Button > div {
   display: flex;
   align-items: center;
   margin-left: 12px;
   margin-right: 22px;
 }
-.BlockTwo .Container .RecentlyWonPatents .Button > div .Icon_Arrow_B {
+.BlockTwo .Container .RecentlyWonPatents .Wrapper .Button > div .Icon_Arrow_B {
   width: 14px;
   height: 9px;
   background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
   padding: 0;
 }
-.BlockTwo .Container .RecentlyWonPatents .Button > div .ButtonText {
+.BlockTwo .Container .RecentlyWonPatents .Wrapper .Button > div .ButtonText {
   letter-spacing: 0.5px;
 }
 .BlockTwo .Container .CallUsToday {
@@ -1299,13 +1299,19 @@ body {
     background: #050713;
   }
   .BlockTwo .Container {
-    width: 88%;
-    max-width: 88%;
+    width: 100%;
+    max-width: 100%;
     justify-content: center;
     margin-bottom: 85px;
   }
-  .BlockTwo .Container .WeCanHelpWith h2 {
+  .BlockTwo .Container .WeCanHelpWith {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .BlockTwo .Container .WeCanHelpWith h2 {
+    width: 87%;
     height: auto;
     margin: 0 0 27px 0;
     font-family: playfair, serif;
@@ -1320,7 +1326,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    width: 87%;
     margin-bottom: 30px;
   }
   .BlockTwo .Container .WeCanHelpWith .SixButtons > div {
@@ -1369,6 +1375,7 @@ body {
   }
   .BlockTwo .Container .ThankYouForChoosing {
     display: flex;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 0;
@@ -1377,12 +1384,15 @@ body {
     width: 100%;
     background: rgba(27, 49, 75, 0.75);
   }
-  .BlockTwo .Container .ThankYouForChoosing > div {
+  .BlockTwo .Container .ThankYouForChoosing .Wrapper {
+    width: 87%;
+  }
+  .BlockTwo .Container .ThankYouForChoosing .Wrapper > div {
     margin-top: 38px;
     margin-left: 2px;
   }
   .BlockTwo .Container .ThankYouForChoosing h2 {
-    width: 90%;
+    width: 87%;
     height: auto;
     margin: 20px 0 25px 0;
     line-height: normal;
@@ -1397,7 +1407,7 @@ body {
   .BlockTwo .Container .ThankYouForChoosing p {
     margin-top: 0;
     margin-bottom: 55px;
-    width: 100%;
+    width: 87%;
     height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -1436,6 +1446,7 @@ body {
   .BlockTwo .Container .RecentlyWonPatents {
     position: static;
     display: flex;
+    align-items: center;
     flex-direction: column;
     height: auto;
     width: 100%;
@@ -1444,7 +1455,7 @@ body {
   .BlockTwo .Container .RecentlyWonPatents h2 {
     margin-bottom: 21px;
     margin-top: 0;
-    width: 257px;
+    width: 87%;
     font-family: playfair, serif;
     font-size: 32px;
     font-style: normal;
@@ -1456,7 +1467,7 @@ body {
   .BlockTwo .Container .RecentlyWonPatents p {
     margin-bottom: 30px;
     margin-top: 0;
-    width: 100%;
+    width: 87%;
     font-family: signika, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1465,7 +1476,10 @@ body {
     letter-spacing: 0.4px;
     line-height: 26px;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper {
+    width: 87%;
+  }
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button {
     position: static;
     display: flex;
     align-items: center;
@@ -1477,9 +1491,9 @@ body {
     text-decoration: none;
     color: black;
     transition: 500ms;
-    width: 185px;
+    width: 200px;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button .ButtonText {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button .ButtonText {
     white-space: nowrap;
     margin-left: 11px;
     font-family: Signika, sans-serif;
@@ -1489,10 +1503,10 @@ body {
     letter-spacing: -0.3px;
     text-transform: uppercase;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button:hover {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button:hover {
     background: #E7CC89;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button .Icon_Arrow_B {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button .Icon_Arrow_B {
     width: 14px;
     height: 9px;
     background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
@@ -1500,7 +1514,7 @@ body {
   }
   .BlockTwo .Container .CallUsToday {
     display: flex;
-    position: relative;
+    justify-content: center;
     width: 100%;
     background-color: rgba(27, 49, 75, 0.75);
     margin-top: 0;
@@ -1508,7 +1522,7 @@ body {
   }
   .BlockTwo .Container .CallUsToday .Wrapper {
     margin: 0;
-    width: 100%;
+    width: 87%;
     height: auto;
   }
   .BlockTwo .Container .CallUsToday .Wrapper h2 {
@@ -1536,11 +1550,12 @@ body {
     display: none;
   }
   .BlockTwo .Container .CallUsToday .TelAdaptive {
+    width: 87%;
     margin-bottom: 40px;
   }
   .BlockTwo .Container .CallUsToday > p {
     margin: 0 0 10px 0;
-    width: 100%;
+    width: 87%;
     height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;

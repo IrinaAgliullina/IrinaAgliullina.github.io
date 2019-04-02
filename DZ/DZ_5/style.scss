@@ -46,6 +46,10 @@ body {
         }
 
         .Black {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             width: 100px;
             height: 100px;
             background: black;
@@ -57,7 +61,60 @@ body {
             text-align: center;
         }
 
+        .BlackPeshka {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/BlackPeshka.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
+
+        .BlackLadya {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/BlackLadya.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
+
+        .BlackHorse {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/BlackHorse.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
+
+        .BlackElephant {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/BlackElephant.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
+
+        .BlackKing {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/BlackKing.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
+
+        .BlackFerz {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/BlackFerz.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
+    }
+
         .White {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             width: 100px;
             height: 100px;
             background: wheat;
@@ -67,5 +124,52 @@ body {
             font-size: 20px;
             text-align: center;
         }
+
+        .WhitePeshka {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/WhitePeshka.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
+
+        .WhiteLadya {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/WhiteLadya.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
+
+        .WhiteHorse {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/WhiteHorse.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
+
+        .WhiteElephant {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/WhiteElephant.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
+
+        .WhiteKing {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/WhiteKing.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
+
+        .WhiteFerz {
+            width: 100px;
+            height: 100px;
+            background: url("../../static/WhiteFerz.png") no-repeat;
+            background-size: auto;
+            margin: 0;
+        }
     }
-}
