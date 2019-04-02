@@ -54,43 +54,43 @@ body {
   text-align: center;
 }
 .Container #Chess .BlackPeshka {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/BlackPeshka.png") no-repeat;
   background-size: auto;
   margin: 0;
 }
 .Container #Chess .BlackLadya {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/BlackLadya.png") no-repeat;
   background-size: auto;
   margin: 0;
 }
 .Container #Chess .BlackHorse {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/BlackHorse.png") no-repeat;
   background-size: auto;
   margin: 0;
 }
 .Container #Chess .BlackElephant {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/BlackElephant.png") no-repeat;
   background-size: auto;
   margin: 0;
 }
 .Container #Chess .BlackKing {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/BlackKing.png") no-repeat;
   background-size: auto;
   margin: 0;
 }
 .Container #Chess .BlackFerz {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/BlackFerz.png") no-repeat;
   background-size: auto;
   margin: 0;
@@ -108,43 +108,43 @@ body {
   text-align: center;
 }
 .Container .WhitePeshka {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/WhitePeshka.png") no-repeat;
   background-size: auto;
   margin: 0;
 }
 .Container .WhiteLadya {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/WhiteLadya.png") no-repeat;
   background-size: auto;
   margin: 0;
 }
 .Container .WhiteHorse {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/WhiteHorse.png") no-repeat;
   background-size: auto;
   margin: 0;
 }
 .Container .WhiteElephant {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/WhiteElephant.png") no-repeat;
   background-size: auto;
   margin: 0;
 }
 .Container .WhiteKing {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/WhiteKing.png") no-repeat;
   background-size: auto;
   margin: 0;
 }
 .Container .WhiteFerz {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: url("../../static/WhiteFerz.png") no-repeat;
   background-size: auto;
   margin: 0;
