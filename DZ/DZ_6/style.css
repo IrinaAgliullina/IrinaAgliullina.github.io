@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+.wrapper #menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: 0.5s;
+  transform: translateX(100%);
+}
+.wrapper #menu #menu-btn {
+  width: auto;
+  height: auto;
+  background-color: darkslateblue;
+  position: absolute;
+  left: -120px;
+  top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.wrapper #menu .menu-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 50%;
+  flex-direction: column;
+}
+.wrapper #menu .menu-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #9b59b6;
+  font-family: Signika, sans-serif;
+}
+.wrapper #menu.active {
+  transform: translateX(0%);
+}
+.wrapper #content {
+  transition: 0.5s;
+  position: relative;
+  z-index: 0;
+}
+.wrapper #content section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.wrapper #content .main {
+  background-color: #27ae60;
+}
+.wrapper #content .news {
+  background-color: #9b59b6;
+}
+.wrapper #content .contacts {
+  background-color: #3498db;
+}
+.wrapper #content .portfolio {
+  background-color: #f1c40f;
+}
+.wrapper #modalW {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper #modalW > div {
+  width: 300px;
+  height: 150px;
+  background: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper #modalW > div #closeModalW {
+  width: 90px;
+  height: 40px;
+  background: darkslateblue;
+  color: aliceblue;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.wrapper #modalW.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=style.css.map */
