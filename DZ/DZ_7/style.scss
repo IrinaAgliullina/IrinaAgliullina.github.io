@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    height: 2000px;
+    background: #0E1420;
+}
+
+.BlockOne {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    #picture {
+
+        background: url('../../static/bg/Mountain.jpg')  no-repeat center/cover;
+        width: 1000px;
+        height: 500px;
+    }
+
+    #content {
+        background: antiquewhite;
+        width: 1000px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+
+        position: relative;
+        z-index: 2;
+
+        #Image {
+            width: 70px;
+            height: 45px;
+            margin-top: 20px;
+            background: url('../../static/images/Sprait.svg') no-repeat -566px -100px;
+            color: #2D3A52;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+
+        }
+    }
+}
