@@ -1,0 +1,7 @@
+@mixin OpenSans($font-size, $font-weight, $line-height) {
+    font-family: OpenSans, serif;
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+
+}

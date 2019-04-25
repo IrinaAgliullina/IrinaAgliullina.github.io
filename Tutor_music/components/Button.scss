@@ -1,0 +1,13 @@
+@mixin Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 255px;
+    height: 46px;
+    background: $commonColor;
+    box-shadow: 0 6px 20px rgba(250, 0, 255, 0.35);
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    @include OpenSans(14px, normal, 0);
+}

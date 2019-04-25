@@ -1,0 +1,36 @@
+@mixin Socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 40px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #fff;
+        @include OpenSans(12px, 550, 0);
+        transition: 500ms;
+        &:hover {
+            box-shadow: 0 6px 6px rgba(255, 255, 255, 0.35);
+        }
+    }
+    .vk {
+        background-color: steelblue;
+    }
+    .instagram {
+        background-color: deeppink;
+    }
+    .viber {
+        background-color: blueviolet;
+    }
+    .whatsapp {
+        background-color: green;
+    }
+    .skype {
+        background-color: dodgerblue;
+    }
+}
