@@ -61,9 +61,13 @@ window.onload = function () {
 
     onscroll = () => {
 
-        block1.style.transform = `translateY( ${pageYOffset / 2}px )`;
+        if (window.matchMedia("(min-width: 501px)").matches) {
 
-        block1.style.filter = `blur( ${pageYOffset / 250}px )`;
+            block1.style.transform = `translateY( ${pageYOffset / 2}px )`;
+
+            block1.style.filter = `blur( ${pageYOffset / 250}px )`;
+        }
+
 
         // кнопка "Вверх"
 
