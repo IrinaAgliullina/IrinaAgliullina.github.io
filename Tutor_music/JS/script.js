@@ -59,7 +59,7 @@ window.onload = function () {
 
     onscroll = () => {
 
-        if (window.matchMedia("(min-width: 501px)").matches) {
+        if (window.matchMedia("(min-width: 999px)").matches) {
 
             block1.style.transform = `translateY( ${pageYOffset / 2}px )`;
 
