@@ -12,10 +12,10 @@
         margin-bottom: 10px;
         text-decoration: none;
         color: #fff;
-        @include OpenSans(12px, 550, 0);
+        @include OpenSans(10px, normal, 0);
         transition: 500ms;
         &:hover {
-            box-shadow: 0 6px 6px rgba(255, 255, 255, 0.35);
+            transform: scale(1.1, 1.1);
         }
     }
     .vk {

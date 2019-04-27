@@ -1,14 +1,18 @@
 // Шрифты
+
 @import "./static/fonts/Montserrat.css";
 @import "./static/fonts/Open_Sans.css";
 
+
 // Миксины
+
 @import "./components/mixin_OpenSans.scss";
 @import "./components/Button.scss";
 @import "./components/Socials.scss";
 @import "./components/FormInputs.scss";
 
 $commonColor: #A406CC;
+
 
 body {
     margin: 0;
@@ -19,8 +23,8 @@ body {
     display: flex;
     justify-content: center;
     background: url('./static/images/Background_1.jpg') top/cover;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 195px;
+    padding-bottom: 167px;
 
     section {
         display: flex;
@@ -34,25 +38,27 @@ body {
             width: 494px;
 
             h2 {
-                margin: 0;
+                margin-top: 9px;
+                margin-bottom: 0;
                 @include OpenSans(16px, normal, 16px);
             }
 
             h1 {
-                font-family: Montserrat, serif;
+                font-family: Montserrat, sans-serif;
                 font-weight: 900;
                 font-size: 48px;
                 line-height: 53px;
-                margin: 20px 0;
+                margin: 12px 0;
             }
 
             h3 {
                 @include OpenSans(14px, normal, 14px);
+                margin-bottom: 25px;
             }
 
             p {
                 @include OpenSans(14px, normal, 29px);
-                margin-bottom: 40px;
+                margin-bottom: 85px;
             }
 
             #contactButton {
@@ -63,14 +69,20 @@ body {
         .contacts {
             display: flex;
             flex-direction: column;
-            width: 214px;
+            width: 185px;
             @include OpenSans(14px, normal, 29px);
             text-align: justify;
 
             .mail {
                 display: flex;
                 align-items: center;
-                margin-bottom: 20px;
+                margin-bottom: 4px;
+
+                a {
+                    @include OpenSans(14px, normal, 29px);
+                    text-decoration: none;
+                    color: #fff;
+                }
 
                 .icon_mail {
                     background: url('./static/images/icon-mail.png') no-repeat;
@@ -83,7 +95,13 @@ body {
             .phone {
                 display: flex;
                 align-items: center;
-                margin-bottom: 40px;
+                margin-bottom: 42px;
+
+                a {
+                    @include OpenSans(14px, normal, 29px);
+                    text-decoration: none;
+                    color: #fff;
+                }
 
                 .icon_phone {
                     background: url('./static/images/icon-phone.png') no-repeat;
@@ -98,10 +116,11 @@ body {
                 @include Socials;
 
                 h3 {
-                    @include OpenSans(14px, bold, 29px);
+                    @include OpenSans(13px, bold, 29px);
                     margin-top: 0;
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
                     width: 100%;
+                    text-align: left;
                 }
             }
         }
@@ -110,7 +129,7 @@ body {
             display: flex;
             justify-content: center;
             width: 100%;
-            margin-top: 30px;
+            margin-top: 63px;
 
             .mouseWrapper {
                 display: flex;
@@ -137,33 +156,37 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 108px;
     z-index: 100;
 
     .matrix {
         position: absolute;
-        top: 0; bottom: 0; left: 0; right: 0;
+        top: -82px; bottom: -160px; left: 0; right: 0;
         background: #fff;
-        transform: matrix(1, -0.1, 0, 1.26, 0, 0);
+        transform: matrix(1, -0.11, 0, 1, 0, 0);
     }
 
     section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 1110px;
+        width: 1100px;
+        max-width: 1100px;
         color: #000;
 
         h2 {
             position: relative;
+            box-sizing: border-box;
+            padding-left: 22px;
             @include OpenSans(36px, 800, 39px);
-            margin-bottom: 100px;
+            margin-bottom: 90px;
             text-align: center;
+
         }
 
         .card_wrapper {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             flex-wrap: wrap;
 
             .card {
@@ -171,12 +194,12 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-bottom: 75px;
+                margin-bottom: 60px;
                 &:hover .tooltip {
                     opacity: 1;
                 }
 
-                a {
+                .item {
                     display: flex;
                     align-items: center;
                     font-weight: bold;
@@ -214,17 +237,18 @@ body {
                         flex-direction: column;
                         padding: 20px 30px;
                         background: #EEE;
-                        border-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        border-bottom-left-radius: 15px;
                         width: 250px;
 
                         h4 {
-                            @include OpenSans(16px, bold, 24px);
+                            @include OpenSans(16px, 800, 24px);
                             margin: 0 0 15px;
 
                         }
 
                         p {
-                            @include OpenSans(14px, normal, 21px);
+                            @include OpenSans(12px, normal, 21px);
                             margin: 0;
                         }
                     }
@@ -237,15 +261,18 @@ body {
                         border-top: 20px solid #EEE;
                     }
                 }
-
-                .bottom {
-                    top: 100px;
-
-                    .triangle {
-                        transform: rotate(180deg);
-                    }
-                }
             }
+        }
+
+        .top {
+            box-sizing: border-box;
+            padding-right: 20px;
+            width: 98%;
+        }
+        .bottom {
+            box-sizing: border-box;
+            padding-left: 50px;
+            width: 90%;
         }
     }
 }
@@ -253,41 +280,47 @@ body {
 #container_3 {
     display: flex;
     justify-content: center;
-    background: url('./static/images/Background_2.jpg') top/cover;
+    background: url('./static/images/Background_2.jpg') top/cover no-repeat;
+    background-position-y: 45px;
     color: #fff;
-    padding-top: 250px;
-    padding-bottom: 100px;
+    padding-top: 370px;
+    padding-bottom: 140px;
     position: relative;
-
 
     section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 1110px;
-        /*border: 1px solid red;*/
+        width: 1125px;
+        max-width: 1125px;
 
         h2 {
             @include OpenSans(36px, 800, 39px);
-            margin-bottom: 60px;
+            margin-top: 0;
+            margin-bottom: 80px;
+            box-sizing: border-box;
+            padding-right: 13px;
         }
 
         article {
             display: flex;
             align-items: flex-start;
+            justify-content: flex-start;
             flex-wrap: wrap;
+            width: 100%;
 
             .wrapper {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin-right: 110px;
 
                 .photo {
                     background: url('./static/images/Client_photo.png') no-repeat;
                     background-size: contain;
                     width: 239px;
                     height: 250px;
-                    margin: 0 60px 50px;
+                    margin-bottom: 31px;
                 }
 
                 #slider {
@@ -296,18 +329,18 @@ body {
                     align-items: center;
 
                     #number {
-                    @include OpenSans(30px, 800, 30px);
-                        margin-right: 10px;
-                }
+                    @include OpenSans(24px, 800, 30px);
+                        margin-right: 17px;
+                    }
 
                     #left {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         background: $commonColor;
-                        width: 30px;
-                        height: 30px;
-                        margin-right: 8px;
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 7px;
                         cursor: pointer;
 
                         .icon_stroke {
@@ -323,8 +356,8 @@ body {
                         justify-content: center;
                         align-items: center;
                         background: $commonColor;
-                        width: 30px;
-                        height: 30px;
+                        width: 32px;
+                        height: 32px;
                         cursor: pointer;
 
                         .icon_stroke {
@@ -345,26 +378,30 @@ body {
 
                 address {
                     font-style: normal;
-                    padding-bottom: 15px;
-                    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+                    padding-bottom: 23px;
+                    border-bottom: 1px solid #fff;
                     @include OpenSans(18px, bold, 20px);
                 }
 
                 p {
                     @include OpenSans(16px, normal, 35px);
-                    margin-top: 40px;
-                    margin-bottom: 80px;
+                    margin-top: 30px;
+                    margin-bottom: 95px;
                 }
 
                 a {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 75px;
+                    width: 68px;
                     height: 40px;
                     text-decoration: none;
                     color: #fff;
+                    transition: 500ms;
                     @include OpenSans(12px, normal, 0);
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
                 }
                 .vk {
                     background-color: steelblue;
@@ -395,28 +432,29 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         background: #fff;
-        padding: 50px 80px;
+        padding: 120px 90px 120px 110px;
         box-sizing: border-box;
-        max-width: 1246px;
-        max-height: 100vh;
+        width: 100%;
+
+        height: 893px;
+        max-height: 893px;
         overflow-y: auto;
         overflow-x: hidden;
 
         .form {
             display: flex;
             flex-direction: column;
-            margin-right: 20px;
             width: 445px;
 
             .header {
                 @include OpenSans(36px, 800, 39px);
-                margin: 20px 0;
+                margin-top: 65px;
+                margin-bottom: 62px;
             }
 
             form {
                 display: flex;
                 flex-direction: column;
-
 
                 label {
                     font-family: "Segoe UI", serif;
@@ -424,11 +462,13 @@ body {
                     font-size: 12px;
                     line-height: 24px;
                     letter-spacing: 0.03em;
+                    margin-bottom: 8px;
                 }
 
                 input {
-                    height: 30px;
+                    height: 40px;
                     @include FormInputs;
+                    margin-bottom: 28px;
                 }
 
                 textarea {
@@ -449,8 +489,8 @@ body {
                     @include OpenSans(14px, normal, 46px);
                     border-width: 0;
 
-                    margin-top: 45px;
-                    margin-bottom: 26px;
+                    margin-top: 25px;
+                    margin-bottom: 28px;
                 }
             }
 
@@ -460,8 +500,13 @@ body {
             }
 
             .socials {
-                width: 391px;
+                width: 310px;
                 @include Socials;
+                flex-wrap: nowrap;
+
+                a {
+                    width: 59px;
+                }
             }
         }
 
@@ -469,8 +514,8 @@ body {
             display: flex;
 
             .piano {
-                width: 531px;
-                height: auto;
+                width: 771px;
+                height: 893px;
                 background: url('./static/images/Grand_piano.jpg') no-repeat;
                 background-size: contain;
             }
@@ -481,26 +526,6 @@ body {
                 background: url('./static/images/Cross.png') no-repeat;
                 background-size: contain;
                 cursor: pointer;
-            }
-        }
-
-        #closeModalWindow {
-            width: 100%;
-
-            .closeWrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: dimgrey;
-                border-radius: 6px;
-                height: 40px;
-                margin-top: 30px;
-                cursor: pointer;
-
-                > div {
-                    @include OpenSans(15px, normal, 15px);
-                    color: #fff;
-                }
             }
         }
     }
@@ -576,7 +601,7 @@ body {
                 }*/
 
                 h1 {
-                    /*font-family: Montserrat, serif;
+                    /*font-family: Montserrat, sans-serif;
                     font-weight: 900;
                     line-height: 53px;
                     margin: 20px 0;*/
@@ -692,10 +717,10 @@ body {
 
         .matrix {
             /*position: absolute;
-            top: 0; bottom: 0; left: 0; right: 0;
+            top: -82px; bottom: -160px; left: 0; right: 0;
             background: #fff;
             transform: matrix(1, -0.1, 0, 1.26, 0, 0);*/
-            transform: matrix(1, -0.1, 0, 1.1, 0, 0);
+            top: -52px; bottom: -72px; left: 0; right: 0;
         }
 
         section {
@@ -710,10 +735,14 @@ body {
                 /*position: relative;
                 @include OpenSans(36px, 800, 39px);
                 margin-bottom: 100px;
-                text-align: center;*/
+                text-align: center;
+                box-sizing: border-box;
+                padding-left: 22px;*/
                 margin-bottom: 50px;
                 font-size: 26px;
                 line-height: 26px;
+                box-sizing: inherit;
+                padding-left: 0;
             }
 
             .card_wrapper {
@@ -728,11 +757,12 @@ body {
                     flex-direction: column;
                     align-items: center;
                     margin-bottom: 35px;
+                    width: 100%;
                     &:hover .tooltip {
                         opacity: 1;
                     }
 
-                    a {
+                    .item {
                         /*display: flex;
                         align-items: center;
                         text-decoration: none;
@@ -741,66 +771,29 @@ body {
                         border-radius: 6px;
                         padding: 15px 20px 15px 0;
                         transition: 500ms;*/
+                        align-items: center;
                         font-size: 18px;
+                        width: 100%;
+                        padding-right: 0;
                         /*&:hover {
                             box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
                         }*/
 
                         .icon_key {
-                            background: url('./static/images/Skripichnyj_kljuch.png') no-repeat;
+                           /* background: url('./static/images/Skripichnyj_kljuch.png') no-repeat;
                             width: 64px;
-                            height: 64px;
-                        }
-                    }
-
-                    .tooltip {
-                        position: absolute;
-                        bottom: 100px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-
-                        opacity: 0;
-                        pointer-events: none;
-                        transition: 500ms;
-
-                        .text {
-                            display: flex;
-                            flex-direction: column;
-                            padding: 20px 30px;
-                            background: #EEE;
-                            border-radius: 15px;
-                            width: 250px;
-
-                            h4 {
-                                @include OpenSans(16px, bold, 24px);
-                                margin: 0 0 15px;
-
-                            }
-
-                            p {
-                                @include OpenSans(14px, normal, 21px);
-                                margin: 0;
-                            }
-                        }
-
-                        .triangle {
-                            width: 0;
-                            height: 0;
-                            border-left: 20px solid transparent;
-                            border-right: 20px solid transparent;
-                            border-top: 20px solid #EEE;
-                        }
-                    }
-
-                    .bottom {
-                        top: 100px;
-
-                        .triangle {
-                            transform: rotate(180deg);
+                            height: 64px;*/
                         }
                     }
                 }
+            }
+            .top {
+                padding-right: 0;
+                width: 100%;
+            }
+            .bottom {
+                padding-left: 0;
+                width: 100%;
             }
         }
     }
@@ -813,7 +806,7 @@ body {
         padding-top: 250px;
         padding-bottom: 100px;
         position: relative;*/
-        padding-top: 120px;
+        padding-top: 190px;
         padding-bottom: 70px;
 
         section {
@@ -827,8 +820,10 @@ body {
                 /*@include OpenSans(36px, 800, 39px);
                 margin-bottom: 60px;*/
                 margin-bottom: 90px;
+                padding: 0;
                 font-size: 26px;
                 line-height: 26px;
+                text-align: center;
             }
 
             article {
@@ -840,6 +835,7 @@ body {
                     /*display: flex;
                     flex-direction: column;
                     align-items: center;*/
+                    margin-right: 0;
                     width: 100%;
 
                     .photo {
@@ -943,7 +939,9 @@ body {
     #modalWindow {
 
         > div {
-            width: 87%;
+            position: relative;
+            width: 100%;
+            height: 100vh;
             padding: 20px 30px;
 
             .form {
@@ -968,6 +966,7 @@ body {
                 .socials {
                     width: 100%;
                     justify-content: space-evenly;
+                    flex-wrap: wrap;
 
                     a {
                         width: 45%;
@@ -976,25 +975,22 @@ body {
             }
 
             .wrapper {
-                display: none;
+                position: absolute;
+                top: 24px; right: 20px;
 
-            }
+                .piano {
+                    display: none;
+                }
 
-            #closeModalWindow {
+                #cross {
+                    width: 24px;
+                    height: 24px;
+                    /*background: url('./static/images/Cross.png') no-repeat;
+                    background-size: contain;
+                    cursor: pointer;*/
+                }
             }
         }
-    }
-
-
-
-    //                                              кнопка "ВВерх"
-
-    #upButton {
-        display: none;
-    }
-
-    #upButton.active {
-        display: none;
     }
 }
 
@@ -1005,9 +1001,7 @@ body {
 
         > div {
 
-            #closeModalWindow {
-                display: none;
-            }
+
         }
     }
 }

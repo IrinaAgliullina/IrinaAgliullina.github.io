@@ -7,7 +7,6 @@ window.onload = function () {
     var modalWindow = document.getElementById('modalWindow');
     var contactButton = document.getElementById('contactButton');
     var cross = document.getElementById('cross');
-    var crossAdaptive = document.getElementById('closeModalWindow');
 
     function show_hide_ModalWindow() {
 
@@ -18,7 +17,6 @@ window.onload = function () {
 
     cross.addEventListener('click', show_hide_ModalWindow);
 
-    crossAdaptive.addEventListener('click', show_hide_ModalWindow);
 
 
 
@@ -66,21 +64,21 @@ window.onload = function () {
             block1.style.transform = `translateY( ${pageYOffset / 2}px )`;
 
             block1.style.filter = `blur( ${pageYOffset / 250}px )`;
+
+            // ****кнопка "Вверх"****
+
+            if(pageYOffset >= 400) {
+
+                showUpButton('yes');
+
+            } else {
+
+                showUpButton('no');
+            }
+
+            // ****кнопка "Вверх"****
         }
-
-
-        // кнопка "Вверх"
-
-        if(pageYOffset >= 400) {
-
-            showUpButton('yes');
-
-        } else {
-
-            showUpButton('no');
-        }
-
-        // кнопка "Вверх"
     }
 
+//window.onload
 }

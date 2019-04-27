@@ -1298,7 +1298,7 @@ body {
   .BlockOne .Container .SliderContainer .LineContainer {
     justify-content: flex-start;
   }
-  .BlockOne .Container .DZ {
+  .BlockOne .Container .DZ .DZa {
     display: none;
   }
 
