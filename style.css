@@ -1147,7 +1147,7 @@ body {
     width: 87%;
     max-width: 87%;
     margin-top: 17px;
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
   .BlockOne .Container header {
     width: 100%;
@@ -1157,7 +1157,7 @@ body {
     max-width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 0 45px 0;
+    margin: 0 0 55px 0;
   }
   .BlockOne .Container header .MenuContainer .Logo {
     margin: 0;
@@ -1170,7 +1170,9 @@ body {
     display: none;
   }
   .BlockOne .Container header .MenuContainer .Tel {
-    margin: 0;
+    margin: 0 15px 0 0;
+    font-size: 18px;
+    letter-spacing: 2.3px;
   }
   .BlockOne .Container header .MenuContainer .Submit {
     margin-top: 16px;
@@ -1197,20 +1199,20 @@ body {
     padding: 0;
   }
   .BlockOne .Container .SloganContainer main h1 {
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
     padding: 0;
     height: auto;
     font-family: playfair, serif;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 600;
     font-style: normal;
     line-height: 32px;
-    letter-spacing: -0.3px;
+    letter-spacing: 1.1px;
     color: #FFFFFF;
     width: 100%;
   }
   .BlockOne .Container .SloganContainer main blockquote {
-    margin: 0 0 60px 0;
+    margin: 0 0 19px 0;
     height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -1223,10 +1225,11 @@ body {
   }
   .BlockOne .Container .SloganContainer main blockquote cite {
     font-style: normal;
+    display: block;
   }
   .BlockOne .Container .SocialsContainer {
     width: 100%;
-    margin-bottom: 102px;
+    margin-bottom: 112px;
   }
   .BlockOne .Container .SocialsContainer .Socials {
     display: none;
@@ -1259,12 +1262,15 @@ body {
   }
   .BlockOne .Container .SliderContainer .Slider article {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    /*&:nth-child(3) {
+      display: none;
+    }*/
   }
-  .BlockOne .Container .SliderContainer .Slider article:nth-child(2) {
+  .BlockOne .Container .SliderContainer .Slider article:nth-child(1) {
     display: none;
   }
-  .BlockOne .Container .SliderContainer .Slider article:nth-child(3) {
+  .BlockOne .Container .SliderContainer .Slider article:nth-child(2) {
     display: none;
   }
   .BlockOne .Container .SliderContainer .Slider article:nth-child(4) {
@@ -1307,7 +1313,7 @@ body {
     width: 100%;
     max-width: 100%;
     justify-content: center;
-    margin-bottom: 85px;
+    margin-bottom: 35px;
   }
   .BlockTwo .Container .WeCanHelpWith {
     width: 100%;
@@ -1332,7 +1338,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 87%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .BlockTwo .Container .WeCanHelpWith .SixButtons > div {
     position: relative;
@@ -1340,7 +1346,7 @@ body {
     width: 45%;
     height: 130px;
     margin-top: 0;
-    margin-bottom: 82px;
+    margin-bottom: 72px;
     /* 15 отступ до текста + 37 высота текста + 30 отступ до следующего блока*/
   }
   .BlockTwo .Container .WeCanHelpWith .SixButtons > div > div {
@@ -1354,6 +1360,8 @@ body {
     top: 145px;
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 1.1px;
   }
   .BlockTwo .Container .WeCanHelpWith .SixButtons > div .Description {
     display: none;
@@ -1384,18 +1392,20 @@ body {
     width: 87%;
     height: auto;
     margin: 20px 0 25px 0;
-    line-height: normal;
+    line-height: 32px;
     font-family: playfair, serif;
     font-size: 32px;
     font-style: normal;
     font-weight: bold;
     color: #FFFFFF;
     letter-spacing: 0.5px;
-    font-size: 26px;
+    font-size: 27px;
+    box-sizing: border-box;
+    padding-right: 52px;
   }
   .BlockTwo .Container .ThankYouForChoosing p {
     margin-top: 0;
-    margin-bottom: 55px;
+    margin-bottom: 34px;
     width: 87%;
     height: auto;
     font-family: signika, sans-serif;
@@ -1442,7 +1452,7 @@ body {
     margin: 48px 0 66px 0;
   }
   .BlockTwo .Container .RecentlyWonPatents h2 {
-    margin-bottom: 21px;
+    margin-bottom: 17px;
     margin-top: 0;
     width: 87%;
     font-family: playfair, serif;
@@ -1454,7 +1464,7 @@ body {
     font-size: 26px;
   }
   .BlockTwo .Container .RecentlyWonPatents p {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
     margin-top: 0;
     width: 87%;
     font-family: signika, sans-serif;
@@ -1463,7 +1473,7 @@ body {
     font-weight: normal;
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: 0.4px;
-    line-height: 26px;
+    line-height: 24px;
   }
   .BlockTwo .Container .RecentlyWonPatents .Wrapper {
     width: 87%;
@@ -1507,7 +1517,7 @@ body {
     width: 100%;
     background-color: rgba(27, 49, 75, 0.75);
     margin-top: 0;
-    padding-top: 47px;
+    padding-top: 55px;
   }
   .BlockTwo .Container .CallUsToday .Wrapper {
     margin: 0;
@@ -1526,7 +1536,7 @@ body {
     line-height: 34px;
   }
   .BlockTwo .Container .CallUsToday .Wrapper > p {
-    margin: 0 0 11px 0;
+    margin: 0 0 22px 0;
     font-family: signika, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1565,6 +1575,11 @@ body {
     margin-bottom: 0;
     align-items: flex-start;
   }
+  .BlockThree .Container h2 {
+    font-size: 26px;
+    width: 70%;
+    margin-bottom: 23px;
+  }
   .BlockThree .Container article {
     width: 100%;
   }
@@ -1576,6 +1591,9 @@ body {
   }
   .BlockThree .Container article section:nth-child(4) {
     display: none;
+  }
+  .BlockThree .Container .Button {
+    margin: 10px 0 27px 0;
   }
 
   .BlockFour {
@@ -1615,6 +1633,8 @@ body {
   .BlockFour footer .Container .Accredited {
     width: 100%;
     flex-wrap: wrap;
+    margin-top: 46px;
+    margin-bottom: 28px;
   }
   .BlockFour footer .Container .Accredited .BBBRating {
     white-space: nowrap;

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
@@ -22,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="460" column="10" lean-forward="true" selection-start-line="460" selection-start-column="10" selection-end-line="460" selection-end-column="10" />
+            <state relative-caret-position="407">
+              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -52,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="325">
+              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
                 <element signature="e#666#10619#0" />
                 <element signature="e#1063#5161#0" />
@@ -65,14 +64,15 @@
                 <element signature="e#10281#10611#0" />
                 <element signature="e#10632#20002#0" />
                 <element signature="e#20017#24293#0" />
+                <element signature="e#20421#23197#0" />
                 <element signature="e#24307#30910#0" />
+                <element signature="e#27818#28902#0" />
                 <element signature="e#31085#35976#0" />
-                <element signature="e#33868#34148#0" />
-                <element signature="e#34179#35851#0" />
+                <element signature="e#32098#32667#0" />
+                <element signature="e#32730#33836#0" />
                 <element signature="e#35992#42640#0" />
                 <element signature="e#36198#38524#0" />
                 <element signature="e#38559#39687#0" />
-                <element signature="e#39721#40935#0" />
                 <element signature="e#40962#42624#0" />
                 <element signature="e#42658#43366#0" />
                 <element signature="e#43383#45932#0" />
@@ -333,7 +333,7 @@
       <workItem from="1556284305329" duration="4614000" />
       <workItem from="1556363560606" duration="15027000" />
       <workItem from="1556382485802" duration="16719000" />
-      <workItem from="1556435323964" duration="18725000" />
+      <workItem from="1556435323964" duration="23632000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1552497663420</created>
@@ -559,11 +559,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556448830821</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Сайт Williams Intellectual Property - адаптив.">
+      <created>1556460878908</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1556460878908</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="519472000" />
+    <option name="totallyTimeSpent" value="524379000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -661,7 +668,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Гитигнор правка" />
     <MESSAGE value="Добавлена игра на JS" />
     <MESSAGE value="Правка гитигнор 2" />
     <MESSAGE value="test" />
@@ -686,7 +692,8 @@
     <MESSAGE value="Сайт Tutor_music - доработаны оказываемые услуги, контакты, размеры по PixelPerfect, мобильная версия." />
     <MESSAGE value="Сайт Tutor_music - адаптив 1 блок до 999 пикселей." />
     <MESSAGE value="Сайт Tutor_music." />
-    <option name="LAST_COMMIT_MESSAGE" value="Сайт Tutor_music." />
+    <MESSAGE value="Сайт Williams Intellectual Property - адаптив." />
+    <option name="LAST_COMMIT_MESSAGE" value="Сайт Williams Intellectual Property - адаптив." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/components/HiddenSubmit.css">
@@ -1035,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="460" column="10" lean-forward="true" selection-start-line="460" selection-start-column="10" selection-end-line="460" selection-end-column="10" />
+        <state relative-caret-position="407">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -1063,8 +1070,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="325">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="e#666#10619#0" />
             <element signature="e#1063#5161#0" />
@@ -1076,14 +1083,15 @@
             <element signature="e#10281#10611#0" />
             <element signature="e#10632#20002#0" />
             <element signature="e#20017#24293#0" />
+            <element signature="e#20421#23197#0" />
             <element signature="e#24307#30910#0" />
+            <element signature="e#27818#28902#0" />
             <element signature="e#31085#35976#0" />
-            <element signature="e#33868#34148#0" />
-            <element signature="e#34179#35851#0" />
+            <element signature="e#32098#32667#0" />
+            <element signature="e#32730#33836#0" />
             <element signature="e#35992#42640#0" />
             <element signature="e#36198#38524#0" />
             <element signature="e#38559#39687#0" />
-            <element signature="e#39721#40935#0" />
             <element signature="e#40962#42624#0" />
             <element signature="e#42658#43366#0" />
             <element signature="e#43383#45932#0" />
