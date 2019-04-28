@@ -352,7 +352,7 @@ body {
 .BlockOne .Container .DZ {
   position: absolute;
   top: 100px;
-  left: 100px;
+  left: 125px;
   display: flex;
   flex-direction: column;
 }
@@ -1140,9 +1140,7 @@ body {
   color: #FFFFFF;
 }
 
-/* Медиа-запросы
-
-                                             до 669px*/
+/* --------------------- Основной стиль ------------------------ */
 @media screen and (max-width: 669px) {
   .BlockOne .Container {
     justify-content: center;
@@ -1364,22 +1362,6 @@ body {
     display: none;
     /* Learn more*/
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover > div > div {
-    opacity: 1;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Subtitle {
-    color: #FFE195;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Description {
-    color: #FFFFFF;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover a {
-    background: #FFE195;
-    color: black;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover {
-    cursor: pointer;
-  }
   .BlockTwo .Container .ThankYouForChoosing {
     display: flex;
     align-items: center;
@@ -1595,6 +1577,7 @@ body {
   .BlockThree .Container article section:nth-child(4) {
     display: none;
   }
+
   .BlockFour {
     padding-top: 64px;
     padding-bottom: 41px;
@@ -1624,18 +1607,6 @@ body {
     font-size: 11px;
     line-height: 18px;
     letter-spacing: -0.2px;
-    /*&:nth-child(1) {
-        margin-right: 26px;
-    }
-    &:nth-child(2) {
-        margin-right: 26px;
-    }
-    &:nth-child(3) {
-        margin-right: 26px;
-    }
-    &:nth-child(4) {
-        margin-right: 26px;
-    }*/
   }
   .BlockFour footer .Container .FooterNav .Button {
     width: 225px;
@@ -1662,7 +1633,6 @@ body {
     margin-bottom: 28px;
   }
 }
-/* 670px -- 820px */
 @media screen and (min-width: 670px) and (max-width: 820px) {
   .BlockOne .Container {
     width: 87%;
@@ -1786,14 +1756,20 @@ body {
   }
 
   .BlockTwo .Container {
-    width: 87%;
-    max-width: 87%;
+    width: 100%;
+    max-width: 100%;
     justify-content: center;
     margin-bottom: 85px;
   }
-  .BlockTwo .Container .WeCanHelpWith h2 {
+  .BlockTwo .Container .WeCanHelpWith {
     width: 100%;
-    height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .BlockTwo .Container .WeCanHelpWith h2 {
+    width: 87%;
+    height: auto;
     margin: 0 0 27px 0;
     font-family: playfair, serif;
     font-size: 32px;
@@ -1807,7 +1783,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    width: 87%;
     margin-bottom: 30px;
   }
   .BlockTwo .Container .WeCanHelpWith .SixButtons > div {
@@ -1838,42 +1814,26 @@ body {
     display: none;
     /* Learn more*/
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover > div > div {
-    opacity: 1;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Subtitle {
-    color: #FFE195;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Description {
-    color: #FFFFFF;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover a {
-    background: #FFE195;
-    color: black;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover {
-    cursor: pointer;
-  }
   .BlockTwo .Container .ThankYouForChoosing {
     display: flex;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
     height: auto;
     width: 100%;
-    position: relative;
     background: rgba(27, 49, 75, 0.75);
   }
-  .BlockTwo .Container .ThankYouForChoosing > div {
+  .BlockTwo .Container .ThankYouForChoosing .Wrapper {
+    width: 87%;
+  }
+  .BlockTwo .Container .ThankYouForChoosing .Wrapper > div {
     margin-top: 38px;
     margin-left: 2px;
-    width: 66px;
-    height: 76px;
-    background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
   }
   .BlockTwo .Container .ThankYouForChoosing h2 {
-    width: 100%;
+    width: 87%;
     height: auto;
     margin: 20px 0 25px 0;
     line-height: normal;
@@ -1888,7 +1848,7 @@ body {
   .BlockTwo .Container .ThankYouForChoosing p {
     margin-top: 0;
     margin-bottom: 55px;
-    width: 100%;
+    width: 87%;
     height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -1928,6 +1888,7 @@ body {
     position: static;
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: auto;
     width: 100%;
     margin: 48px 0 66px 0;
@@ -1935,7 +1896,7 @@ body {
   .BlockTwo .Container .RecentlyWonPatents h2 {
     margin-bottom: 21px;
     margin-top: 0;
-    width: 257px;
+    width: 87%;
     font-family: playfair, serif;
     font-size: 32px;
     font-style: normal;
@@ -1947,7 +1908,7 @@ body {
   .BlockTwo .Container .RecentlyWonPatents p {
     margin-bottom: 30px;
     margin-top: 0;
-    width: 100%;
+    width: 87%;
     font-family: signika, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1956,7 +1917,10 @@ body {
     letter-spacing: 0.4px;
     line-height: 26px;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper {
+    width: 87%;
+  }
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button {
     position: static;
     display: flex;
     align-items: center;
@@ -1968,9 +1932,8 @@ body {
     text-decoration: none;
     color: black;
     transition: 500ms;
-    width: 185px;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button .ButtonText {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button .ButtonText {
     white-space: nowrap;
     margin-left: 11px;
     font-family: Signika, sans-serif;
@@ -1980,10 +1943,10 @@ body {
     letter-spacing: -0.3px;
     text-transform: uppercase;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button:hover {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button:hover {
     background: #E7CC89;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button .Icon_Arrow_B {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button .Icon_Arrow_B {
     width: 14px;
     height: 9px;
     background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
@@ -1991,21 +1954,20 @@ body {
   }
   .BlockTwo .Container .CallUsToday {
     display: flex;
-    position: relative;
+    justify-content: center;
     width: 100%;
-    height: auto;
     background-color: rgba(27, 49, 75, 0.75);
     margin-top: 0;
     padding-top: 47px;
   }
   .BlockTwo .Container .CallUsToday .Wrapper {
     margin: 0;
-    width: 100%;
+    width: 87%;
     height: auto;
   }
   .BlockTwo .Container .CallUsToday .Wrapper h2 {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-family: playfair, serif;
     font-size: 36px;
     font-style: normal;
@@ -2028,11 +1990,12 @@ body {
     display: none;
   }
   .BlockTwo .Container .CallUsToday .TelAdaptive {
+    width: 87%;
     margin-bottom: 40px;
   }
   .BlockTwo .Container .CallUsToday > p {
     margin: 0 0 10px 0;
-    width: 100%;
+    width: 87%;
     height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -2129,11 +2092,13 @@ body {
   .BlockFour footer .Container .Wrapper {
     flex-wrap: wrap;
   }
+  .BlockFour footer .Container .Wrapper .Inner {
+    margin-bottom: 10px;
+  }
   .BlockFour footer .Container .Wrapper .Inner .Author {
     line-height: 23px;
   }
 }
-/* 821px -- 1230px */
 @media screen and (min-width: 821px) and (max-width: 1230px) {
   .BlockOne .Container {
     width: 87%;
@@ -2176,26 +2141,6 @@ body {
     display: flex;
     justify-content: space-between;
     width: 154px;
-  }
-  .BlockOne .Container .SocialsContainer .Socials a {
-    width: 31px;
-    height: 31px;
-    transition: 500ms;
-  }
-  .BlockOne .Container .SocialsContainer .Socials a:hover {
-    opacity: 0.5;
-  }
-  .BlockOne .Container .SocialsContainer .Socials .Social_1 {
-    background: url("./static/images/Sprait.svg") no-repeat 0 -185px;
-  }
-  .BlockOne .Container .SocialsContainer .Socials .Social_2 {
-    background: url("./static/images/Sprait.svg") no-repeat -33px -185px;
-  }
-  .BlockOne .Container .SocialsContainer .Socials .Social_3 {
-    background: url("./static/images/Sprait.svg") no-repeat -65px -185px;
-  }
-  .BlockOne .Container .SocialsContainer .Socials .Social_4 {
-    background: url("./static/images/Sprait.svg") no-repeat -96px -185px;
   }
   .BlockOne .Container .SocialsContainer .Mouse {
     margin-left: 0;
@@ -2263,11 +2208,17 @@ body {
   }
 
   .BlockTwo .Container {
-    width: 87%;
-    max-width: 87%;
+    width: 100%;
+    justify-content: center;
+  }
+  .BlockTwo .Container .WeCanHelpWith {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .BlockTwo .Container .WeCanHelpWith h2 {
-    width: 100%;
+    width: 87%;
     height: 35px;
     margin: 0 0 27px 0;
     font-family: playfair, serif;
@@ -2282,7 +2233,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    width: 87%;
     margin-bottom: 30px;
   }
   .BlockTwo .Container .WeCanHelpWith .SixButtons > div {
@@ -2298,35 +2249,21 @@ body {
     display: flex;
     align-items: center;
   }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div a {
-    /* Learn more*/
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover > div > div {
-    opacity: 1;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Subtitle {
-    color: #FFE195;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover .Description {
-    color: #FFFFFF;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover a {
-    background: #FFE195;
-    color: black;
-  }
-  .BlockTwo .Container .WeCanHelpWith .SixButtons > div:hover {
-    cursor: pointer;
-  }
   .BlockTwo .Container .ThankYouForChoosing {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     margin-top: 0;
     margin-bottom: 0;
     height: auto;
     width: 100%;
     background: rgba(27, 49, 75, 0.75);
   }
-  .BlockTwo .Container .ThankYouForChoosing > div {
+  .BlockTwo .Container .ThankYouForChoosing .Wrapper {
+    width: 87%;
+  }
+  .BlockTwo .Container .ThankYouForChoosing .Wrapper > div {
     margin-top: 38px;
     margin-left: 2px;
     width: 66px;
@@ -2334,7 +2271,7 @@ body {
     background: url("./static/images/Sprait.svg") no-repeat -486px -84px;
   }
   .BlockTwo .Container .ThankYouForChoosing h2 {
-    width: 100%;
+    width: 87%;
     height: auto;
     margin: 20px 0 25px 0;
     line-height: normal;
@@ -2349,7 +2286,7 @@ body {
   .BlockTwo .Container .ThankYouForChoosing p {
     margin-top: 0;
     margin-bottom: 55px;
-    width: 100%;
+    width: 87%;
     height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -2389,6 +2326,7 @@ body {
     position: static;
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: auto;
     width: 100%;
     margin: 48px 0 66px 0;
@@ -2396,7 +2334,7 @@ body {
   .BlockTwo .Container .RecentlyWonPatents h2 {
     margin-bottom: 21px;
     margin-top: 0;
-    width: 257px;
+    width: 87%;
     font-family: playfair, serif;
     font-size: 32px;
     font-style: normal;
@@ -2408,7 +2346,7 @@ body {
   .BlockTwo .Container .RecentlyWonPatents p {
     margin-bottom: 30px;
     margin-top: 0;
-    width: 100%;
+    width: 87%;
     font-family: signika, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -2417,7 +2355,10 @@ body {
     letter-spacing: 0.4px;
     line-height: 26px;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper {
+    width: 87%;
+  }
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button {
     position: static;
     display: flex;
     align-items: center;
@@ -2429,9 +2370,8 @@ body {
     text-decoration: none;
     color: black;
     transition: 500ms;
-    width: 185px;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button .ButtonText {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button .ButtonText {
     white-space: nowrap;
     margin-left: 11px;
     font-family: Signika, sans-serif;
@@ -2441,10 +2381,10 @@ body {
     letter-spacing: -0.3px;
     text-transform: uppercase;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button:hover {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button:hover {
     background: #E7CC89;
   }
-  .BlockTwo .Container .RecentlyWonPatents .Button .Icon_Arrow_B {
+  .BlockTwo .Container .RecentlyWonPatents .Wrapper .Button .Icon_Arrow_B {
     width: 14px;
     height: 9px;
     background: url("./static/images/Sprait.svg") no-repeat -1px -174px;
@@ -2452,6 +2392,7 @@ body {
   }
   .BlockTwo .Container .CallUsToday {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: auto;
     background-color: rgba(27, 49, 75, 0.75);
@@ -2460,7 +2401,7 @@ body {
   }
   .BlockTwo .Container .CallUsToday .Wrapper {
     margin: 0;
-    width: 100%;
+    width: 87%;
     height: auto;
   }
   .BlockTwo .Container .CallUsToday .Wrapper h2 {
@@ -2489,7 +2430,7 @@ body {
   }
   .BlockTwo .Container .CallUsToday > p {
     margin: 0 0 10px 0;
-    width: 100%;
+    width: 87%;
     height: auto;
     font-family: signika, sans-serif;
     font-size: 14px;
@@ -2502,6 +2443,7 @@ body {
   }
   .BlockTwo .Container .CallUsToday .TelAdaptive {
     margin-bottom: 40px;
+    width: 87%;
   }
 
   .BlockThree .Container {
@@ -2605,24 +2547,29 @@ body {
     line-height: 23px;
   }
 }
-/* 1231px -- 1289px*/
 @media screen and (min-width: 1231px) and (max-width: 1289px) {
   .BlockOne .Container {
     width: 87%;
     max-width: 87%;
+    position: relative;
   }
   .BlockOne .Container header .MenuContainer {
     flex-wrap: wrap;
   }
+  .BlockOne .Container header .MenuContainer .Nav {
+    margin: 0 20px 0 0;
+  }
   .BlockOne .Container header .MenuContainer .Submit {
-    margin-top: 40px;
+    position: absolute;
+    top: 23px;
+    right: 150px;
   }
   .BlockOne .Container header .MenuContainer .Sandwich {
     display: none;
   }
   .BlockOne .Container .SloganContainer {
-    padding-top: 70px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 130px;
   }
   .BlockOne .Container .SloganContainer main h1 {
     width: 500px;
@@ -2638,26 +2585,6 @@ body {
     display: flex;
     justify-content: space-between;
     width: 154px;
-  }
-  .BlockOne .Container .SocialsContainer .Socials a {
-    width: 31px;
-    height: 31px;
-    transition: 500ms;
-  }
-  .BlockOne .Container .SocialsContainer .Socials a:hover {
-    opacity: 0.5;
-  }
-  .BlockOne .Container .SocialsContainer .Socials .Social_1 {
-    background: url("./static/images/Sprait.svg") no-repeat 0 -185px;
-  }
-  .BlockOne .Container .SocialsContainer .Socials .Social_2 {
-    background: url("./static/images/Sprait.svg") no-repeat -33px -185px;
-  }
-  .BlockOne .Container .SocialsContainer .Socials .Social_3 {
-    background: url("./static/images/Sprait.svg") no-repeat -65px -185px;
-  }
-  .BlockOne .Container .SocialsContainer .Socials .Social_4 {
-    background: url("./static/images/Sprait.svg") no-repeat -96px -185px;
   }
   .BlockOne .Container .SocialsContainer .Mouse {
     margin-left: 0;
@@ -2732,7 +2659,6 @@ body {
     display: none;
   }
 }
-/* от 1290px */
 @media screen and (min-width: 1290px) {
   .BlockOne .Container header .MenuContainer .Sandwich {
     display: none;

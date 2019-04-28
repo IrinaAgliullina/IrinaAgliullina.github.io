@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e93924dc-6646-4c5e-adb6-d0f4a9817778" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutor_music/JS/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tutor_music/JS/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutor_music/components/Socials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Tutor_music/components/Socials.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutor_music/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tutor_music/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutor_music/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tutor_music/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutor_music/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Tutor_music/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutor_music/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Tutor_music/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,92 +20,86 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tutor_music/index.html">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="104" column="8" lean-forward="true" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+            <state relative-caret-position="607">
+              <caret line="460" column="10" lean-forward="true" selection-start-line="460" selection-start-column="10" selection-end-line="460" selection-end-column="10" />
               <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tutor_music/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="444" lean-forward="true" selection-start-line="444" selection-end-line="444" />
-              <folding>
-                <element signature="e#358#3781#0" />
-                <element signature="e#717#1451#0" />
-                <element signature="e#1665#2193#0" />
-                <element signature="e#2214#2745#0" />
-                <element signature="e#2768#3090#0" />
-                <element signature="e#3116#3773#0" />
-                <element signature="e#3796#7300#0" />
-                <element signature="e#7315#11380#0" />
-                <element signature="e#14479#14524#0" />
-                <element signature="e#14604#15157#0" />
-                <element signature="e#15176#15221#0" />
-                <element signature="e#15365#19178#0" />
-                <element signature="e#19197#22032#0" />
-                <element signature="e#22051#26622#0" />
-                <element signature="e#26725#28063#0" />
-                <element signature="e#26588#37792#0" />
-                <element signature="e#30467#31091#0" />
-                <element signature="e#31824#36395#0" />
-                <element signature="e#29096#30433#0" />
-                <element signature="e#28234#29176#0" />
-                <element signature="e#28627#29091#0" />
-                <element signature="e#29195#29819#0" />
-                <element signature="e#29838#30560#0" />
-                <element signature="e#30579#31916#0" />
-                <element signature="e#32488#35911#0" />
-                <element signature="e#33525#34102#0" />
-                <element signature="e#34121#34804#0" />
-                <element signature="e#35053#38047#0" />
+                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#3;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#2;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#3;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#footer#0;n#section#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#footer#0;n#section#3;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tutor_music/components/Socials.scss">
+        <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tutor_music/JS/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+            <state relative-caret-position="350">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <element signature="e#666#10619#0" />
+                <element signature="e#1063#5161#0" />
+                <element signature="e#1093#5151#0" />
+                <element signature="e#5188#6132#0" />
+                <element signature="e#5369#6122#0" />
+                <element signature="e#6160#7531#0" />
+                <element signature="e#7558#10267#0" />
+                <element signature="e#10281#10611#0" />
+                <element signature="e#10632#20002#0" />
+                <element signature="e#20017#24293#0" />
+                <element signature="e#24307#30910#0" />
+                <element signature="e#31085#35976#0" />
+                <element signature="e#33868#34148#0" />
+                <element signature="e#34179#35851#0" />
+                <element signature="e#35992#42640#0" />
+                <element signature="e#36198#38524#0" />
+                <element signature="e#38559#39687#0" />
+                <element signature="e#39721#40935#0" />
+                <element signature="e#40962#42624#0" />
+                <element signature="e#42658#43366#0" />
+                <element signature="e#43383#45932#0" />
+                <element signature="e#46078#49632#0" />
+                <element signature="e#49648#56013#0" />
+                <element signature="e#49822#52013#0" />
+                <element signature="e#52048#53220#0" />
+                <element signature="e#53254#54312#0" />
+                <element signature="e#54339#55997#0" />
+                <element signature="e#56031#57280#0" />
+                <element signature="e#57297#59190#0" />
+                <element signature="e#59338#63315#0" />
+                <element signature="e#63331#69167#0" />
+                <element signature="e#63692#65265#0" />
+                <element signature="e#65564#66734#0" />
+                <element signature="e#66444#67502#0" />
+                <element signature="e#67529#69151#0" />
+                <element signature="e#69185#70925#0" />
+                <element signature="e#70942#72835#0" />
+                <element signature="e#72984#76500#0" />
+                <element signature="e#74970#76420#0" />
+                <element signature="e#76516#76682#0" />
+                <element signature="e#76700#76882#0" />
+                <element signature="e#77002#77502#0" />
+                <element signature="e#77518#77684#0" />
+                <element signature="e#77702#77884#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,13 +167,13 @@
         <option value="$PROJECT_DIR$/DZ/DZ_7/style.scss" />
         <option value="$PROJECT_DIR$/DZ/DZ_7/DZ_7_Parallax.js" />
         <option value="$PROJECT_DIR$/Tutor_music/static/fonts/Montserrat.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/style.scss" />
         <option value="$PROJECT_DIR$/Tutor_music/static/fonts/Open_Sans.css" />
         <option value="$PROJECT_DIR$/Tutor_music/index.html" />
         <option value="$PROJECT_DIR$/Tutor_music/JS/script.js" />
         <option value="$PROJECT_DIR$/Tutor_music/style.scss" />
         <option value="$PROJECT_DIR$/Tutor_music/components/Socials.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.scss" />
       </list>
     </option>
   </component>
@@ -204,17 +196,6 @@
             <path>
               <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
               <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
-              <item name="Tutor_music" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Аглиуллина Ирина" type="462c0819:PsiDirectoryNode" />
-              <item name="Tutor_music" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Аглиуллина Ирина" type="b2602c69:ProjectViewProjectNode" />
@@ -352,7 +333,7 @@
       <workItem from="1556284305329" duration="4614000" />
       <workItem from="1556363560606" duration="15027000" />
       <workItem from="1556382485802" duration="16719000" />
-      <workItem from="1556435323964" duration="13108000" />
+      <workItem from="1556435323964" duration="18725000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1552497663420</created>
@@ -571,11 +552,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556399514108</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Сайт Tutor_music.">
+      <created>1556448830821</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1556448830821</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="513855000" />
+    <option name="totallyTimeSpent" value="519472000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,7 +661,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Медиа" />
     <MESSAGE value="Гитигнор правка" />
     <MESSAGE value="Добавлена игра на JS" />
     <MESSAGE value="Правка гитигнор 2" />
@@ -698,7 +685,8 @@
     <MESSAGE value="Сайт Tutor_music - добавлен .matchMedia" />
     <MESSAGE value="Сайт Tutor_music - доработаны оказываемые услуги, контакты, размеры по PixelPerfect, мобильная версия." />
     <MESSAGE value="Сайт Tutor_music - адаптив 1 блок до 999 пикселей." />
-    <option name="LAST_COMMIT_MESSAGE" value="Сайт Tutor_music - адаптив 1 блок до 999 пикселей." />
+    <MESSAGE value="Сайт Tutor_music." />
+    <option name="LAST_COMMIT_MESSAGE" value="Сайт Tutor_music." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/components/HiddenSubmit.css">
@@ -951,49 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="166" column="59" selection-start-line="166" selection-start-column="59" selection-end-line="166" selection-end-column="59" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#3;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#2;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#3;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#footer#0;n#section#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#footer#0;n#section#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="1187" column="34" lean-forward="true" selection-start-line="1187" selection-start-column="34" selection-end-line="1187" selection-end-column="34" />
-          <folding>
-            <element signature="e#666#10619#0" />
-            <element signature="e#5369#6122#0" />
-            <element signature="e#6160#7531#0" />
-            <element signature="e#7558#10267#0" />
-            <element signature="e#10632#20002#0" />
-            <element signature="e#20017#24293#0" />
-            <element signature="e#24307#30910#0" />
-            <element signature="e#31281#32699#0" />
-            <element signature="e#32730#33836#0" />
-            <element signature="e#33868#34148#0" />
-            <element signature="e#34179#35851#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tutor_music/components/mixin_OpenSans.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1004,6 +949,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tutor_music/components/Socials.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tutor_music/JS/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -1011,10 +963,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tutor_music/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="156" column="1" lean-forward="true" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
+          <folding>
+            <element signature="e#358#3781#0" />
+            <element signature="e#717#1451#0" />
+            <element signature="e#1665#2193#0" />
+            <element signature="e#2214#2745#0" />
+            <element signature="e#2768#3090#0" />
+            <element signature="e#3116#3773#0" />
+            <element signature="e#3796#7300#0" />
+            <element signature="e#7315#11380#0" />
+            <element signature="e#11463#14457#0" />
+            <element signature="e#14479#14524#0" />
+            <element signature="e#14604#15157#0" />
+            <element signature="e#15176#15221#0" />
+            <element signature="e#15365#19178#0" />
+            <element signature="e#19197#22032#0" />
+            <element signature="e#22051#26622#0" />
+            <element signature="e#26725#28063#0" />
+            <element signature="e#26588#37792#0" />
+            <element signature="e#30467#31091#0" />
+            <element signature="e#31824#36395#0" />
+            <element signature="e#29096#30433#0" />
+            <element signature="e#28234#29176#0" />
+            <element signature="e#28627#29091#0" />
+            <element signature="e#29195#29819#0" />
+            <element signature="e#29838#30560#0" />
+            <element signature="e#30579#31916#0" />
+            <element signature="e#32488#35911#0" />
+            <element signature="e#33525#34102#0" />
+            <element signature="e#34121#34804#0" />
+            <element signature="e#35053#38047#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tutor_music/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="104" column="8" lean-forward="true" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+        <state relative-caret-position="700">
+          <caret line="376" column="4" lean-forward="true" selection-start-line="376" selection-start-column="4" selection-end-line="376" selection-end-column="4" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -1043,47 +1033,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tutor_music/style.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="444" lean-forward="true" selection-start-line="444" selection-end-line="444" />
+        <state relative-caret-position="607">
+          <caret line="460" column="10" lean-forward="true" selection-start-line="460" selection-start-column="10" selection-end-line="460" selection-end-column="10" />
           <folding>
-            <element signature="e#358#3781#0" />
-            <element signature="e#717#1451#0" />
-            <element signature="e#1665#2193#0" />
-            <element signature="e#2214#2745#0" />
-            <element signature="e#2768#3090#0" />
-            <element signature="e#3116#3773#0" />
-            <element signature="e#3796#7300#0" />
-            <element signature="e#7315#11380#0" />
-            <element signature="e#14479#14524#0" />
-            <element signature="e#14604#15157#0" />
-            <element signature="e#15176#15221#0" />
-            <element signature="e#15365#19178#0" />
-            <element signature="e#19197#22032#0" />
-            <element signature="e#22051#26622#0" />
-            <element signature="e#26725#28063#0" />
-            <element signature="e#26588#37792#0" />
-            <element signature="e#30467#31091#0" />
-            <element signature="e#31824#36395#0" />
-            <element signature="e#29096#30433#0" />
-            <element signature="e#28234#29176#0" />
-            <element signature="e#28627#29091#0" />
-            <element signature="e#29195#29819#0" />
-            <element signature="e#29838#30560#0" />
-            <element signature="e#30579#31916#0" />
-            <element signature="e#32488#35911#0" />
-            <element signature="e#33525#34102#0" />
-            <element signature="e#34121#34804#0" />
-            <element signature="e#35053#38047#0" />
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#header#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#2;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#3;n#article#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#footer#0;n#section#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#footer#0;n#section#3;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tutor_music/components/Socials.scss">
+    <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="350">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="e#666#10619#0" />
+            <element signature="e#1063#5161#0" />
+            <element signature="e#1093#5151#0" />
+            <element signature="e#5188#6132#0" />
+            <element signature="e#5369#6122#0" />
+            <element signature="e#6160#7531#0" />
+            <element signature="e#7558#10267#0" />
+            <element signature="e#10281#10611#0" />
+            <element signature="e#10632#20002#0" />
+            <element signature="e#20017#24293#0" />
+            <element signature="e#24307#30910#0" />
+            <element signature="e#31085#35976#0" />
+            <element signature="e#33868#34148#0" />
+            <element signature="e#34179#35851#0" />
+            <element signature="e#35992#42640#0" />
+            <element signature="e#36198#38524#0" />
+            <element signature="e#38559#39687#0" />
+            <element signature="e#39721#40935#0" />
+            <element signature="e#40962#42624#0" />
+            <element signature="e#42658#43366#0" />
+            <element signature="e#43383#45932#0" />
+            <element signature="e#46078#49632#0" />
+            <element signature="e#49648#56013#0" />
+            <element signature="e#49822#52013#0" />
+            <element signature="e#52048#53220#0" />
+            <element signature="e#53254#54312#0" />
+            <element signature="e#54339#55997#0" />
+            <element signature="e#56031#57280#0" />
+            <element signature="e#57297#59190#0" />
+            <element signature="e#59338#63315#0" />
+            <element signature="e#63331#69167#0" />
+            <element signature="e#63692#65265#0" />
+            <element signature="e#65564#66734#0" />
+            <element signature="e#66444#67502#0" />
+            <element signature="e#67529#69151#0" />
+            <element signature="e#69185#70925#0" />
+            <element signature="e#70942#72835#0" />
+            <element signature="e#72984#76500#0" />
+            <element signature="e#74970#76420#0" />
+            <element signature="e#76516#76682#0" />
+            <element signature="e#76700#76882#0" />
+            <element signature="e#77002#77502#0" />
+            <element signature="e#77518#77684#0" />
+            <element signature="e#77702#77884#0" />
+          </folding>
         </state>
       </provider>
     </entry>
