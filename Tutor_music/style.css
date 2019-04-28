@@ -165,6 +165,9 @@ body {
   width: 100%;
   text-align: left;
 }
+#container_1 section .contacts #contactButtonAdaptive {
+  display: none;
+}
 #container_1 section .next {
   display: flex;
   justify-content: center;
@@ -469,7 +472,6 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 893px;
-  max-height: 893px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -639,7 +641,7 @@ body {
   pointer-events: auto;
 }
 
-@media screen and (max-width: 679px) {
+@media screen and (max-width: 499px) {
   #container_1 {
     /*display: flex;
     justify-content: center;
@@ -696,29 +698,6 @@ body {
     width: 100%;
     margin-top: 30px;
     align-items: center;
-    /*.phone {
-                        display: flex;
-                        align-items: center;
-                        margin-bottom: 40px;
-    
-                        .icon_phone {
-                            background: url('./static/images/icon-phone.png') no-repeat;
-                            width: 16px;
-                            height: 16px;
-                            margin-right: 10px;
-                        }
-                    }*/
-  }
-  #container_1 section .contacts .mail {
-    /* display: flex;
-     align-items: center;
-     margin-bottom: 20px;*/
-    /*.icon_mail {
-        background: url('./static/images/icon-mail.png') no-repeat;
-        width: 16px;
-        height: 16px;
-        margin-right: 10px;
-    }*/
   }
   #container_1 section .contacts .socials {
     /*@include Socials;*/
@@ -727,6 +706,7 @@ body {
   }
   #container_1 section .contacts .socials a {
     width: 90%;
+    font-size: 13px;
   }
   #container_1 section .contacts .socials h3 {
     /*@include OpenSans(14px, bold, 29px);
@@ -735,60 +715,22 @@ body {
     text-align: center;
   }
   #container_1 section .next {
-    display: flex;
-    justify-content: center;
-    width: 100%;
     margin-top: 30px;
-  }
-  #container_1 section .next .mouseWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    background: #A406CC;
-    box-shadow: 0 6px 20px rgba(250, 0, 255, 0.35);
-    border-radius: 30px;
-  }
-  #container_1 section .next .icon_mouse {
-    background: url("./static/images/Mouse.png") no-repeat;
-    width: 15px;
-    height: 26px;
   }
 
   #container_2 {
-    /*position: relative;
-    display: flex;
-    justify-content: center;
-    padding-top: 80px;
-    z-index: 100;*/
     padding-top: 30px;
   }
   #container_2 .matrix {
-    /*position: absolute;
-    top: -82px; bottom: -160px; left: 0; right: 0;
-    background: #fff;
-    transform: matrix(1, -0.1, 0, 1.26, 0, 0);*/
     top: -52px;
     bottom: -92px;
     left: 0;
     right: 0;
   }
   #container_2 section {
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1110px;
-    color: #000;*/
     width: 87%;
   }
   #container_2 section h2 {
-    /*position: relative;
-    @include OpenSans(36px, 800, 39px);
-    margin-bottom: 100px;
-    text-align: center;
-    box-sizing: border-box;
-    padding-left: 22px;*/
     margin-bottom: 50px;
     font-size: 26px;
     line-height: 26px;
@@ -796,9 +738,6 @@ body {
     padding-left: 0;
   }
   #container_2 section .card_wrapper {
-    /*display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;*/
     justify-content: flex-start;
   }
   #container_2 section .card_wrapper .card {
@@ -813,26 +752,13 @@ body {
     opacity: 1;
   }
   #container_2 section .card_wrapper .card .item {
-    /*display: flex;
-    align-items: center;
-    text-decoration: none;
-    @include OpenSans(22px, bold, 24px);
-    color: #000;
-    border-radius: 6px;
-    padding: 15px 20px 15px 0;
-    transition: 500ms;*/
-    align-items: center;
+    justify-content: flex-start;
     font-size: 18px;
     width: 100%;
     padding-right: 0;
-    /*&:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-    }*/
   }
-  #container_2 section .card_wrapper .card .item .icon_key {
-    /* background: url('./static/images/Skripichnyj_kljuch.png') no-repeat;
-     width: 64px;
-     height: 64px;*/
+  #container_2 section .card_wrapper .card .item .item_text {
+    width: 70%;
   }
   #container_2 section .top {
     padding-right: 0;
@@ -973,7 +899,7 @@ body {
   #modalWindow > div {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 20px 30px;
   }
   #modalWindow > div .form {
@@ -997,6 +923,7 @@ body {
   }
   #modalWindow > div .form .socials a {
     width: 45%;
+    font-size: 12px;
   }
   #modalWindow > div .wrapper {
     position: absolute;
@@ -1014,47 +941,56 @@ body {
     cursor: pointer;*/
   }
 }
-@media screen and (min-width: 680px) and (max-width: 999px) {
+@media screen and (min-width: 500px) and (max-width: 679px) {
   #container_1 {
     padding-top: 70px;
     padding-bottom: 90px;
-    background-position-x: -570px;
+    background-position-x: 0;
   }
   #container_1 section {
     width: 87%;
   }
   #container_1 section .author {
-    width: 270px;
+    width: 100%;
   }
   #container_1 section .author h1 {
-    font-size: 40px;
+    line-height: 40px;
+    font-size: 36px;
+    margin: 25px 0;
+  }
+  #container_1 section .author h3 {
+    font-family: OpenSans, serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    margin-bottom: 35px;
   }
   #container_1 section .author #contactButton {
     width: 100%;
   }
   #container_1 section .contacts {
     width: 100%;
-    margin-top: 70px;
+    margin-top: 30px;
     align-items: center;
   }
   #container_1 section .contacts .socials {
-    width: 90%;
-    justify-content: space-evenly;
+    width: 100%;
+    justify-content: center;
   }
   #container_1 section .contacts .socials a {
-    width: 18%;
+    width: 90%;
+    font-size: 13px;
   }
   #container_1 section .contacts .socials h3 {
-    margin-bottom: 15px;
     text-align: center;
   }
   #container_1 section .next {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   #container_2 .matrix {
-    top: -82px;
-    bottom: -160px;
+    top: -42px;
+    bottom: -100px;
     left: 0;
     right: 0;
   }
@@ -1079,8 +1015,7 @@ body {
   }
 
   #container_3 {
-    background-position-x: -830px;
-    padding-top: 220px;
+    padding-top: 190px;
     padding-bottom: 70px;
   }
   #container_3 section {
@@ -1103,6 +1038,441 @@ body {
   #container_3 section article .content {
     width: 100%;
     margin-top: 50px;
+  }
+
+  #modalWindow > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px;
+  }
+  #modalWindow > div .form {
+    width: 100%;
+    margin-right: 0;
+  }
+  #modalWindow > div .form .header {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 0;
+  }
+  #modalWindow > div .form form button {
+    margin-bottom: 26px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  #modalWindow > div .form .socials {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #modalWindow > div .form .socials a {
+    width: 18%;
+    font-size: 12px;
+  }
+  #modalWindow > div .wrapper {
+    position: absolute;
+    top: 24px;
+    right: 27px;
+  }
+  #modalWindow > div .wrapper .piano {
+    display: none;
+  }
+  #modalWindow > div .wrapper #cross {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 680px) and (max-width: 999px) {
+  #container_1 {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    background-position-x: -510px;
+  }
+  #container_1 section {
+    width: 87%;
+    position: relative;
+  }
+  #container_1 section .author {
+    width: 278px;
+  }
+  #container_1 section .author h1 {
+    font-size: 40px;
+  }
+  #container_1 section .author p {
+    margin-bottom: 25px;
+  }
+  #container_1 section .author #contactButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #container_1 section .contacts {
+    width: 100%;
+    margin-top: 70px;
+    align-items: center;
+  }
+  #container_1 section .contacts .socials {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  #container_1 section .contacts .socials a {
+    width: 18%;
+    font-size: 12px;
+  }
+  #container_1 section .contacts .socials h3 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  #container_1 section .next {
+    margin-top: 50px;
+  }
+
+  #container_2 .matrix {
+    top: -50px;
+    bottom: -98px;
+    left: 0;
+    right: 0;
+  }
+  #container_2 section {
+    width: 87%;
+  }
+  #container_2 section h2 {
+    padding-left: 0;
+  }
+  #container_2 section .card_wrapper {
+    justify-content: space-evenly;
+  }
+  #container_2 section .top {
+    box-sizing: border-box;
+    padding-right: 0;
+    width: 100%;
+  }
+  #container_2 section .bottom {
+    box-sizing: border-box;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  #container_3 {
+    padding-top: 170px;
+    padding-bottom: 70px;
+  }
+  #container_3 section {
+    width: 87%;
+  }
+  #container_3 section h2 {
+    margin-bottom: 90px;
+    padding: 0;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+  }
+  #container_3 section article .wrapper {
+    margin-right: 0;
+    width: 100%;
+  }
+  #container_3 section article .wrapper .photo {
+    margin: 0 0 30px;
+  }
+  #container_3 section article .content {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #modalWindow > div {
+    position: relative;
+    width: 57%;
+    height: 100%;
+    padding: 40px 60px;
+  }
+  #modalWindow > div .form {
+    margin-right: 0;
+  }
+  #modalWindow > div .form .header {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 0;
+  }
+  #modalWindow > div .form form button {
+    margin-bottom: 26px;
+    margin-top: 30px;
+  }
+  #modalWindow > div .form .socials {
+    width: 100%;
+  }
+  #modalWindow > div .form .socials a {
+    width: 18%;
+    font-size: 12px;
+  }
+  #modalWindow > div .wrapper {
+    position: absolute;
+    top: 39px;
+    right: 28px;
+  }
+  #modalWindow > div .wrapper .piano {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  #container_1 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  #container_1 section {
+    width: 87%;
+    position: relative;
+  }
+  #container_1 section .author {
+    width: 265px;
+  }
+  #container_1 section .author h1 {
+    width: 200px;
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  #container_1 section .author p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  #container_1 section .author #contactButton {
+    display: none;
+  }
+  #container_1 section .contacts #contactButtonAdaptive {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 255px;
+    height: 46px;
+    background: #A406CC;
+    box-shadow: 0 6px 20px rgba(250, 0, 255, 0.35);
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-family: OpenSans, serif;
+    font-size: 14px;
+    line-height: 0;
+    font-weight: normal;
+    width: 160px;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  #container_1 section .next {
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+
+  #container_2 .matrix {
+    top: -50px;
+    bottom: -108px;
+    left: 0;
+    right: 0;
+  }
+  #container_2 section {
+    width: 87%;
+  }
+  #container_2 section h2 {
+    padding-left: 0;
+  }
+  #container_2 section .card_wrapper {
+    justify-content: space-evenly;
+  }
+  #container_2 section .top {
+    box-sizing: border-box;
+    padding-right: 0;
+    width: 100%;
+  }
+  #container_2 section .bottom {
+    box-sizing: border-box;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  #container_3 {
+    padding-top: 170px;
+    padding-bottom: 70px;
+  }
+  #container_3 section {
+    width: 87%;
+  }
+  #container_3 section h2 {
+    margin-bottom: 90px;
+    padding: 0;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+  }
+  #container_3 section article .wrapper {
+    margin-right: 0;
+    width: 100%;
+  }
+  #container_3 section article .wrapper .photo {
+    margin: 0 0 30px;
+  }
+  #container_3 section article .content {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #modalWindow {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 101;
+  }
+  #modalWindow > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+    padding: 30px 30px 30px 50px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #modalWindow > div .form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+  #modalWindow > div .form .header {
+    font-family: OpenSans, serif;
+    font-size: 36px;
+    line-height: 39px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 62px;
+  }
+  #modalWindow > div .form form {
+    display: flex;
+    flex-direction: column;
+  }
+  #modalWindow > div .form form label {
+    font-family: "Segoe UI", serif;
+    display: block;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-bottom: 8px;
+  }
+  #modalWindow > div .form form input {
+    height: 40px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 28px;
+  }
+  #modalWindow > div .form form textarea {
+    height: 140px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    background: #fff;
+    box-sizing: border-box;
+    resize: none;
+  }
+  #modalWindow > div .form form button {
+    width: 255px;
+    height: 46px;
+    background: #A406CC;
+    box-shadow: 0 6px 20px rgba(250, 0, 255, 0.35);
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    font-family: OpenSans, serif;
+    font-size: 14px;
+    line-height: 46px;
+    font-weight: normal;
+    border-width: 0;
+    margin-top: 25px;
+    margin-bottom: 28px;
+  }
+  #modalWindow > div .form p {
+    font-family: OpenSans, serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    margin: 0 0 13px;
+  }
+  #modalWindow > div .form .socials {
+    width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  #modalWindow > div .form .socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 40px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: OpenSans, serif;
+    font-size: 10px;
+    line-height: 0;
+    font-weight: normal;
+    transition: 500ms;
+  }
+  #modalWindow > div .form .socials a:hover {
+    transform: scale(1.1, 1.1);
+  }
+  #modalWindow > div .form .socials .vk {
+    background-color: steelblue;
+  }
+  #modalWindow > div .form .socials .instagram {
+    background-color: deeppink;
+  }
+  #modalWindow > div .form .socials .viber {
+    background-color: blueviolet;
+  }
+  #modalWindow > div .form .socials .whatsapp {
+    background-color: green;
+  }
+  #modalWindow > div .form .socials .skype {
+    background-color: dodgerblue;
+  }
+  #modalWindow > div .form .socials a {
+    width: 59px;
+  }
+  #modalWindow > div .wrapper {
+    display: flex;
+    height: auto;
+  }
+  #modalWindow > div .wrapper .piano {
+    width: 601px;
+    height: 723px;
+    background: url("./static/images/Grand_piano.jpg") no-repeat;
+    background-size: contain;
+  }
+  #modalWindow > div .wrapper #cross {
+    width: 34px;
+    height: 34px;
+    background: url("./static/images/Cross.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
   }
 }
 

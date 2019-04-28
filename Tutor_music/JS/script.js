@@ -6,6 +6,7 @@ window.onload = function () {
 
     var modalWindow = document.getElementById('modalWindow');
     var contactButton = document.getElementById('contactButton');
+    var contactButtonAdaptive = document.getElementById('contactButtonAdaptive');
     var cross = document.getElementById('cross');
 
     function show_hide_ModalWindow() {
@@ -14,6 +15,8 @@ window.onload = function () {
     }
 
     contactButton.addEventListener('click', show_hide_ModalWindow);
+
+    contactButtonAdaptive.addEventListener('click', show_hide_ModalWindow);
 
     cross.addEventListener('click', show_hide_ModalWindow);
 

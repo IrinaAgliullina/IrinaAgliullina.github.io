@@ -123,6 +123,10 @@ body {
                     text-align: left;
                 }
             }
+
+            #contactButtonAdaptive {
+                display: none;
+            }
         }
 
         .next {
@@ -435,9 +439,7 @@ body {
         padding: 120px 90px 120px 110px;
         box-sizing: border-box;
         width: 100%;
-
         height: 893px;
-        max-height: 893px;
         overflow-y: auto;
         overflow-x: hidden;
 
@@ -576,7 +578,7 @@ body {
 //                                                  Медиа-запрос до 679 пикселей
 
 
-@media screen and (max-width: 679px) {
+@media screen and (max-width: 499px) {
 
     #container_1 {
         /*display: flex;
@@ -638,32 +640,6 @@ body {
                 margin-top: 30px;
                 align-items: center;
 
-                .mail {
-                   /* display: flex;
-                    align-items: center;
-                    margin-bottom: 20px;*/
-
-                    /*.icon_mail {
-                        background: url('./static/images/icon-mail.png') no-repeat;
-                        width: 16px;
-                        height: 16px;
-                        margin-right: 10px;
-                    }*/
-                }
-
-                /*.phone {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 40px;
-
-                    .icon_phone {
-                        background: url('./static/images/icon-phone.png') no-repeat;
-                        width: 16px;
-                        height: 16px;
-                        margin-right: 10px;
-                    }
-                }*/
-
                 .socials {
                     /*@include Socials;*/
                     width: 100%;
@@ -671,6 +647,7 @@ body {
 
                     a {
                         width: 90%;
+                        font-size: 13px;
                     }
 
                     h3 {
@@ -683,63 +660,22 @@ body {
             }
 
             .next {
-                display: flex;
-                justify-content: center;
-                width: 100%;
                 margin-top: 30px;
-
-                .mouseWrapper {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    width: 60px;
-                    height: 60px;
-                    background: $commonColor;
-                    box-shadow: 0 6px 20px rgba(250, 0, 255, 0.35);
-                    border-radius: 30px;
-                }
-
-                .icon_mouse {
-                    background: url('./static/images/Mouse.png') no-repeat;
-                    width: 15px;
-                    height: 26px;
-                }
             }
         }
     }
 
     #container_2 {
-        /*position: relative;
-        display: flex;
-        justify-content: center;
-        padding-top: 80px;
-        z-index: 100;*/
         padding-top: 30px;
 
         .matrix {
-            /*position: absolute;
-            top: -82px; bottom: -160px; left: 0; right: 0;
-            background: #fff;
-            transform: matrix(1, -0.1, 0, 1.26, 0, 0);*/
             top: -52px; bottom: -92px; left: 0; right: 0;
         }
 
         section {
-            /*display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 1110px;
-            color: #000;*/
             width: 87%;
 
             h2 {
-                /*position: relative;
-                @include OpenSans(36px, 800, 39px);
-                margin-bottom: 100px;
-                text-align: center;
-                box-sizing: border-box;
-                padding-left: 22px;*/
                 margin-bottom: 50px;
                 font-size: 26px;
                 line-height: 26px;
@@ -748,9 +684,6 @@ body {
             }
 
             .card_wrapper {
-                /*display: flex;
-                justify-content: space-evenly;
-                flex-wrap: wrap;*/
                 justify-content: flex-start;
 
                 .card {
@@ -765,26 +698,13 @@ body {
                     }
 
                     .item {
-                        /*display: flex;
-                        align-items: center;
-                        text-decoration: none;
-                        @include OpenSans(22px, bold, 24px);
-                        color: #000;
-                        border-radius: 6px;
-                        padding: 15px 20px 15px 0;
-                        transition: 500ms;*/
-                        align-items: center;
+                        justify-content: flex-start;
                         font-size: 18px;
                         width: 100%;
                         padding-right: 0;
-                        /*&:hover {
-                            box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-                        }*/
 
-                        .icon_key {
-                           /* background: url('./static/images/Skripichnyj_kljuch.png') no-repeat;
-                            width: 64px;
-                            height: 64px;*/
+                        .item_text {
+                            width: 70%;
                         }
                     }
                 }
@@ -935,15 +855,12 @@ body {
         }
     }
 
-
-    //                                             Модальное окно до 679 пикселей
-
     #modalWindow {
 
         > div {
             position: relative;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             padding: 20px 30px;
 
             .form {
@@ -972,6 +889,7 @@ body {
 
                     a {
                         width: 45%;
+                        font-size: 12px;
                     }
                 }
             }
@@ -996,25 +914,28 @@ body {
     }
 }
 
-
-
-//                                              Медиа-запрос от 680 до 999 пикселей
-
-@media screen and (min-width: 680px) and (max-width: 999px) {
+@media screen and (min-width: 500px) and (max-width: 679px) {
 
     #container_1 {
         padding-top: 70px;
         padding-bottom: 90px;
-        background-position-x: -570px;
+        background-position-x: 0;
 
         section {
             width: 87%;
 
             .author {
-                width: 270px;
+                width: 100%;
 
                 h1 {
-                    font-size: 40px;
+                    line-height: 40px;
+                    font-size: 36px;
+                    margin: 25px 0;
+                }
+
+                h3 {
+                    @include OpenSans(14px, normal, 14px);
+                    margin-bottom: 35px;
                 }
 
                 #contactButton {
@@ -1024,26 +945,26 @@ body {
 
             .contacts {
                 width: 100%;
-                margin-top: 70px;
+                margin-top: 30px;
                 align-items: center;
 
                 .socials {
-                    width: 90%;
-                    justify-content: space-evenly;
+                    width: 100%;
+                    justify-content: center;
 
                     a {
-                        width: 18%;
+                        width: 90%;
+                        font-size: 13px;
                     }
 
                     h3 {
-                        margin-bottom: 15px;
                         text-align: center;
                     }
                 }
             }
 
             .next {
-                margin-top: 50px;
+                margin-top: 30px;
             }
         }
     }
@@ -1051,7 +972,7 @@ body {
     #container_2 {
 
         .matrix {
-            top: -82px; bottom: -160px; left: 0; right: 0;
+            top: -42px; bottom: -100px; left: 0; right: 0;
         }
 
         section {
@@ -1082,8 +1003,7 @@ body {
     }
 
     #container_3 {
-        background-position-x: -830px;
-        padding-top: 220px;
+        padding-top: 190px;
         padding-bottom: 70px;
 
         section {
@@ -1115,6 +1035,464 @@ body {
             }
         }
     }
+
+    #modalWindow {
+
+        > div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 20px 30px;
+
+            .form {
+                width: 100%;
+                margin-right: 0;
+
+                .header {
+                    font-size: 30px;
+                    line-height: 30px;
+                    margin-top: 0;
+                }
+
+                form {
+
+                    button {
+                        margin-bottom: 26px;
+                        width: 100%;
+                        margin-top: 30px;
+                    }
+                }
+
+                .socials {
+                    width: 100%;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+
+                    a {
+                        width: 18%;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .wrapper {
+                position: absolute;
+                top: 24px; right: 27px;
+
+                .piano {
+                    display: none;
+                }
+
+                #cross {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
 }
 
-//                                         Модальное окно от 680 до 768 пикселей
+
+
+//                                              Медиа-запрос от 680 до 999 пикселей
+
+@media screen and (min-width: 680px) and (max-width: 999px) {
+
+    #container_1 {
+        padding-top: 70px;
+        padding-bottom: 90px;
+        background-position-x: -510px;
+
+        section {
+            width: 87%;
+            position: relative;
+
+            .author {
+                width: 278px;
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                p {
+                    margin-bottom: 25px;
+                }
+
+                #contactButton {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .contacts {
+                width: 100%;
+                margin-top: 70px;
+                align-items: center;
+
+                .socials {
+                    width: 90%;
+                    justify-content: space-evenly;
+
+                    a {
+                        width: 18%;
+                        font-size: 12px;
+                    }
+
+                    h3 {
+                        margin-bottom: 15px;
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .next {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    #container_2 {
+
+        .matrix {
+            top: -50px; bottom: -98px; left: 0; right: 0;
+        }
+
+        section {
+            width: 87%;
+
+            h2 {
+                padding-left: 0;
+            }
+
+            .card_wrapper {
+                justify-content: space-evenly;
+            }
+
+            .top {
+                box-sizing: border-box;
+                padding-right: 0;
+                width: 100%;
+            }
+            .bottom {
+                box-sizing: border-box;
+                padding-left: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    #container_3 {
+        padding-top: 170px;
+        padding-bottom: 70px;
+
+        section {
+            width: 87%;
+
+            h2 {
+                margin-bottom: 90px;
+                padding: 0;
+                font-size: 26px;
+                line-height: 26px;
+                text-align: center;
+            }
+
+            article {
+
+                .wrapper {
+                    margin-right: 0;
+                    width: 100%;
+
+                    .photo {
+                        margin: 0 0 30px;
+                    }
+                }
+
+                .content {
+                    width: 100%;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    #modalWindow {
+
+        > div {
+            position: relative;
+            width: 57%;
+            height: 100%;
+            padding: 40px 60px;
+
+            .form {
+                margin-right: 0;
+
+                .header {
+                    font-size: 30px;
+                    line-height: 30px;
+                    margin-top: 0;
+                }
+
+                form {
+
+                    button {
+                        margin-bottom: 26px;
+                        margin-top: 30px;
+                    }
+                }
+
+                .socials {
+                    width: 100%;
+
+                    a {
+                        width: 18%;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .wrapper {
+                position: absolute;
+                top: 39px; right: 28px;
+
+                .piano {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+//                                             Медиа-запрос от 1000 до 1199 пикселей
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+
+    #container_1 {
+        padding-top: 50px;
+        padding-bottom: 100px;
+
+        section {
+            width: 87%;
+            position: relative;
+
+            .author {
+                width: 265px;
+
+                h1 {
+                    width: 200px;
+                    font-size: 40px;
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
+
+                #contactButton {
+                    display: none;
+                }
+            }
+
+            .contacts {
+
+                #contactButtonAdaptive {
+                    display: block;
+                    @include Button;
+                    width: 160px;
+                    margin-top: 20px;
+                    font-size: 13px;
+                }
+            }
+
+            .next {
+                margin-top: 0;
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    #container_2 {
+
+        .matrix {
+            top: -50px; bottom: -108px; left: 0; right: 0;
+        }
+
+        section {
+            width: 87%;
+
+            h2 {
+                padding-left: 0;
+            }
+
+            .card_wrapper {
+                justify-content: space-evenly;
+            }
+
+            .top {
+                box-sizing: border-box;
+                padding-right: 0;
+                width: 100%;
+            }
+            .bottom {
+                box-sizing: border-box;
+                padding-left: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    #container_3 {
+        padding-top: 170px;
+        padding-bottom: 70px;
+
+        section {
+            width: 87%;
+
+            h2 {
+                margin-bottom: 90px;
+                padding: 0;
+                font-size: 26px;
+                line-height: 26px;
+                text-align: center;
+            }
+
+            article {
+
+                .wrapper {
+                    margin-right: 0;
+                    width: 100%;
+
+                    .photo {
+                        margin: 0 0 30px;
+                    }
+                }
+
+                .content {
+                    width: 100%;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    #modalWindow {
+        position: fixed;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background: rgba(#000, 0.5);
+        pointer-events: none;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: 101;
+
+        > div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background: #fff;
+            padding: 30px 30px 30px 50px;
+            box-sizing: border-box;
+            width: 100%;
+
+            height: 100%;
+
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+
+                .header {
+                    @include OpenSans(36px, 800, 39px);
+                    margin-top: 0;
+                    margin-bottom: 62px;
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        font-family: "Segoe UI", serif;
+                        display: block;
+                        font-size: 12px;
+                        line-height: 24px;
+                        letter-spacing: 0.03em;
+                        margin-bottom: 8px;
+                    }
+
+                    input {
+                        height: 40px;
+                        @include FormInputs;
+                        margin-bottom: 28px;
+                    }
+
+                    textarea {
+                        height: 140px;
+                        @include FormInputs;
+                        resize: none;
+                    }
+
+                    button {
+                        width: 255px;
+                        height: 46px;
+                        background: $commonColor;
+                        box-shadow: 0 6px 20px rgba(250, 0, 255, 0.35);
+                        border-radius: 6px;
+                        cursor: pointer;
+                        color: #fff;
+                        text-align: center;
+                        @include OpenSans(14px, normal, 46px);
+                        border-width: 0;
+
+                        margin-top: 25px;
+                        margin-bottom: 28px;
+                    }
+                }
+
+                p {
+                    @include OpenSans(14px, normal, 14px);
+                    margin: 0 0 13px;
+                }
+
+                .socials {
+                    width: 310px;
+                    @include Socials;
+                    flex-wrap: nowrap;
+
+                    a {
+                        width: 59px;
+                    }
+                }
+            }
+
+            .wrapper {
+                display: flex;
+                height: auto;
+
+                .piano {
+                    width: 601px;
+                    height: 723px;
+                    background: url('./static/images/Grand_piano.jpg') no-repeat;
+                    background-size: contain;
+                }
+
+                #cross {
+                    width: 34px;
+                    height: 34px;
+                    background: url('./static/images/Cross.png') no-repeat;
+                    background-size: contain;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
